@@ -76,9 +76,14 @@ header {
 
 /*Форма поиска в шапке*/
 .main_navigation__search {
+  width: 440px;
+
   margin-top: -12px;
   margin-left: 60px;
+}
 
+.main_navigation__search:active {
+  border-bottom: 2px solid #000000;
 }
 
 .main_navigation__search_icon {
@@ -97,15 +102,22 @@ header {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
   line-height: 20px;
   text-align: right;
 
   padding-left: 16px;
+  margin-bottom: 14px;
 
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main_navigation__search_input:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main_navigation__search_input:focus {
+  color: #000000;
+}
 
 main {
   margin-left: 140px;
