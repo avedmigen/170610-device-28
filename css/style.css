@@ -64,13 +64,12 @@ header {
 }
 
 .main_navigation {
+  width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
   align-items: flex-start;
-
-  width: 100%;
 
   padding-left: 60px;
 }
@@ -105,8 +104,7 @@ header {
 
 /*Форма поиска в шапке*/
 .main_navigation__search {
-  flex-basis: 440px;
-  border: 1px solid red;
+  width: 440px;
 }
 
 .main_navigation__search_form{
@@ -123,7 +121,7 @@ header {
 
 .main_navigation__search_icon {
   position: absolute;
-  top: 13px;
+  top: 14px;
 }
 
 .main_navigation__search_input {
@@ -188,6 +186,7 @@ header {
 
 /*Меню пользователя в шапке*/
 .main_navigation__user_menu {
+  width: 500px;
   border: 1px solid red;
 }
 
