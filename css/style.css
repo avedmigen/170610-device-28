@@ -56,7 +56,7 @@ header {
 
   margin-left: 140px;
   margin-right: 140px;
-  padding-top: 20px;
+  padding-top: 33px;
 
   display: flex;
 
@@ -71,18 +71,37 @@ header {
   align-items: flex-start;
 
   width: 100%;
+
+  padding-left: 60px;
 }
 
 /*Логотип в шапке*/
 
 .main_navigation__logo {
   position: absolute;
-  top: -40px;
+  top: -20px;
   left: 60px;
+}
+
+.main_navigation__logo svg {
+  display: block;
 
   width: 163px;
   height: 35px;
+
+  fill: black;
+
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.main_navigation__logo svg:hover {
+  opacity: 0.6;
+}
+
+.main_navigation__logo svg:active {
+  opacity: 0.3;
+}
+
 
 /*Форма поиска в шапке*/
 .main_navigation__search {
@@ -169,7 +188,6 @@ header {
 
 /*Меню пользователя в шапке*/
 .main_navigation__user_menu {
-  flex-basis: 500px;
   border: 1px solid red;
 }
 
@@ -178,9 +196,28 @@ header {
   flex-wrap: wrap;
 
   list-style-type: none;
+
 }
 
-/*Главное меню в шапке*/
+.login svg {
+  fill: red;
+}
+
+.main_navigation__user_menu_list li, .main_navigation__user_menu_list li a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.main_navigation__user_menu_list li a {
+
+}
+
+  /*Главное меню в шапке*/
 
 .main_navigation__navbar {
   flex-grow: 1;
@@ -192,6 +229,19 @@ header {
   flex-wrap: wrap;
 
   list-style-type: none;
+}
+
+.main_navigation__navbar_list li, .main_navigation__navbar_list li a {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #000000;
 }
 
 main {
