@@ -101,6 +101,8 @@ header {
   line-height: 20px;
   text-align: right;
 
+  padding-left: 16px;
+
   color: rgba(0, 0, 0, 0.3);
 }
 
