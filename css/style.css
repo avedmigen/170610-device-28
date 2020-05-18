@@ -77,18 +77,26 @@ header {
 /*Форма поиска в шапке*/
 .main_navigation__search {
   width: 440px;
-
-  margin-top: -12px;
+  margin-top: -21px;
   margin-left: 60px;
 }
 
-.main_navigation__search:active {
+.main_navigation__search_form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  position: relative;
+  border-bottom: 2px transparent;
+}
+
+.main_navigation__search_form:active {
   border-bottom: 2px solid #000000;
 }
 
 .main_navigation__search_icon {
   position: absolute;
-  top: 47px;
+  top: 13px;
 }
 
 .main_navigation__search_input {
@@ -102,10 +110,12 @@ header {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
+  font-size: 15px;
   line-height: 20px;
+
   text-align: right;
 
-  padding-left: 16px;
+  padding-left: 17px;
   margin-bottom: 14px;
 
   color: rgba(0, 0, 0, 0.3);
@@ -117,6 +127,23 @@ header {
 
 .main_navigation__search_input:focus {
   color: #000000;
+}
+
+.main_navigation__search_btn {
+  flex-basis: 84px;
+  border: 2px solid #000000;
+
+  padding: 15px 17px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background: rgba(0, 0, 0, 0);
+  background-color: #F7E296;
 }
 
 main {
