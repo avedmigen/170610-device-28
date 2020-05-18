@@ -49,6 +49,8 @@ img {
   background-color: #FFFFFF;
 }
 
+/*Шапка*/
+
 header {
   position: relative;
 
@@ -61,6 +63,8 @@ header {
   background-color: #F7E296;
 }
 
+/*Логотип в шапке*/
+
 .main_navigation__logo {
   position: relative;
   top: -40px;
@@ -69,6 +73,37 @@ header {
   width: 163px;
   height: 35px;
 }
+
+/*Форма поиска в шапке*/
+.main_navigation__search {
+  margin-top: -12px;
+  margin-left: 60px;
+
+}
+
+.main_navigation__search_icon {
+  position: absolute;
+  top: 47px;
+}
+
+.main_navigation__search_input {
+  width: 144px;
+
+  background: rgba(0, 0, 0, 0);
+  background-color: #F7E296;
+
+  border: 0 solid transparent;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 main {
   margin-left: 140px;
