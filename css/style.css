@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff");
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  position: relative;
+
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  background-color: #FFFFFF;
+}
+
+header {
+  position: relative;
+
+  margin-left: 140px;
+  margin-right: 140px;
+  padding-top: 20px;
+
+  display: flex;
+
+  background-color: #F7E296;
+}
+
+.main_navigation__logo {
+  position: relative;
+  top: -40px;
+  left: 60px;
+
+  width: 163px;
+  height: 35px;
+}
+
+main {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+footer {
+  margin-left: 140px;
+  margin-right: 140px;
+}

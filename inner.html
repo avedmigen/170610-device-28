@@ -3,37 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <nav class="main_navigation">
-        <div class="logo">
+      <div class="main_navigation">
+        <div class="main_navigation__logo">
           <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина модных девайсов и умных гаджетов для гиков Девайс">
         </div>
-        <ul>
-          <li><a href="inner.html">Каталог товаров</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="search_form">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" id="search_form_input" name="search_form_input" value="" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
-        </form>
-      </div>
-      <div class="user_menu">
-        <ul>
-          <li>Валентин Петухов</li>
-          <li>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <button type="submit">Выйти</button>
-            </form>
-          </li>
-          <li>Сравнить</li>
-          <li>Корзина</li>
-        </ul>
+        <div class="main_navigation__search_form">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" id="search_form_input" name="search_form_input" value="" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
+          </form>
+        </div>
+        <div class="main_navigation__user_menu">
+          <ul class="main_navigation__user_menu_list">
+            <li>Валентин Петухов</li>
+            <li>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <button type="submit">Выйти</button>
+              </form>
+            </li>
+            <li>Сравнить</li>
+            <li>Корзина</li>
+          </ul>
+        </div>
+        <nav class="main_navigation__navbar">
+          <ul class="main_navigation__navbar_list">
+            <li><a href="inner.html">Каталог товаров</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>

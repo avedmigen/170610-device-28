@@ -3,149 +3,156 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav class="main_navigation">
-        <div class="logo">
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина модных девайсов и умных гаджетов для гиков Девайс">
+    <div class="wrapper">
+      <header>
+        <div class="main_navigation">
+          <div class="main_navigation__logo">
+            <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина модных девайсов и умных гаджетов для гиков Девайс">
+          </div>
+          <div class="main_navigation__search_form">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" id="search_form_input" name="search_form_input" value="" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
+            </form>
+          </div>
+          <div class="main_navigation__user_menu">
+            <ul class="main_navigation__user_menu_list">
+              <li>Войти</li>
+              <li>Сравнить</li>
+              <li>Корзина</li>
+            </ul>
+          </div>
+          <nav class="main_navigation__navbar">
+            <ul class="main_navigation__navbar_list">
+              <li><a href="inner.html">Каталог товаров</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="guarantee.html">Гарантия</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
-        <ul>
-          <li><a href="inner.html">Каталог товаров</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="search_form">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" id="search_form_input" name="search_form_input" value="" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
-        </form>
-      </div>
-      <div class="user_menu">
-        <ul>
-          <li>Войти</li>
-          <li>Сравнить</li>
-          <li>Корзина</li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <h1>Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс</h1>
-      <section class="slider">
-        <h2>Топ-3 по продажам</h2>
-        <ol>
-          <li>
-            <h3>Делай селфи, как Бен Стиллер!</h3>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <img src="https://via.placeholder.com/384x486" alt="Самая длинная палка для селфи восемь метров длиной и весом всего 5 килограмм.">
-            <table>
-              <caption>Характеристики</caption>
-              <tr>
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-              <tr>
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-            </table>
-            <a href="blank.html">Подробнее</a>
-          </li>
-        </ol>
-        <div class="slider-controls">
-          <input type="radio" id="slide_1" name="slide_1" checked>
-          <input type="radio" id="slide_2" name="slide_2">
-          <input type="radio" id="slide_3" name="slide_3">
-        </div>
-      </section>
-      <section class="popular">
-        <h2>Популярные товары</h2>
-        <ul>
-          <li>Виртуальная реальность</li>
-          <li>Моноподы для селфи</li>
-          <li>Экшн-камеры</li>
-          <li>Фитнес-браслеты</li>
-          <li>Умные часы</li>
-          <li>Квадрокоптеры</li>
-        </ul>
-      </section>
-      <section class="services">
-        <h2>Наши услуги</h2>
-        <ul>
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
-        </ul>
-        <div>
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-      </section>
-      <section class="logotypes">
-        <h2>Наши партнеры</h2>
-        <ul>
-          <li><img src="https://via.placeholder.com/260x180" alt="DJI"></li>
-          <li><img src="https://via.placeholder.com/260x180" alt="SP Gadgets"></li>
-          <li><img src="https://via.placeholder.com/260x180" alt="GoPro"></li>
-          <li><img src="https://via.placeholder.com/260x180" alt="Vive"></li>
-        </ul>
-      </section>
-      <section class="info">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="about_us.html">Подробнее о нас</a>
-      </section>
-      <section class="contact">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map">
-          <h3 class="visually-hidden">Карта проезда в интернет-магазин модных девайсов и умных гаджетов для гиков Девайс</h3>
-          <!-- <iframe src="" width="560" height="222" style="border:0"></iframe>-->
-          <img src="img/map.jpg" width="560" height="222" alt="Карта проезда в интернет-магазин модных девайсов и умных гаджетов для гиков Девайс">
-        </div>
-        <a href="contacts.html">Напишите нам</a>
-      </section>
-    </main>
-    <footer>
-      <div class="footer_navigation">
-        <div class="logo">
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина модных девайсов и умных гаджетов для гиков Девайс">
-        </div>
-        <ul class="footer_nav">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <div class="user_menu">
+      </header>
+      <main>
+        <h1>Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс</h1>
+        <section class="slider">
+          <h2>Топ-3 по продажам</h2>
+          <ol>
+            <li>
+              <h3>Делай селфи, как Бен Стиллер!</h3>
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <img src="https://via.placeholder.com/384x486" alt="Самая длинная палка для селфи восемь метров длиной и весом всего 5 килограмм.">
+              <table>
+                <caption>Характеристики</caption>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </table>
+              <a href="blank.html">Подробнее</a>
+            </li>
+          </ol>
+          <div class="slider-controls">
+            <input type="radio" id="slide_1" name="slide_1" checked>
+            <input type="radio" id="slide_2" name="slide_2">
+            <input type="radio" id="slide_3" name="slide_3">
+          </div>
+        </section>
+        <section class="popular">
+          <h2>Популярные товары</h2>
           <ul>
-            <li>Войти</li>
-            <li>Сравнить</li>
-            <li>Корзина</li>
+            <li>Виртуальная реальность</li>
+            <li>Моноподы для селфи</li>
+            <li>Экшн-камеры</li>
+            <li>Фитнес-браслеты</li>
+            <li>Умные часы</li>
+            <li>Квадрокоптеры</li>
           </ul>
+        </section>
+        <section class="services">
+          <h2>Наши услуги</h2>
+          <ul>
+            <li>Доставка</li>
+            <li>Гарантия</li>
+            <li>Кредит</li>
+          </ul>
+          <div>
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+        </section>
+        <section class="logotypes">
+          <h2>Наши партнеры</h2>
+          <ul>
+            <li><img src="https://via.placeholder.com/260x180" alt="DJI"></li>
+            <li><img src="https://via.placeholder.com/260x180" alt="SP Gadgets"></li>
+            <li><img src="https://via.placeholder.com/260x180" alt="GoPro"></li>
+            <li><img src="https://via.placeholder.com/260x180" alt="Vive"></li>
+          </ul>
+        </section>
+        <section class="info">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="about_us.html">Подробнее о нас</a>
+        </section>
+        <section class="contact">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <div class="map">
+            <h3 class="visually-hidden">Карта проезда в интернет-магазин модных девайсов и умных гаджетов для гиков Девайс</h3>
+            <!-- <iframe src="" width="560" height="222" style="border:0"></iframe>-->
+            <img src="img/map.jpg" width="560" height="222" alt="Карта проезда в интернет-магазин модных девайсов и умных гаджетов для гиков Девайс">
+          </div>
+          <a href="contacts.html">Напишите нам</a>
+        </section>
+      </main>
+      <footer>
+        <div class="footer_navigation">
+          <div class="logo">
+            <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина модных девайсов и умных гаджетов для гиков Девайс">
+          </div>
+          <ul class="footer_nav">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="user_menu">
+            <ul>
+              <li>Войти</li>
+              <li>Сравнить</li>
+              <li>Корзина</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <p class="address">г. Москва, ул. Строителей, 15</p>
-      <p class="phone_number">Тел.: +7 (495) 495-95-95</p>
-      <section>
-        <h2>Давайте дружить!</h2>
-        <ul class="social_icons">
-          <li><a href="#">Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс в Facebook</a></li>
-          <li><a href="#">Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс в Instagram</a></li>
-          <li><a href="#">Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс в Twitter</a></li>
-        </ul>
-      </section>
-      <a class="htmlacademy_logo" href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy</a>
-    </footer>
+        <p class="address">г. Москва, ул. Строителей, 15</p>
+        <p class="phone_number">Тел.: +7 (495) 495-95-95</p>
+        <section>
+          <h2>Давайте дружить!</h2>
+          <ul class="social_icons">
+            <li><a href="#">Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс в Facebook</a></li>
+            <li><a href="#">Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс в Instagram</a></li>
+            <li><a href="#">Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс в Twitter</a></li>
+          </ul>
+        </section>
+        <a class="htmlacademy_logo" href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy</a>
+      </footer>
+    </div>
   </body>
 </html>
