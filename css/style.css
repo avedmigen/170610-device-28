@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Переменные */
 :root {
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -8,10 +10,42 @@
   --special-yellow: #F7E296;
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
+  --status-pink: #F6DADA;
 }
 
+/* Локальные шрифты */
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+/* Глобальные стили тегов */
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Хедер */
 header {
   background-color: var(--special-yellow);
 }
 
-
+/*# sourceMappingURL=style.css.map */
