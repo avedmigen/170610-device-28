@@ -9,6 +9,3 @@
 node_modules/
 npm-debug.*
 Thumbs.db
-
-!/css/style.css.map
-!/css/style.scss

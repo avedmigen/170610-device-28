@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Переменные */
 :root {
   --basic-black: #000000;
@@ -26,21 +27,30 @@
   font-weight: 300;
   font-style: normal;
 }
+
 /* Глобальные стили тегов */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  min-width: 1160px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
 }
 
 /* Хедер */
