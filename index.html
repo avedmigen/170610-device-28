@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,16 +19,14 @@
         </svg>
       </a>
     </div>
-    <div class="search-form">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="search-form-input" class="visually-hidden">Введите поисковый запрос</label>
-        <img src="img/icon_search.svg" alt="Иконка поиска" width="16"
-             height="16">
-        <input type="text" id="search-form-input" name="search-form-input"
-               value="" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
-      </form>
-    </div>
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="search-form-input" class="visually-hidden">Введите поисковый запрос</label>
+      <img src="img/icon_search.svg" alt="Иконка поиска" width="16"
+           height="16">
+      <input type="text" id="search-form-input" name="search-form-input"
+             value="" placeholder="Поиск по сайту">
+      <button type="submit">Найти</button>
+    </form>
     <ul class="user-menu">
       <li>
         <a class="login" href="blank.html" title="Войти в личный кабинет">
@@ -65,14 +63,14 @@
           Корзина</a></li>
     </ul>
     <nav class="navbar">
-      <ul>
+      <ul class="mainmenu">
         <li>
           <a href="inner.html">Каталог товаров</a>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка открытия вложенного меню">
             <path d="M15.7 6.9V9.1H9.10005V15.7H6.90005V9.1H0.300049V6.9H6.90005V0.300003H9.10005V6.9H15.7Z"
-                  fill-opacity="0.3"/>
+                  fill-opacity="0.3" fill="grey"/>
           </svg>
-          <ul>
+          <ul class="submenu">
             <li><a href="blank.html">Виртуальная реальность</a></li>
             <li><a href="blank.html">Моноподы для селфи</a></li>
             <li><a href="blank.html">Экшн-камеры</a></li>
@@ -350,30 +348,30 @@
         </div>
         <a href="contacts.html">Напишите нам</a>
       </section>
-    </div>
-    <div class="contact-form-popup">
-      <h2>Напишите нам</h2>
-      <button type="button">
-        <span class="visually-hidden">Закрыть контактную форму</span>
-      </button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="visually-hidden">Контактная форма</legend>
-          <p>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" value="Имя Фамилия" placeholder="Имя Фамилия" required>
-          </p>
-          <p>
-            <label for="email">Ваш e-mail:</label>
-            <input type="email" id="email" name="email" value="email@example.com" placeholder="email@example.com" required>
-          </p>
-          <p>
-            <label for="message">Текст письма:</label>
-            <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
-          </p>
-        </fieldset>
-        <button type="submit">Отправить</button>
-      </form>
+      <div class="contact-form-popup">
+        <h2>Напишите нам</h2>
+        <button type="button">
+          <span class="visually-hidden">Закрыть контактную форму</span>
+        </button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="visually-hidden">Контактная форма</legend>
+            <p>
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" value="Имя Фамилия" placeholder="Имя Фамилия" required>
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" id="email" name="email" value="email@example.com" placeholder="email@example.com" required>
+            </p>
+            <p>
+              <label for="message">Текст письма:</label>
+              <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </main>
   <footer>

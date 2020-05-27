@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-/* Глобальные стили тегов */
+/* Глобальные стили */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -36,12 +36,12 @@
 body {
   margin: 0;
   min-width: 1160px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gilroy Light", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+  color: var(--basic-black, black);
+  background-color: var(--basic-white, white);
 }
 
 img {
@@ -53,9 +53,228 @@ a {
   text-decoration: none;
 }
 
-/* Хедер */
-header {
-  background-color: var(--special-yellow);
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
-/*# sourceMappingURL=style.css.map */
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* Хедер */
+header {
+  margin-top: 40px;
+}
+
+header .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-left: 60px;
+  padding-top: 28px;
+
+  background-color: var(--special-yellow, goldenrod);
+}
+
+/*Логотип в шапке*/
+
+.logo a {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+}
+
+.logo a svg {
+  display: block;
+  width: 163px;
+  height: 35px;
+}
+
+.logo svg:hover {
+  opacity: 0.6;
+}
+
+.logo svg:active,
+.logo svg:focus {
+  opacity: 0.3;
+}
+
+/*Форма поиска в шапке*/
+.search-form {
+  width: 440px;
+  display: flex;
+  border-bottom: 2px solid black;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 99px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black,black);
+}
+
+.search-form img {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.search-form input {
+  width: 144px;
+  border: 0;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  opacity:  0.3;
+
+  background-color: inherit;
+}
+
+.search-form input:hover {
+  opacity: 0.6;
+}
+
+.search-form input:focus {
+  opacity: unset;
+}
+
+.search-form button {
+  position: relative;
+  bottom: -2px;
+
+  width: 84px;
+  border: 2px solid var(--special-yellow, goldenrod);
+  padding: 15px 17px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  color: var(--special-yellow, goldenrod);
+  background-color: inherit;
+
+}
+
+.search-form button:focus {
+  border: 2px solid var(--basic-black, black);
+
+  color: var(--basic-black, black);
+  background-color: inherit;
+
+  cursor: pointer;
+}
+
+
+.search-form button:hover {
+  color: var(--basic-white, white);
+  background-color: var(--basic-black, black);
+}
+
+.search-form button:active {
+  color: rgba(255,255,255,0.3);
+  background-color: var(--basic-black, black);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Меню */
+.user-menu, .mainmenu, .submenu {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.user-menu {
+  display: flex;
+  flex-direction: row;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(----basic-black, black);
+}
+
+.mainmenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainmenu a {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.mainmenu a:hover {
+  opacity: 0.6;
+}
+
+.mainmenu a:active {
+  opacity: 0.3;
+}
+
+.mainmenu li:first-child {
+  flex-grow: 1;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(----basic-black, black);
+}
+
+
+
