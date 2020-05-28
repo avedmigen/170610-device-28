@@ -141,9 +141,9 @@ header .wrapper {
   width: 440px;
   outline-style: none;
   padding-bottom: 15px;
-  outline: none;
   border:2px solid var(--special-yellow, goldenrod);
   padding-left: 35px;
+  padding-right: 84px;
 
   align-self: flex-end;
 
@@ -160,12 +160,13 @@ header .wrapper {
 
 .search-form input:hover {
   opacity: 0.6;
-  outline: none;
 }
 
 .search-form input:focus {
   opacity: unset;
   outline: none;
+  border-left: 1px;
+  border-right: 1px;
   border-bottom: 2px solid var(--basic-black, black);
 }
 
@@ -174,7 +175,8 @@ header .wrapper {
   right: 84px;
 
   width: 84px;
-  border: 2px solid transparent;
+  border: 0 transparent;
+
   padding: 15px 17px;
 
   font-family: "Open Sans";
