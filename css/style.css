@@ -115,10 +115,7 @@ header .wrapper {
 
 /*Форма поиска в шапке*/
 .search-form {
-  width: 440px;
   display: flex;
-  border-bottom: 2px solid black;
-
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -130,6 +127,7 @@ header .wrapper {
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black,black);
+  text-align: left;
 }
 
 .search-form img {
@@ -140,15 +138,21 @@ header .wrapper {
 }
 
 .search-form input {
-  width: 144px;
-  border: 0;
+  width: 440px;
+  outline-style: none;
+  padding-bottom: 15px;
+  outline: none;
+  border:2px solid var(--special-yellow, goldenrod);
+  padding-left: 35px;
+
+  align-self: flex-end;
 
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  text-align: right;
+  text-align: left;
   opacity:  0.3;
 
   background-color: inherit;
@@ -156,18 +160,21 @@ header .wrapper {
 
 .search-form input:hover {
   opacity: 0.6;
+  outline: none;
 }
 
 .search-form input:focus {
   opacity: unset;
+  outline: none;
+  border-bottom: 2px solid var(--basic-black, black);
 }
 
 .search-form button {
   position: relative;
-  bottom: -2px;
+  right: 84px;
 
   width: 84px;
-  border: 2px solid var(--special-yellow, goldenrod);
+  border: 2px solid transparent;
   padding: 15px 17px;
 
   font-family: "Open Sans";
@@ -183,8 +190,6 @@ header .wrapper {
 }
 
 .search-form button:focus {
-  border: 2px solid var(--basic-black, black);
-
   color: var(--basic-black, black);
   background-color: inherit;
 
