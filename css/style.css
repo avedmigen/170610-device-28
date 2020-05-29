@@ -282,13 +282,14 @@ header .wrapper {
 }
 
 .user-menu button:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 /* Главное навигационное меню */
 .navbar {
   flex-grow: 1;
   margin-top: 35px;
+  margin-bottom: 51px;
 }
 
 .mainmenu {
@@ -347,7 +348,9 @@ header .wrapper {
 
 /* Выпадающее меню */
 .submenu {
-  margin-top: 35px;
+  position: absolute;
+
+  margin-top: 5px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 22px;
@@ -389,5 +392,6 @@ header .wrapper {
   opacity: 0.3;
 }
 
+/* Футер */
 
 
