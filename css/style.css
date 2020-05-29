@@ -85,13 +85,13 @@ header .wrapper {
   flex-wrap: wrap;
   align-items: baseline;
   padding-left: 60px;
+  padding-right: 60px;
   padding-top: 28px;
 
   background-color: var(--special-yellow, goldenrod);
 }
 
 /*Логотип в шапке*/
-
 .logo a {
   position: absolute;
   top: -20px;
@@ -119,7 +119,7 @@ header .wrapper {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 99px;
+  margin-right: 15px;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -132,18 +132,20 @@ header .wrapper {
 
 .search-form img {
   position: absolute;
+
   display: block;
   width: 16px;
   height: 16px;
+  margin-top: 1px;
 }
 
 .search-form input {
   width: 440px;
-  outline-style: none;
-  padding-bottom: 15px;
   border:2px solid var(--special-yellow, goldenrod);
-  padding-left: 35px;
+  padding-left: 37px;
   padding-right: 84px;
+  padding-bottom: 12px;
+  outline-style: none;
 
   align-self: flex-end;
 
@@ -163,11 +165,12 @@ header .wrapper {
 }
 
 .search-form input:focus {
-  opacity: unset;
-  outline: none;
   border-left: 1px;
   border-right: 1px;
   border-bottom: 2px solid var(--basic-black, black);
+  outline: none;
+
+  opacity: unset;
 }
 
 .search-form button {
@@ -176,7 +179,6 @@ header .wrapper {
 
   width: 84px;
   border: 0 transparent;
-
   padding: 15px 17px;
 
   font-family: "Open Sans";
@@ -188,7 +190,6 @@ header .wrapper {
 
   color: var(--special-yellow, goldenrod);
   background-color: inherit;
-
 }
 
 .search-form button:focus {
@@ -197,7 +198,6 @@ header .wrapper {
 
   cursor: pointer;
 }
-
 
 .search-form button:hover {
   color: var(--basic-white, white);
@@ -209,27 +209,14 @@ header .wrapper {
   background-color: var(--basic-black, black);
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Меню */
-.user-menu, .mainmenu, .submenu {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-}
-
+/* Меню пользователя */
 .user-menu {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -237,22 +224,117 @@ header .wrapper {
   font-size: 15px;
   line-height: 20px;
   color: var(----basic-black, black);
+
+  list-style-type: none;
+}
+
+.user-menu a {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.user-menu a svg {
+  margin: auto;
+  margin-right: 12px;
+}
+
+.user-menu a,
+.user-menu a:visited {
+  color: var(----basic-black, black);
+}
+
+.user-menu a:hover {
+  opacity: 0.6;
+}
+
+.user-menu a:active {
+  opacity: 0.3;
+}
+
+.user-menu li:first-child {
+  margin-right: 20px;
+}
+
+.user-menu li.chart {
+  margin-left: auto;
+}
+
+.user-menu li:last-child {
+  margin-left: 43px;
+}
+
+.user-menu button {
+  margin: 0;
+  padding: 0;
+  background: 0;
+  border: none;
+
+  color: var(----basic-black, black);
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.user-menu button:hover,
+.user-menu button:focus {
+  opacity: 0.6;
+}
+
+.user-menu button:active {
+  opacity: 0.6;
+}
+
+/* Главное навигационное меню */
+.navbar {
+  flex-grow: 1;
+  margin-top: 35px;
 }
 
 .mainmenu {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.mainmenu a {
+.mainmenu > li:first-child {
+  flex-grow: 1;
+}
+
+.mainmenu > li:first-child a {
+  margin-right: 13px;
+}
+
+.mainmenu > li:first-child svg {
+  position: relative;
+  top: 2px;
+}
+
+.mainmenu > li:first-child + li {
+  margin-right: 35px;
+}
+
+.mainmenu > li:last-child {
+  margin-left: 108px;
+  margin-right: -3px;
+}
+
+.mainmenu a,
+.mainmenu a:visited {
   font-family: "Gilroy Extra Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #000000;
+  color: var(----basic-black, black);
+}
+
+.mainmenu > li:first-child > a {
+  letter-spacing: 0.1em;
 }
 
 .mainmenu a:hover {
@@ -263,16 +345,32 @@ header .wrapper {
   opacity: 0.3;
 }
 
-.mainmenu li:first-child {
-  flex-grow: 1;
-}
-
+/* Выпадающее меню */
 .submenu {
+  margin-top: 35px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 22px;
+  padding: 0;
+
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 110px;
+  align-content: space-between;
+
+  list-style-type: none;
 }
 
-.submenu a {
+.submenu li {
+  margin-bottom: 16px;
+}
+.submenu > li:nth-child(5)  {
+  margin-bottom: 20px;
+}
+
+.submenu a,
+.submenu a:visited {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
@@ -281,6 +379,14 @@ header .wrapper {
   letter-spacing: normal;
   text-transform: none;
   color: var(----basic-black, black);
+}
+
+.submenu a:hover {
+  opacity: 0.6;
+}
+
+.submenu a:active {
+  opacity: 0.3;
 }
 
 
