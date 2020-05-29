@@ -12,6 +12,7 @@
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
   --status-pink: #F6DADA;
+  --footer-yellow: #FFC600;
 }
 
 /* Локальные шрифты */
@@ -223,7 +224,7 @@ header .wrapper {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: var(----basic-black, black);
+  color: var(--basic-black, black);
 
   list-style-type: none;
 }
@@ -241,7 +242,7 @@ header .wrapper {
 
 .user-menu a,
 .user-menu a:visited {
-  color: var(----basic-black, black);
+  color: var(--basic-black, black);
 }
 
 .user-menu a:hover {
@@ -270,7 +271,12 @@ header .wrapper {
   background: 0;
   border: none;
 
-  color: var(----basic-black, black);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black, black);
   opacity: 0.3;
 
   cursor: pointer;
@@ -287,7 +293,7 @@ header .wrapper {
 
 /* Главное навигационное меню */
 .navbar {
-  flex-grow: 1;
+  width: 100%;
   margin-top: 35px;
   margin-bottom: 51px;
 }
@@ -331,7 +337,7 @@ header .wrapper {
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(----basic-black, black);
+  color: var(--basic-black, black);
 }
 
 .mainmenu > li:first-child > a {
@@ -381,7 +387,7 @@ header .wrapper {
   line-height: 20px;
   letter-spacing: normal;
   text-transform: none;
-  color: var(----basic-black, black);
+  color: var(--basic-black, black);
 }
 
 .submenu a:hover {
@@ -393,5 +399,254 @@ header .wrapper {
 }
 
 /* Футер */
+footer {
+  background-color: var(--basic-dark, black);
+}
+
+footer .wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 45px;
+}
+
+/*Логотип в футере*/
+
+.footer-logo {
+  width: 163px;
+  height: 35px;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.footer-logo svg path {
+  fill: var(--special-yellow-dark, yellow);
+}
+
+.footer-logo a {
+}
+
+.footer-logo a svg {
+  display: block;
+  width: 163px;
+  height: 35px;
+}
+
+.footer-logo svg:hover {
+  opacity: 0.6;
+}
+
+.footer-logo svg:active,
+.footer-logo svg:focus {
+  opacity: 0.3;
+}
+
+/* Меню пользователя в футере */
+.footer-user-menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white, white);
+
+  list-style-type: none;
+}
+
+.footer-user-menu li {
+  margin-right: 35px;
+}
+
+.footer-user-menu li:last-child {
+  margin-right: 0;
+}
+
+.footer-user-menu a {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.footer-user-menu svg {
+  margin: auto;
+  margin-right: 11px;
+}
+
+.footer-user-menu svg path {
+  fill: var(--footer-yellow, goldenrod);
+}
+
+.footer-user-menu a,
+.footer-user-menu a:visited {
+  color: var(--basic-white, white);
+  opacity: 0.7;
+}
+
+.footer-user-menu a:hover {
+  opacity: unset;
+}
+
+.footer-user-menu a:active {
+  opacity: 0.3;
+}
+
+.footer-user-menu button {
+  margin: 0;
+  padding: 0;
+  background: 0;
+  border: none;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white, white);
+  opacity: 0.7;
+
+  cursor: pointer;
+}
+
+.footer-user-menu button:hover,
+.footer-user-menu button:focus {
+  opacity: unset;
+}
+
+.footer-user-menu button:active {
+  opacity: 0.3;
+}
+
+/* Контакты в футере */
+.footer-contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: var(--basic-white, white);
+  opacity: 0.6;
+}
+
+/* Навигация по сайту в футере */
+.footer-navbar {
+  position: relative;
+  top: -36px;
+
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.6;
+
+  list-style-type: none;
+}
+
+.footer-navbar li {
+  margin-right: 36px;
+}
+
+.footer-navbar li:last-child {
+  margin-right: 0;
+}
+
+.footer-navbar a {
+  color: var(--basic-white, white);
+}
+
+.footer-navbar a:hover {
+  opacity: 0.6;
+}
+
+.footer-navbar a:active {
+  opacity: 0.3;
+}
+
+/* Декоративный прямоугольник в футере */
+.rectangle {
+  width: 80px;
+  height: 7px;
+  margin-top: 13px;
+  background-color: var(--footer-yellow, goldenrod);
+}
 
 
+/* Иконки соцсетей */
+.social-icons ul {
+  margin: 0;
+  margin-right: 52px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+.social-icons ul li {
+  margin-right: 20px;
+}
+
+.social-icons ul li:last-child {
+  margin-right: 0;
+}
+
+.social-icons ul a,
+.social-icons ul a:visited {
+  opacity: 0.3;
+}
+
+.social-icons ul a:hover {
+  opacity: 0.6;
+}
+
+.social-icons ul a:active {
+  opacity: 0.1;
+}
+
+.social-icons svg path {
+  fill: var(--basic-white, white);
+}
+
+/* Логотип HTML Academy */
+.htmlacademy-logo {
+  margin-bottom: 60px;
+}
+
+.htmlacademy-logo svg path {
+  fill: var(--special-yellow-dark, yellow);
+}
+
+.htmlacademy-logo a:hover {
+  opacity: 0.6;
+}
+
+.htmlacademy-logo a:active {
+  opacity: 0.3;
+}
