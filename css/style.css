@@ -408,29 +408,22 @@ footer {
 }
 
 footer .wrapper {
-  position: relative;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
   justify-content: space-between;
+  align-items: start;
   padding-top: 45px;
 }
 
 /*Логотип в футере*/
 
 .footer-logo {
-  width: 163px;
-  height: 35px;
-  margin-top: 18px;
-  margin-bottom: 25px;
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-logo svg path {
   fill: var(--special-yellow-dark, yellow);
-}
-
-.footer-logo a {
 }
 
 .footer-logo a svg {
@@ -450,13 +443,14 @@ footer .wrapper {
 
 /* Меню пользователя в футере */
 .footer-user-menu {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  justify-content: flex-end;
   margin: 0;
   padding: 0;
+  grid-column: 2/4;
+
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: end;
+  grid-column-gap: 40px;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -466,25 +460,9 @@ footer .wrapper {
   color: var(--basic-white, white);
 
   list-style-type: none;
-}
 
-.footer-user-menu li {
-  margin-right: 35px;
-}
-
-.footer-user-menu li:last-child {
-  margin-right: 0;
-}
-
-.footer-user-menu a {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.footer-user-menu svg {
-  margin: auto;
-  margin-right: 11px;
+  outline: 2px solid rgba(7, 184, 197, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-user-menu svg path {
@@ -533,10 +511,12 @@ footer .wrapper {
 
 /* Контакты в футере */
 .footer-contacts {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  grid-column: 1/4;
+
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
+
 
   font-family: "Open Sans";
   font-style: normal;
@@ -546,19 +526,19 @@ footer .wrapper {
 
   color: var(--basic-white, white);
   opacity: 0.6;
+
+  outline: 2px solid rgba(7, 197, 55, 0.7);
+  outline-offset: -5px;
 }
 
 /* Навигация по сайту в футере */
 .footer-navbar {
-  position: relative;
-  top: -36px;
-
-  width: 100%;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 36px;
+  grid-column: 1/4;
   justify-content: center;
 
   font-family: "Gilroy Extra Bold";
@@ -571,14 +551,9 @@ footer .wrapper {
   opacity: 0.6;
 
   list-style-type: none;
-}
 
-.footer-navbar li {
-  margin-right: 36px;
-}
-
-.footer-navbar li:last-child {
-  margin-right: 0;
+  outline: 2px solid rgba(197, 80, 7, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-navbar a {
@@ -595,31 +570,34 @@ footer .wrapper {
 
 /* Декоративный прямоугольник в футере */
 .rectangle {
-  width: 80px;
   height: 7px;
-  margin-top: 13px;
   background-color: var(--footer-yellow, goldenrod);
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
 }
 
 
 /* Иконки соцсетей */
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+
+  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline-offset: -5px;
+}
+
 .social-icons ul {
   margin: 0;
-  margin-right: 52px;
   padding: 0;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns:repeat(3, 32px);
+  grid-column-gap: 20px;
 
   list-style-type: none;
 }
 
-.social-icons ul li {
-  margin-right: 20px;
-}
-
-.social-icons ul li:last-child {
-  margin-right: 0;
-}
 
 .social-icons ul a,
 .social-icons ul a:visited {
@@ -640,7 +618,10 @@ footer .wrapper {
 
 /* Логотип HTML Academy */
 .htmlacademy-logo {
-  margin-bottom: 60px;
+  justify-self: end;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
 }
 
 .htmlacademy-logo svg path {
