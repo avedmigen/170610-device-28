@@ -702,11 +702,16 @@ footer .wrapper {
   /* Фильтр по характеристикам товаров */
 .product-filter {
   width: 328px;
+  background-color: #E5E5E5;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
 }
+
 .product-filter h2 {
+  margin: 0;
+  padding: 25px 0;
+
   font-family: "Gilroy Extra Bold";
   font-style: normal;
   font-weight: 800;
@@ -714,14 +719,76 @@ footer .wrapper {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color:var(--basic-black)
+  color:var(--basic-black);
+  text-align: center;
+
+  background-color: #DCDCDC;
 }
 
 .product-filter fieldset {
   border: none;
 }
 
-/* Товары */
+.product-filter legend {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+.product-filter ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-filter ul li {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+}
+
+.product-filter input,
+.product-filter label {
+  cursor: pointer;
+}
+
+.product-filter button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+
+  background: none;
+
+  cursor: pointer;
+}
+
+.product-filter button:hover,
+.product-filter button:focus {
+  background-color: var(--special-yellow-dark);
+}
+
+.product-filter button:active {
+  opacity: 0.3;
+}
+
+
+  /* Товары */
 .goods {
   display: grid;
   grid-template-columns: 1fr;
@@ -829,6 +896,7 @@ button[name="add-to-cart"] {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-black);
+  background: none;
 
   cursor: pointer;
 }
