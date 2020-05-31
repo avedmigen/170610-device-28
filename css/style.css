@@ -966,3 +966,17 @@ button[name="add-to-cart"]:active {
   margin-right: 30px;
 }
 
+.goods-controls ul a,
+.goods-controls ul a:visited {
+  opacity: 0.3;
+}
+
+.goods-controls ul a:hover {
+  opacity: 0.6;
+}
+
+.goods-controls ul a:active {
+  opacity: unset;
+}
+
+
