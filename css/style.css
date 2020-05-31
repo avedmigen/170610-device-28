@@ -447,10 +447,9 @@ footer .wrapper {
   padding: 0;
   grid-column: 2/4;
 
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
+  display: flex;
   justify-content: end;
-  grid-column-gap: 40px;
+  justify-content: flex-end;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -463,6 +462,10 @@ footer .wrapper {
 
   outline: 2px solid rgba(7, 184, 197, 0.7);
   outline-offset: -5px;
+}
+
+.footer-user-menu li {
+  margin-left: 40px;
 }
 
 .footer-user-menu svg path {
