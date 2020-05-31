@@ -43,8 +43,8 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  color: var(--basic-black, black);
-  background-color: var(--basic-white, white);
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 img {
@@ -94,20 +94,15 @@ header .wrapper {
   padding-right: 60px;
   padding-top: 28px;
 
-  background-color: var(--special-yellow, goldenrod);
+  background-color: var(--special-yellow);
 }
 
 /*Логотип в шапке*/
-.logo a {
+.logo a,
+.logo a:visited {
   position: absolute;
   top: -20px;
   left: 60px;
-}
-
-.logo a svg {
-  display: block;
-  width: 163px;
-  height: 35px;
 }
 
 .logo svg:hover {
@@ -117,6 +112,12 @@ header .wrapper {
 .logo svg:active,
 .logo svg:focus {
   opacity: 0.3;
+}
+
+.logo svg {
+  display: block;
+  width: 163px;
+  height: 35px;
 }
 
 /*Форма поиска в шапке*/
@@ -132,7 +133,7 @@ header .wrapper {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: var(--basic-black,black);
+  color: var(--basic-black);
   text-align: left;
 }
 
@@ -147,7 +148,7 @@ header .wrapper {
 
 .search-form input {
   width: 440px;
-  border:2px solid var(--special-yellow, goldenrod);
+  border:2px solid var(--special-yellow);
   padding-left: 37px;
   padding-right: 84px;
   padding-bottom: 12px;
@@ -173,7 +174,7 @@ header .wrapper {
 .search-form input:focus {
   border-left: 1px;
   border-right: 1px;
-  border-bottom: 2px solid var(--basic-black, black);
+  border-bottom: 2px solid var(--basic-black);
   outline: none;
 
   opacity: unset;
@@ -194,25 +195,25 @@ header .wrapper {
   line-height: 20px;
   text-transform: uppercase;
 
-  color: var(--special-yellow, goldenrod);
+  color: var(--special-yellow);
   background-color: inherit;
 }
 
+.search-form button:hover {
+  color: var(--basic-white, white);
+  background-color: var(--basic-black);
+}
+
 .search-form button:focus {
-  color: var(--basic-black, black);
+  color: var(--basic-black);
   background-color: inherit;
 
   cursor: pointer;
 }
 
-.search-form button:hover {
-  color: var(--basic-white, white);
-  background-color: var(--basic-black, black);
-}
-
 .search-form button:active {
   color: rgba(255,255,255,0.3);
-  background-color: var(--basic-black, black);
+  background-color: var(--basic-black);
 }
 
 /* Меню пользователя */
@@ -229,7 +230,7 @@ header .wrapper {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: var(--basic-black, black);
+  color: var(--basic-black);
 
   list-style-type: none;
 }
@@ -247,7 +248,7 @@ header .wrapper {
 
 .user-menu a,
 .user-menu a:visited {
-  color: var(--basic-black, black);
+  color: var(--basic-black);
 }
 
 .user-menu a:hover {
@@ -281,7 +282,7 @@ header .wrapper {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: var(--basic-black, black);
+  color: var(--basic-black);
   opacity: 0.3;
 
   cursor: pointer;
@@ -343,7 +344,7 @@ header .wrapper {
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--basic-black, black);
+  color: var(--basic-black);
 }
 
 .mainmenu > li:first-child > a {
@@ -391,7 +392,7 @@ header .wrapper {
   line-height: 20px;
   letter-spacing: normal;
   text-transform: none;
-  color: var(--basic-black, black);
+  color: var(--basic-black);
 }
 
 .submenu a:hover {
@@ -404,7 +405,7 @@ header .wrapper {
 
 /* Футер */
 footer {
-  background-color: var(--basic-dark, black);
+  background-color: var(--basic-dark);
 }
 
 footer .wrapper {
@@ -423,7 +424,7 @@ footer .wrapper {
 }
 
 .footer-logo svg path {
-  fill: var(--special-yellow-dark, yellow);
+  fill: var(--special-yellow-dark);
 }
 
 .footer-logo a svg {
@@ -445,7 +446,7 @@ footer .wrapper {
 .footer-user-menu {
   margin: 0;
   padding: 0;
-  grid-column: 2/4;
+  grid-column: span 2;
 
   display: flex;
   justify-content: end;
@@ -456,7 +457,7 @@ footer .wrapper {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: var(--basic-white, white);
+  color: var(--basic-white);
 
   list-style-type: none;
 
@@ -469,12 +470,12 @@ footer .wrapper {
 }
 
 .footer-user-menu svg path {
-  fill: var(--footer-yellow, goldenrod);
+  fill: var(--footer-yellow);
 }
 
 .footer-user-menu a,
 .footer-user-menu a:visited {
-  color: var(--basic-white, white);
+  color: var(--basic-white);
   opacity: 0.7;
 }
 
@@ -497,7 +498,7 @@ footer .wrapper {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: var(--basic-white, white);
+  color: var(--basic-white);
   opacity: 0.7;
 
   cursor: pointer;
@@ -514,7 +515,7 @@ footer .wrapper {
 
 /* Контакты в футере */
 .footer-contacts {
-  grid-column: 1/4;
+  grid-column: span 4;
 
   display: grid;
   grid-template-columns: repeat(2, max-content);
@@ -527,7 +528,7 @@ footer .wrapper {
   font-size: 15px;
   line-height: 20px;
 
-  color: var(--basic-white, white);
+  color: var(--basic-white);
   opacity: 0.6;
 
   outline: 2px solid rgba(7, 197, 55, 0.7);
@@ -560,7 +561,7 @@ footer .wrapper {
 }
 
 .footer-navbar a {
-  color: var(--basic-white, white);
+  color: var(--basic-white);
 }
 
 .footer-navbar a:hover {
@@ -574,7 +575,7 @@ footer .wrapper {
 /* Декоративный прямоугольник в футере */
 .rectangle {
   height: 7px;
-  background-color: var(--footer-yellow, goldenrod);
+  background-color: var(--footer-yellow);
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
@@ -601,7 +602,6 @@ footer .wrapper {
   list-style-type: none;
 }
 
-
 .social-icons ul a,
 .social-icons ul a:visited {
   opacity: 0.3;
@@ -616,7 +616,7 @@ footer .wrapper {
 }
 
 .social-icons svg path {
-  fill: var(--basic-white, white);
+  fill: var(--basic-white);
 }
 
 /* Логотип HTML Academy */
@@ -628,7 +628,7 @@ footer .wrapper {
 }
 
 .htmlacademy-logo svg path {
-  fill: var(--special-yellow-dark, yellow);
+  fill: var(--special-yellow-dark);
 }
 
 .htmlacademy-logo a:hover {
@@ -638,3 +638,289 @@ footer .wrapper {
 .htmlacademy-logo a:active {
   opacity: 0.3;
 }
+
+/* Страница каталога товаров */
+
+.inner {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.inner h1 {
+  grid-column: span 2;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
+}
+
+.breadcrumbs li {
+  margin-right: 16px;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:visited {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+  /* Фильтр по характеристикам товаров */
+.product-filter {
+  width: 328px;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+.product-filter h2 {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:var(--basic-black)
+}
+
+.product-filter fieldset {
+  border: none;
+}
+
+/* Товары */
+.goods {
+  display: grid;
+  grid-template-columns: 1fr;
+  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline-offset: -5px;
+}
+
+.goods-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+}
+
+/* Карточка товара */
+.goods-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.goods-item h2 {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.goods-item a {
+  grid-column: span 2;
+  order: -1;
+}
+
+.goods-item > a > img {
+  width: 360px;
+  height: 380px;
+}
+
+.goods-item p {
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+
+  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline-offset: -5px;
+}
+
+.goods-item-controls {
+  position: absolute;
+
+  grid-column: span 2;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
+  justify-self: center;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.goods-item-controls button:first-child {
+  order: 1;
+}
+
+/* Сортировка товаров */
+.sorting {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 72px;
+
+  display: flex;
+  flex-direction: row;
+
+  background-color: var(--basic-grey-light);
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.sorting span {
+  margin-right: 74px;
+
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.sorting ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+.sorting ul li {
+  margin-left: 30px;
+}
+
+.sorting a,
+.sorting a:visited {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+
+  opacity: 0.3;
+}
+
+.sorting a:hover {
+  opacity: 0.6;
+}
+
+.sorting a:active {
+  opacity: unset;
+}
+
+/* Навигация по страницам товаров */
+.goods-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  background-color: #EBEBEB;
+
+  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline-offset: -5px;
+}
+
+.goods-controls a,
+.goods-controls a:visited {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-black);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.goods-controls a:active {
+  opacity: 0.3;
+}
+
+.goods-controls span a,
+.goods-controls span a:visited {
+  display: block;
+  padding: 25px 30px;
+}
+
+.goods-controls span a:hover {
+  background: #D9D9D9;
+}
+
+.goods-controls span a:active {
+  background: #D9D9D9;
+}
+
+.goods-controls span + span {
+  order: 1;
+}
+
+.goods-controls ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+.goods-controls ul li {
+  margin-right: 30px;
+}
+
