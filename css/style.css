@@ -746,7 +746,7 @@ footer .wrapper {
   outline-offset: -5px;
 }
 
-.goods-item h2 {
+.goods-item h2 a {
   font-family: "Gilroy Extra Bold";
   font-style: normal;
   font-weight: 800;
@@ -796,8 +796,50 @@ footer .wrapper {
   outline-offset: -5px;
 }
 
-.goods-item-controls button:first-child {
+button[name="add-to-comparison"] {
   order: 1;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+button[name="add-to-comparison"]:hover,
+button[name="add-to-comparison"]:focus {
+  opacity: unset;
+}
+
+button[name="add-to-comparison"]:active {
+  opacity: 0.2;
+}
+
+button[name="add-to-cart"] {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+
+  cursor: pointer;
+}
+
+button[name="add-to-cart"]:hover,
+button[name="add-to-cart"]:focus {
+  background-color: var(--special-yellow-dark);
+}
+
+button[name="add-to-cart"]:active {
+  opacity: 0.3;
 }
 
 /* Сортировка товаров */
