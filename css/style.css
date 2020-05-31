@@ -39,11 +39,15 @@ body {
   grid-template-rows: minmax(186px, 300px) 1fr 324px;
   margin: 0;
   min-width: 1160px;
-  font-family: "Gilroy Light", sans-serif;
+
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
+  line-height: 28px;
+
   color: var(--basic-black);
+
   background-color: var(--basic-white);
 }
 
@@ -74,6 +78,33 @@ input[type='radio'].visually-hidden {
 .wrapper {
   width: 1160px;
   margin: 0 auto;
+}
+
+.button,
+.button:visited,
+.button:hover {
+  border: none;
+
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+
+  cursor: pointer;
+
+  background-color: var(--special-yellow-dark);
+}
+
+.button:focus {
+  opacity: unset;
+}
+
+.button:active {
+  opacity: 0.3;
 }
 
 /* Хедер */
@@ -581,7 +612,6 @@ footer .wrapper {
   outline-offset: -5px;
 }
 
-
 /* Иконки соцсетей */
 .social-icons {
   display: grid;
@@ -639,9 +669,132 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-/* Страница каталога товаров */
+/* Индексная страница */
+.wrapper-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content;
+}
 
-.inner {
+.wrapper-index h2 {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  color: var(--basic-black);
+}
+
+/* Слайдер Топ-3 по продажам */
+.slider {
+  grid-column: span 2;
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
+}
+
+.slider ol {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+/* Популярные товары */
+.popular {
+  grid-column: span 2;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.popular ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+.popular a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.popular a span {
+  order: 1;
+}
+
+/* Блок Наши услуги*/
+.services {
+  grid-column: span 2;
+
+  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline-offset: -5px;
+}
+
+.services ul {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+/* Блок Наши партнеры */
+.logotypes {
+  grid-column: span 2;
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
+}
+
+.logotypes ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+/* Блок О нас */
+.info {
+  padding-right: 80px;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.info ul {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--basic-black);
+}
+
+/* Блок Контакты */
+.contact {
+  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline-offset: -5px;
+}
+
+/* Контактная форма Напишите нам*/
+.contact-form-popup {
+  grid-column: span 2;
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
+}
+
+/* Страница каталога товаров */
+.wrapper-inner {
   display: grid;
   grid-template-columns: min-content 1fr;
 }
@@ -759,35 +912,6 @@ footer .wrapper {
   cursor: pointer;
 }
 
-.product-filter button {
-  padding: 0;
-  margin: 0;
-  border: 0;
-
-  font-family: "Gilroy Extra Bold";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--basic-black);
-
-  background: none;
-
-  cursor: pointer;
-}
-
-.product-filter button:hover,
-.product-filter button:focus {
-  background-color: var(--special-yellow-dark);
-}
-
-.product-filter button:active {
-  opacity: 0.3;
-}
-
-
   /* Товары */
 .goods {
   display: grid;
@@ -864,16 +988,19 @@ footer .wrapper {
 }
 
 button[name="add-to-comparison"] {
+  margin: 0;
+  padding: 0;
+  border: none;
+
   order: 1;
 
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
   color: var(--basic-black);
-  opacity: 0.5;
 
   cursor: pointer;
 }
@@ -887,29 +1014,6 @@ button[name="add-to-comparison"]:active {
   opacity: 0.2;
 }
 
-button[name="add-to-cart"] {
-  font-family: "Gilroy Extra Bold";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--basic-black);
-  background: none;
-
-  cursor: pointer;
-}
-
-button[name="add-to-cart"]:hover,
-button[name="add-to-cart"]:focus {
-  background-color: var(--special-yellow-dark);
-}
-
-button[name="add-to-cart"]:active {
-  opacity: 0.3;
-}
-
 /* Сортировка товаров */
 .sorting {
   padding-top: 25px;
@@ -918,6 +1022,7 @@ button[name="add-to-cart"]:active {
 
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 
   background-color: var(--basic-grey-light);
 
