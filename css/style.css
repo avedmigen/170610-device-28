@@ -460,7 +460,7 @@ footer {
 
 footer .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: start;
   padding-top: 45px;
@@ -690,6 +690,8 @@ footer .wrapper {
 
 /* Индексная страница */
 .wrapper-index {
+  position: relative;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content;
@@ -707,6 +709,12 @@ footer .wrapper {
 
 /* Слайдер Топ-3 по продажам */
 .slider {
+  position: relative;
+  top: -30px;
+
+  margin-left: 47px;
+  margin-right: 47px;
+
   grid-column: span 2;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
@@ -724,8 +732,15 @@ footer .wrapper {
   outline: 2px solid rgba(242, 48, 30, 0.7);
   outline-offset: -5px;
 }
+.slider h4 {
+  outline: 2px solid rgba(242, 48, 30, 0.7);
+  outline-offset: -5px;
+}
 
 .slider li > span {
+  grid-row: 1;
+  grid-column: 2;
+
   font-family: "Gilroy Extra Bold";
   font-style: normal;
   font-weight: 800;
@@ -737,7 +752,10 @@ footer .wrapper {
   outline-offset: -5px;
 }
 
-.slider a {
+.image-link {
+  grid-row: 1;
+  grid-row: 1/6;
+
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
 }
@@ -754,9 +772,12 @@ footer .wrapper {
   list-style-type: none;
 }
 
-slider ol li {
+.slider ol li {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  align-items: start;
+  grid-gap: 10px;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
