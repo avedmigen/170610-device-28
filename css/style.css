@@ -10,6 +10,7 @@
   --basic-grey-light: #E5E5E5;
   --special-yellow: #F7E296;
   --special-green: #91C92F;
+  --special-yellow-light: #F7E296;
   --special-yellow-dark: #F0C52E;
   --status-pink: #F6DADA;
   --footer-yellow: #FFC600;
@@ -749,12 +750,62 @@ footer .wrapper {
 }
 
 .popular a {
-  display: grid;
-  justify-items: center;
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+
+  order: 1;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
 }
 
-.popular a span {
-  order: 1;
+.popular h3 > a::before,
+.popular h3 > a:visited::before {
+  content: "";
+  width: 160px;
+  height: 160px;
+  display: block;
+
+  background-color: var(--special-yellow-light);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular .virtual-reality:hover::before {
+  background-color: var(--special-yellow-dark);
+}
+
+.popular .virtual-reality:active::before {
+  opacity: 0.7;
+}
+
+.virtual-reality::before {
+  background-image: url("../img/popular/virtual-reality.svg");
+}
+
+.monopods-for-selfies::before {
+  background-image: url("../img/popular/monopods-for-selfies.svg");
+}
+
+.action-cameras::before {
+  background-image: url("../img/popular/action-cameras.svg");
+}
+
+.fitness-bracelets::before {
+  background-image: url("../img/popular/fitness-bracelets.svg");
+}
+
+.smartwatch::before {
+  background-image: url("../img/popular/smartwatch.svg");
+}
+
+.quadcopters::before {
+  background-image: url("../img/popular/quadcopters.svg");
 }
 
 /* Блок Наши услуги*/
@@ -814,7 +865,7 @@ footer .wrapper {
   list-style-type: none;
 }
 
-.info ul li:before {
+.info ul li::before {
   content: "";
 
   width: 8px;
