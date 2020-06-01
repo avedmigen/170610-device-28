@@ -761,6 +761,8 @@ footer .wrapper {
   display: flex;
   flex-direction: row;
 
+  background-color: var(--basic-grey-light);
+
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -5px;
 }
@@ -815,10 +817,65 @@ footer .wrapper {
 
 /* Контактная форма Напишите нам*/
 .contact-form-popup {
+  position: relative;
+
   grid-column: span 2;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
+}
+
+.contact-form-popup form {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form-popup fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  display: contents;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.contact-form-popup p {
+  display: flex;
+  flex-direction: column;
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
+}
+
+.contact-form-popup p:last-child {
+  grid-column: span 2;
+}
+
+.contact-form-popup label {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--basic-black);
+
+}
+
+.contact-form-popup input {
+  width: 360px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form-popup textarea {
+  margin: 0;
+  padding: 0;
 }
 
 /* Страница каталога товаров */
@@ -883,7 +940,7 @@ footer .wrapper {
   /* Фильтр по характеристикам товаров */
 .product-filter {
   width: 328px;
-  background-color: #E5E5E5;
+  background-color: var(--basic-grey-light);
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
