@@ -81,11 +81,12 @@ input[type='radio'].visually-hidden {
 }
 
 .button,
-.button:visited,
-.button:hover {
+.button:visited {
   margin: 0;
   padding: 9px 25px;
   border: none;
+
+  display: inline-block;
 
   font-family: "Gilroy Extra Bold";
   font-style: normal;
@@ -98,11 +99,22 @@ input[type='radio'].visually-hidden {
 
   cursor: pointer;
 
+  background: url("../img/misc/button-rectangle-bg.svg") center repeat-x;
+
+  transition: all 1s;
+}
+
+.button:hover {
+  padding: 9px 25px;
   background-color: var(--special-yellow-dark);
+
+  transition: all 1s;
 }
 
 .button:focus {
   opacity: unset;
+
+  transition: all 1s;
 }
 
 .button:active {
