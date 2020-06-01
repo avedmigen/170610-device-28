@@ -13,6 +13,9 @@
   --special-yellow-dark: #F0C52E;
   --status-pink: #F6DADA;
   --footer-yellow: #FFC600;
+  --input-grey: #F2F2F2;
+  --input-grey-hover: #EAEAEA;
+
 }
 
 /* Локальные шрифты */
@@ -828,7 +831,7 @@ footer .wrapper {
 .contact-form-popup form {
   width: 960px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 100px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -869,18 +872,75 @@ footer .wrapper {
   font-size: 18px;
   line-height: 22px;
   color: var(--basic-black);
-
 }
 
 .contact-form-popup input {
   width: 360px;
   margin: 0;
-  padding: 0;
+  padding: 18px 0;
+  padding-left: 20px;
+  border: 1px solid transparent;
+
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-black);
+  opacity: 0.4;
+
+  background-color: var(--input-grey);
+}
+
+.contact-form-popup input:hover {
+  background-color: var(--input-grey-hover);
+}
+
+.contact-form-popup input:focus {
+  outline: none;
+  outline: 2px solid var(--special-yellow);
+
+  color: var(--basic-dark);
+  opacity: unset;
+}
+
+.contact-form-popup input:invalid {
+  background-color: var(--status-pink);
 }
 
 .contact-form-popup textarea {
+  min-height: 167px;
   margin: 0;
   padding: 0;
+  padding: 18px 0;
+  padding-left: 20px;
+  border: 1px solid transparent;
+
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-black);
+  opacity: 0.4;
+
+  background-color: var(--input-backround);
+}
+
+.contact-form-popup textarea:hover {
+  background-color: var(--input-grey-hover);
+}
+
+.contact-form-popup textarea:focus {
+  outline: none;
+  outline: 2px solid var(--special-yellow);
+
+  color: var(--basic-dark);
+  opacity: unset;
+}
+
+.contact-form-popup textarea:invalid {
+  background-color: var(--status-pink);
 }
 
 /* Страница каталога товаров */
