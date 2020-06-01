@@ -714,11 +714,25 @@ footer .wrapper {
 }
 
 .slider h3 {
-  outline: 2px solid rgba(197, 187, 7, 0.7);
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
+
+  outline: 2px solid rgba(242, 48, 30, 0.7);
   outline-offset: -5px;
 }
 
-.slider span {
+.slider li > span {
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -5px;
 }
