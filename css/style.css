@@ -753,7 +753,6 @@ footer .wrapper {
 }
 
 .image-link {
-  grid-row: 1;
   grid-row: 1/6;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
@@ -775,10 +774,15 @@ footer .wrapper {
 .slider ol li {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(6, auto);
   align-items: start;
   grid-gap: 10px;
 
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
+}
+
+.сharacteristics {
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
 }
@@ -804,7 +808,7 @@ footer .wrapper {
 .popular ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: max-content max-content ;
+  grid-template-rows: max-content max-content;
 }
 
 .popular li {
