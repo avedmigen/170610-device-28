@@ -838,8 +838,32 @@ footer .wrapper {
 }
 
 .contact-form-popup > button {
+  width: 55px;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+
   position: relative;
-  left: 90%;
+  left: 85%;
+
+  background: var(--special-yellow) url("../img/misc/cross.svg") center no-repeat;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.contact-form-popup > button:hover {
+  opacity: 0.7;
+
+  background-color: var(--special-yellow-dark);
+}
+
+.contact-form-popup > button:focus {
+  opacity: 0.3;
+
+  background-color: var(--special-yellow-dark);
 }
 
 .contact-form-popup fieldset {
