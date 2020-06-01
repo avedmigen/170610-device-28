@@ -846,6 +846,11 @@ footer .wrapper {
   list-style-type: none;
 }
 
+.logotypes ul li {
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
+}
+
 .logotypes a img,
 .logotypes a:visited img{
   opacity: 0.1;
