@@ -834,6 +834,11 @@ footer .wrapper {
   grid-template-columns: 1fr 1fr;
 }
 
+.contact-form-popup > button {
+  position: relative;
+  left: 90%;
+}
+
 .contact-form-popup fieldset {
   margin: 0;
   padding: 0;
