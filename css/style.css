@@ -810,6 +810,24 @@ footer .wrapper {
   font-size: 16px;
   line-height: 28px;
   color: var(--basic-black);
+
+  list-style-type: none;
+}
+
+.info ul li:before {
+  content: "";
+
+  width: 8px;
+  height: 8px;
+
+  margin-right: 24px;
+
+  display: inline-block;
+  border: 2px solid var(--basic-grey-light);
+  border-radius: 50%;
+
+  position: relative;
+  top: -2px;
 }
 
 /* Блок Контакты */
