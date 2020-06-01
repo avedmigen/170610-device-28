@@ -83,6 +83,8 @@ input[type='radio'].visually-hidden {
 .button,
 .button:visited,
 .button:hover {
+  margin: 0;
+  padding: 9px 25px;
   border: none;
 
   font-family: "Gilroy Extra Bold";
@@ -392,26 +394,27 @@ header .wrapper {
 
 /* Выпадающее меню */
 .submenu {
-  position: relative;
-  top: 12%;
-
   margin: 0;
   padding: 0;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 110px;
-  align-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(3, min-content);
+  grid-auto-flow: column;
 
   list-style-type: none;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
 }
 
 .submenu li {
-  margin-bottom: 16px;
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
 }
-.submenu > li:nth-child(5)  {
-  margin-bottom: 20px;
+
+.submenu li:last-child {
+  grid-column-start: 3;
 }
 
 .submenu a,
