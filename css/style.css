@@ -773,7 +773,7 @@ footer .wrapper {
 
   background-color: var(--special-yellow-light);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 .popular .virtual-reality:hover::before {
@@ -845,6 +845,19 @@ footer .wrapper {
 
   list-style-type: none;
 }
+
+.logotypes a img,
+.logotypes a:visited img{
+  opacity: 0.1;
+  filter: grayscale(100%);
+}
+
+.logotypes a:hover img{
+  opacity: unset;
+  filter: unset;
+}
+
+
 
 /* Блок О нас */
 .info {
