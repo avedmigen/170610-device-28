@@ -726,7 +726,7 @@ footer .wrapper {
 
 .slider h3 {
   margin-top: 94px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 
   font-family: "Gilroy Extra Bold";
   font-style: normal;
@@ -771,6 +771,16 @@ footer .wrapper {
 }
 
 .slider p {
+  padding-right: 35px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: var(--basic-black);
+
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -5px;
 }
@@ -787,7 +797,7 @@ footer .wrapper {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(3, max-content);
   align-items: start;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
@@ -805,8 +815,53 @@ footer .wrapper {
 }
 
 .сharacteristics {
+  display: flex;
+  flex-direction: row;
+
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
+}
+
+.сharacteristics p {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 25px;
+}
+
+.сharacteristics p span:first-child {
+  order: 2;
+  flex-shrink: 0;
+
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+.сharacteristics p span:last-child {
+  flex-shrink: 0;
+
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+.slider ol> li> a.button {
+  justify-self: left;
+}
+
+.slider-controls {
+  position: absolute;
+  right: 10px;
+  top: 332px;
 }
 
 /* Популярные товары */
