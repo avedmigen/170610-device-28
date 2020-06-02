@@ -713,9 +713,9 @@ footer .wrapper {
 /* Слайдер Топ-3 по продажам */
 .slider {
   position: relative;
-  top: -30px;
+  top: -129px;
 
-  margin-left: 47px;
+  margin-left: 89px;
   margin-right: 47px;
 
   grid-column: span 2;
@@ -741,8 +741,12 @@ footer .wrapper {
 }
 
 .slider li > span {
+  position: absolute;
+  top: -17px;
+
   grid-row: 1;
   grid-column: 2;
+  justify-self: end;
 
   font-family: "Gilroy Extra Bold";
   font-style: normal;
@@ -750,6 +754,7 @@ footer .wrapper {
   font-size: 179px;
   line-height: 219px;
   text-transform: uppercase;
+  color: var(--basic-white);
 
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -5px;
@@ -775,11 +780,12 @@ footer .wrapper {
 }
 
 .slider ol li {
+  position: relative;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, auto);
   align-items: start;
-  grid-gap: 10px;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
