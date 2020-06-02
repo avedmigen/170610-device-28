@@ -108,13 +108,14 @@ input[type='radio'].visually-hidden {
 
   background: url("../img/misc/button-rectangle-bg.svg") center repeat-x;
 
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 .button:hover {
+  background-image: none;
   background-color: var(--special-yellow-dark);
 
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 .button:focus {
@@ -889,8 +890,8 @@ footer .wrapper {
 
 .slider-text .rectangle {
   position: absolute;
-  top: 34px;
-  right: 413px;
+  top: -50px;
+  right: 460px;
 
   width: 100px;
 
