@@ -42,6 +42,7 @@ body {
   display: grid;
   grid-template-rows: minmax(186px, 300px) 1fr 324px;
   margin: 0;
+  padding-top: 40px;
   min-width: 1160px;
 
   font-family: "Open Sans";
@@ -128,20 +129,20 @@ input[type='radio'].visually-hidden {
 /* Хедер */
 header {
   max-height: 300px;
-
-  margin-top: 40px;
 }
 
 header .wrapper {
   position: relative;
 
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 28px;
+  padding-bottom: 47px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 28px;
 
   background-color: var(--special-yellow);
 }
@@ -349,15 +350,14 @@ header .wrapper {
 /* Главное навигационное меню */
 .navbar {
   width: 100%;
-  margin-top: 35px;
-  margin-bottom: 51px;
+  padding-top: 35px
 }
 
 .mainmenu {
   display: flex;
   flex-direction: row;
   margin: 0;
-  margin-bottom: 6px;
+  margin-top: -2px;
   padding: 0;
   list-style-type: none;
 }
@@ -411,12 +411,15 @@ header .wrapper {
 /* Выпадающее меню */
 .submenu {
   margin: 0;
+  margin-top: 23px;
+  margin-bottom: -9px;
   padding: 0;
 
   display: grid;
   grid-template-columns: repeat(3, max-content);
   grid-template-rows: repeat(3, min-content);
   grid-auto-flow: column;
+  grid-gap: 8px 50px;
 
   list-style-type: none;
 
