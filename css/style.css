@@ -88,7 +88,7 @@ input[type='radio'].visually-hidden {
 .button,
 .button:visited {
   margin: 0;
-  padding: 9px 25px;
+  padding: 9px 10px;
   border: none;
 
   display: inline-block;
@@ -102,6 +102,8 @@ input[type='radio'].visually-hidden {
   text-transform: uppercase;
   color: var(--basic-black);
 
+  text-align: center;
+
   cursor: pointer;
 
   background: url("../img/misc/button-rectangle-bg.svg") center repeat-x;
@@ -110,7 +112,6 @@ input[type='radio'].visually-hidden {
 }
 
 .button:hover {
-  padding: 9px 25px;
   background-color: var(--special-yellow-dark);
 
   transition: all 1s;
@@ -711,16 +712,14 @@ footer .wrapper {
 /* Слайдер Топ-3 по продажам */
 .slider {
   position: relative;
-  top: -129px;
+  top: -45px;
 
   grid-column: span 2;
 
-  max-width: 1024px;
-  max-height: 506px;
   margin: 0 auto;
   margin-bottom: -39px;
 
-  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline: 2px solid rgba(242, 48, 30, 0.7);
   outline-offset: -5px;
 }
 
@@ -737,28 +736,44 @@ footer .wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
 }
 
 .slider-image {
-  order: -1;
   width: 50%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
 }
 
 .slider-text {
+  order: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
   width: 50%;
+  padding-top: 9px;
+  padding-left: 20px;
+  padding-right: 50px;
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
 }
 
 .slider-text > span {
   position: absolute;
-  top: -17px;
-  right: 47px;
+  top: -101px;
+  right: 53px;
+  z-index: 1;
 
   font-family: "Gilroy Extra Bold";
   font-style: normal;
@@ -773,8 +788,12 @@ footer .wrapper {
 }
 
 .slider-text h3 {
-  margin-top: 94px;
-  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+
+  padding: 0;
+  padding-bottom: 26px;
+  margin: 0;
 
   font-family: "Gilroy Extra Bold";
   font-style: normal;
@@ -788,12 +807,19 @@ footer .wrapper {
 }
 
 .slider-text h4 {
+  padding: 0;
+  margin: 0;
+
   outline: 2px solid rgba(242, 48, 30, 0.7);
   outline-offset: -5px;
 }
 
 .slider-text p {
-  padding-right: 35px;
+  min-height: 91px;
+
+  padding: 0;
+  padding-right: 50px;
+  margin: 0;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -807,7 +833,15 @@ footer .wrapper {
   outline-offset: -5px;
 }
 
+.slider-text a.button {
+  width: 220px;
+  margin-left: 1px;
+}
+
 .slider-props {
+  order: 1;
+  margin-top: 52px;
+
   display: flex;
   flex-direction: row;
 
@@ -816,6 +850,10 @@ footer .wrapper {
 }
 
 .slider-props p {
+  padding: 0;
+  margin: 0;
+  margin-right: 27px;
+
   display: flex;
   flex-direction: column;
 
@@ -836,6 +874,8 @@ footer .wrapper {
 }
 
 .slider-props p span:last-child {
+  margin-bottom: 15px;
+
   flex-shrink: 0;
 
   font-family: "Gilroy Light";
@@ -859,8 +899,8 @@ footer .wrapper {
 
 .slider-controls {
   position: absolute;
-  right: 10px;
-  top: 332px;
+  top: 248px;
+  right: 88px;
 }
 
 /* Популярные товары */
