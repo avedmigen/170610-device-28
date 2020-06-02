@@ -630,8 +630,6 @@ footer .wrapper {
   height: 7px;
   background-color: var(--footer-yellow);
 
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 /* Иконки соцсетей */
@@ -715,6 +713,8 @@ footer .wrapper {
   position: relative;
   top: -129px;
 
+  width: 1024px;
+
   margin-left: 89px;
   margin-right: 47px;
 
@@ -725,6 +725,9 @@ footer .wrapper {
 }
 
 .slider h3 {
+  margin-top: 94px;
+  margin-bottom: 6px;
+
   font-family: "Gilroy Extra Bold";
   font-style: normal;
   font-weight: 800;
@@ -784,11 +787,21 @@ footer .wrapper {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: repeat(3, auto);
   align-items: start;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
+}
+
+.slider .rectangle {
+  position: absolute;
+  top: 34px;
+  right: 413px;
+
+  width: 100px;
+
+  background-color: var(--basic-white);
 }
 
 .сharacteristics {
