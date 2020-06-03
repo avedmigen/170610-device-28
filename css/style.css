@@ -816,11 +816,10 @@ footer .wrapper {
 }
 
 .slider-text p {
-  min-height: 91px;
-
   padding: 0;
   padding-right: 50px;
   margin: 0;
+  margin-bottom: 51px;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -898,10 +897,12 @@ footer .wrapper {
   background-color: var(--basic-white);
 }
 
+/* Переключатели слайдов */
+
 .slider-controls {
-  position: absolute;
-  top: 248px;
-  right: 88px;
+  position: relative;
+  left: 90%;
+  bottom: 158px;
 }
 
 /* Популярные товары */
