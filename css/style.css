@@ -40,7 +40,7 @@
 
 body {
   display: grid;
-  grid-template-rows: minmax(186px, 300px) 1fr 324px;
+  grid-template-rows: min-content 1fr 324px;
   margin: 0;
   padding-top: 40px;
   min-width: 1160px;
@@ -83,6 +83,15 @@ input[type='radio'].visually-hidden {
 .wrapper {
   width: 1160px;
   margin: 0 auto;
+}
+
+.wrapper h1 {
+  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
 }
 
 .button,
@@ -130,7 +139,7 @@ input[type='radio'].visually-hidden {
 
 /* Хедер */
 header {
-  max-height: 300px;
+  min-height: 186px;
 }
 
 header .wrapper {
@@ -139,7 +148,7 @@ header .wrapper {
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 28px;
-  padding-bottom: 47px;
+  border-bottom: 47px solid var(--special-yellow);
 
   display: flex;
   flex-direction: row;
@@ -903,6 +912,7 @@ footer .wrapper {
   position: relative;
   left: 90%;
   bottom: 158px;
+
 }
 
 /* Популярные товары */
