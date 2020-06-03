@@ -91,64 +91,18 @@
     </div>
   </header>
     <main>
-      <div class="wrapper wrapper-inner">
+      <div class="wrapper wrapper-inner-top">
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="inner.html">Каталог товаров</a></li>
           <li><a href="blank.html">Моноподы для селфи</a></li>
         </ul>
-        <section class="product-filter">
-          <h2>Фильтр:</h2>
-          <form action="https://echo.htmlacademy.ru" method="get" aria-label="Форма фильтрации товаров по характеристикам">
-            <fieldset>
-              <legend>Стоимость</legend>
-              <div>
-                <div>
-                  <div></div>
-                </div>
-                <div><span>от 0</span></div>
-                <div><span>до 5000</span></div>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>Цвет</legend>
-              <ul>
-                <li>
-                  <input type="checkbox" id="filter-black" name="black" checked>
-                  <label for="filter-black">Чёрный</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="filter-white" name="white">
-                  <label for="filter-white">Белый</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="filter-blue" name="blue" checked>
-                  <label for="filter-blue">Синий</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="filter-red" name="red" checked>
-                  <label for="filter-red">Красный</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="filter-pink" name="pink">
-                  <label for="filter-pink">Розовый</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Bluetooth</legend>
-              <input type="radio" id="filter-yes" name="bluetooth-group" value="yes" checked>
-              <label for="filter-yes">Да</label>
-              <input type="radio" id="filter-no" name="bluetooth-group" value="no">
-              <label for="filter-no">Нет</label>
-            </fieldset>
-            <button type="submit" class="button">Показать</button>
-          </form>
-        </section>
-        <section class="goods">
-          <h2 class="visually-hidden">Каталог товаров</h2>
-          <div class="sorting">
+      </div>
+      <div class="nowrap">
+        <div class="top-column">
+          <div class="sorting wrapper">
+            <span>Фильтр:</span>
             <span>Cортировка:</span>
             <ul>
               <li><a href="#">По цене</a></li>
@@ -160,54 +114,109 @@
               <li><a href="#" class="visually-hidden">По убыванию</a></li>
             </ul>
           </div>
-          <div class="goods-items">
-            <article class="goods-item">
-              <h2><a href="blank.html">Любительская селфи-палка</a></h2>
-              <a href="blank.html"><img src="img/catalog/amateur_selfie_stick.png" height="380" width="360" alt="Любительская селфи-палка"></a>
-              <p aria-label="Цена">500 руб.</p>
-              <div class="goods-item-controls">
-                <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
-                <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
-              </div>
-            </article>
-            <article class="goods-item">
-              <h2><a href="blank.html">Профессиональная селфи-палка</a></h2>
-              <a href="blank.html"><img src="img/catalog/professional_selfie_stick.png" height="380" width="360" alt="Профессиональная селфи-палка"></a>
-              <p aria-label="Цена">1 500 руб.</p>
-              <div class="goods-item-controls">
-                <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
-                <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
-              </div>
-            </article>
-            <article class="goods-item">
-              <h2><a href="blank.html">Непотопляемая селфи-палка</a></h2>
-              <a href="blank.html"><img src="img/catalog/unsinkable_selfie_stick.png" height="380" width="360" alt="Непотопляемая селфи-палка"></a>
-              <p aria-label="Цена">2 500 руб.</p>
-              <div class="goods-item-controls">
-                <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
-                <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
-              </div>
-            </article>
-            <article class="goods-item">
-              <h2><a href="blank.html">Селфи-палка «Следуй за мной»</a></h2>
-              <a href="blank.html"><img src="img/catalog/the_selfie_stick_follow_me.png" alt="Селфи-палка «Следуй за мной»"></a>
-              <p aria-label="Цена">4 900 руб.</p>
-              <div class="goods-item-controls">
-                <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
-                <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
-              </div>
-            </article>
-          </div>
-          <div class="goods-controls" aria-label="Переключатели страниц с товарами">
-            <span><a href="#">Назад</a></span>
-            <span><a href="#">Вперед</a></span>
-            <ul aria-label="Номер страницы с товарами">
-              <li><a href="#" aria-label="Страница №1">1</a></li>
-              <li><a href="#" aria-label="Страница №2">2</a></li>
-              <li><a href="#" aria-label="Страница №3">3</a></li>
-            </ul>
-          </div>
-        </section>
+        </div>
+        <div class="left-column">
+          <section class="product-filter">
+            <h2 class="visually-hidden">Фильтр по характеристикам товаров</h2>
+            <form action="https://echo.htmlacademy.ru" method="get" aria-label="Форма фильтрации товаров по характеристикам">
+              <fieldset>
+                <legend>Стоимость</legend>
+                <div>
+                  <div>
+                    <div></div>
+                  </div>
+                  <div><span>от 0</span></div>
+                  <div><span>до 5000</span></div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Цвет</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="filter-black" name="black" checked>
+                    <label for="filter-black">Чёрный</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filter-white" name="white">
+                    <label for="filter-white">Белый</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filter-blue" name="blue" checked>
+                    <label for="filter-blue">Синий</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filter-red" name="red" checked>
+                    <label for="filter-red">Красный</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filter-pink" name="pink">
+                    <label for="filter-pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Bluetooth</legend>
+                <input type="radio" id="filter-yes" name="bluetooth-group" value="yes" checked>
+                <label for="filter-yes">Да</label>
+                <input type="radio" id="filter-no" name="bluetooth-group" value="no">
+                <label for="filter-no">Нет</label>
+              </fieldset>
+              <button type="submit" class="button">Показать</button>
+            </form>
+          </section>
+        </div>
+        <div class="right-column">
+          <section class="goods">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <div class="goods-items">
+              <article class="goods-item">
+                <h2><a href="blank.html">Любительская селфи-палка</a></h2>
+                <a href="blank.html"><img src="img/catalog/amateur_selfie_stick.png" height="380" width="360" alt="Любительская селфи-палка"></a>
+                <p aria-label="Цена">500 руб.</p>
+                <div class="goods-item-controls">
+                  <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
+                  <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
+                </div>
+              </article>
+              <article class="goods-item">
+                <h2><a href="blank.html">Профессиональная селфи-палка</a></h2>
+                <a href="blank.html"><img src="img/catalog/professional_selfie_stick.png" height="380" width="360" alt="Профессиональная селфи-палка"></a>
+                <p aria-label="Цена">1 500 руб.</p>
+                <div class="goods-item-controls">
+                  <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
+                  <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
+                </div>
+              </article>
+              <article class="goods-item">
+                <h2><a href="blank.html">Непотопляемая селфи-палка</a></h2>
+                <a href="blank.html"><img src="img/catalog/unsinkable_selfie_stick.png" height="380" width="360" alt="Непотопляемая селфи-палка"></a>
+                <p aria-label="Цена">2 500 руб.</p>
+                <div class="goods-item-controls">
+                  <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
+                  <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
+                </div>
+              </article>
+              <article class="goods-item">
+                <h2><a href="blank.html">Селфи-палка «Следуй за мной»</a></h2>
+                <a href="blank.html"><img src="img/catalog/the_selfie_stick_follow_me.png" alt="Селфи-палка «Следуй за мной»"></a>
+                <p aria-label="Цена">4 900 руб.</p>
+                <div class="goods-item-controls">
+                  <button type="button" name="add-to-comparison" value="amateur-selfie-stick">Добавить к сравнению</button>
+                  <button type="button" name="add-to-cart" value="amateur-selfie-stick" class="button">В корзину</button>
+                </div>
+              </article>
+            </div>
+            <div class="goods-controls" aria-label="Переключатели страниц с товарами">
+              <span><a href="#">Назад</a></span>
+              <span><a href="#">Вперед</a></span>
+              <ul aria-label="Номер страницы с товарами">
+                <li><a href="#" aria-label="Страница №1">1</a></li>
+                <li><a href="#" aria-label="Страница №2">2</a></li>
+                <li><a href="#" aria-label="Страница №3">3</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   <footer>

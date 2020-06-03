@@ -1250,30 +1250,73 @@ footer .wrapper {
 }
 
 /* Страница каталога товаров */
-.wrapper-inner {
-  display: grid;
-  grid-template-columns: min-content 1fr;
+
+.wrapper-inner-top {
+  padding-top: 44px;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
 }
 
-.wrapper-inner h1 {
-  grid-column: 1/3;
-
+.wrapper-inner-top h1 {
   margin: 0;
   padding: 0;
-
-  font-family: "Gilroy Extra Bold";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
-  color: var(--basic-black);
+  padding-left: 60px;
 }
+
+/* Фильтр и карточки товаров */
+.nowrap {
+  position: relative;
+
+  display:grid;
+  grid-template-columns: 1fr 328px 832px 1fr;
+  grid-template-rows: 70px 1fr;
+}
+
+.top-column {
+  position: relative;
+  top: 70px;
+
+  grid-column: span 4;
+  grid-row: 1;
+}
+
+.left-column {
+  grid-column: 1/3;
+  grid-row: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 328px;
+
+  border-top: 70px solid #DCDCDC;
+  background-color: var(--basic-grey-light);
+}
+
+.product-filter {
+  grid-column: 2;
+}
+
+.right-column {
+  grid-column: 3/5;
+  grid-row: 2;
+
+  display: grid;
+  grid-template-columns: 832px 1fr;
+
+  border-top: 70px solid var(--basic-grey-light);
+
+  background-color: var(--basic-white);
+}
+
+.goods {
+  grid-column: 1;
+}
+
 
 /* Хлебные крошки */
 .breadcrumbs {
+  padding-left: 60px;
+
   grid-column: span 2;
 
   display: flex;
@@ -1311,9 +1354,66 @@ footer .wrapper {
   opacity: 0.1;
 }
 
+/* Сортировка товаров */
+.sorting {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.sorting span {
+  margin-right: 74px;
+
+  font-family: "Gilroy Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.sorting ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+.sorting ul li {
+  margin-left: 30px;
+}
+
+.sorting a,
+.sorting a:visited {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+
+  opacity: 0.3;
+}
+
+.sorting a:hover {
+  opacity: 0.6;
+}
+
+.sorting a:active {
+  opacity: unset;
+}
+
   /* Фильтр по характеристикам товаров */
 .product-filter {
-  width: 328px;
   background-color: var(--basic-grey-light);
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
@@ -1471,70 +1571,6 @@ button[name="add-to-comparison"]:focus {
 
 button[name="add-to-comparison"]:active {
   opacity: 0.2;
-}
-
-/* Сортировка товаров */
-.sorting {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 72px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-
-  background-color: var(--basic-grey-light);
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
-}
-
-.sorting span {
-  margin-right: 74px;
-
-  font-family: "Gilroy Extra Bold";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--basic-black);
-}
-
-.sorting ul {
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  flex-direction: row;
-
-  list-style-type: none;
-}
-
-.sorting ul li {
-  margin-left: 30px;
-}
-
-.sorting a,
-.sorting a:visited {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--basic-black);
-
-  opacity: 0.3;
-}
-
-.sorting a:hover {
-  opacity: 0.6;
-}
-
-.sorting a:active {
-  opacity: unset;
 }
 
 /* Навигация по страницам товаров */
