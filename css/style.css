@@ -312,7 +312,8 @@ header .wrapper {
   color: var(--basic-black);
 }
 
-.user-menu a:hover {
+.user-menu a:hover,
+.user-menu a:focus {
   opacity: 0.6;
 }
 
@@ -411,7 +412,8 @@ header .wrapper {
   letter-spacing: 0.1em;
 }
 
-.mainmenu a:hover {
+.mainmenu a:hover,
+.mainmenu a:focus {
   opacity: 0.6;
 }
 
@@ -459,7 +461,8 @@ header .wrapper {
   color: var(--basic-black);
 }
 
-.submenu a:hover {
+.submenu a:hover,
+.submenu a:focus {
   opacity: 0.6;
 }
 
@@ -543,7 +546,8 @@ footer .wrapper {
   opacity: 0.7;
 }
 
-.footer-user-menu a:hover {
+.footer-user-menu a:hover,
+.footer-user-menu a:focus {
   opacity: unset;
 }
 
@@ -628,7 +632,8 @@ footer .wrapper {
   color: var(--basic-white);
 }
 
-.footer-navbar a:hover {
+.footer-navbar a:hover,
+.footer-navbar a:focus {
   opacity: 0.6;
 }
 
@@ -668,7 +673,8 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-.social-icons ul a:hover {
+.social-icons ul a:hover,
+.social-icons ul a:focus {
   opacity: 0.6;
 }
 
@@ -692,7 +698,8 @@ footer .wrapper {
   fill: var(--special-yellow-dark);
 }
 
-.htmlacademy-logo a:hover {
+.htmlacademy-logo a:hover,
+.htmlacademy-logo a:focus {
   opacity: 0.6;
 }
 
@@ -971,7 +978,8 @@ footer .wrapper {
   background-position: center center;
 }
 
-.popular h3 > a:hover::before {
+.popular h3 > a:hover::before,
+.popular h3 > a:focus::before {
   background-color: var(--special-yellow-dark);
 }
 
@@ -1052,7 +1060,8 @@ footer .wrapper {
   filter: grayscale(100%);
 }
 
-.logotypes a:hover img{
+.logotypes a:hover img,
+.logotypes a:focus img{
   opacity: unset;
   filter: unset;
 }
@@ -1346,7 +1355,8 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
   opacity: 0.6;
 }
 
@@ -1356,6 +1366,9 @@ footer .wrapper {
 
 /* Сортировка товаров */
 .sorting {
+  padding-top: 21px;
+  padding-left: 60px;
+
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -1365,9 +1378,7 @@ footer .wrapper {
 }
 
 .sorting span {
-  margin-right: 74px;
-
-  font-family: "Gilroy Extra Bold";
+  font-family: "Gilroy Extra Bold", Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1376,6 +1387,14 @@ footer .wrapper {
   text-transform: uppercase;
 
   color: var(--basic-black);
+}
+
+.sorting span:first-child {
+  margin-right: 263px;
+}
+
+.sorting span:nth-child(2) {
+  margin-right: 73px;
 }
 
 .sorting ul {
@@ -1388,12 +1407,12 @@ footer .wrapper {
   list-style-type: none;
 }
 
-.sorting ul li {
-  margin-left: 30px;
+.sorting-types li {
+  margin-right: 30px;
 }
 
-.sorting a,
-.sorting a:visited {
+.sorting-types a,
+.sorting-types a:visited {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -1404,18 +1423,49 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-.sorting a:hover {
+.sorting-types a:hover,
+.sorting-types a:focus {
   opacity: 0.6;
 }
 
-.sorting a:active {
+.sorting-types a:active {
   opacity: unset;
 }
 
-  /* Фильтр по характеристикам товаров */
-.product-filter {
-  background-color: var(--basic-grey-light);
+/* Сортировка по возрастанию и убыванию */
 
+ul.sorting-ascdesc {
+  padding-right: 4px;
+
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
+}
+
+.sorting-ascdesc li {
+  margin: 0;
+  margin-left: 23px;
+  padding: 0;
+}
+
+.sorting-ascdesc a,
+.sorting-ascdesc a:visited {
+  opacity: 0.2;
+}
+
+.sorting-ascdesc a:hover,
+.sorting-ascdesc a:focus {
+  opacity: 0.4;
+}
+
+.sorting-ascdesc a:active {
+  opacity: unset;
+}
+
+ /* Фильтр по характеристикам товаров */
+.product-filter {
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
 }
@@ -1608,7 +1658,8 @@ button[name="add-to-comparison"]:active {
   padding: 25px 30px;
 }
 
-.goods-controls span a:hover {
+.goods-controls span a:hover,
+.goods-controls span a:focus {
   background: #D9D9D9;
 }
 
@@ -1639,7 +1690,8 @@ button[name="add-to-comparison"]:active {
   opacity: 0.3;
 }
 
-.goods-controls ul a:hover {
+.goods-controls ul a:hover,
+.goods-controls ul a:focus {
   opacity: 0.6;
 }
 
