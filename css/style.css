@@ -1428,6 +1428,7 @@ footer .wrapper {
   opacity: 0.6;
 }
 
+.sorting-types a.active,
 .sorting-types a:active {
   opacity: unset;
 }
@@ -1460,6 +1461,7 @@ ul.sorting-ascdesc {
   opacity: 0.4;
 }
 
+.sorting-ascdesc a.active,
 .sorting-ascdesc a:active {
   opacity: unset;
 }
