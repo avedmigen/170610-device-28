@@ -1461,7 +1461,7 @@ ul.sorting-ascdesc {
 /* Фильтр по характеристикам товаров */
 
 .product-filter {
-  width: 220px;
+  width: 199px;
 
   grid-column: 2;
   justify-self: end;
@@ -1488,6 +1488,8 @@ ul.sorting-ascdesc {
 }
 
 .product-filter fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 
   outline: 2px solid rgba(242, 48, 30, 0.7);
@@ -1496,7 +1498,8 @@ ul.sorting-ascdesc {
 
 .product-filter legend {
   width: 200px;
-  padding-top: 16px;
+  padding-top: 15px;
+  margin-bottom: 38px;
   border-top: 2px solid var(--basic-black);
 
   display: block;
@@ -1530,7 +1533,45 @@ ul.sorting-ascdesc {
   cursor: pointer;
 }
 
-/* Карточки товаров */
+.range-controls {
+  margin-bottom: 30px;
+
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-black);
+  opacity: 0.2;
+}
+
+.range-controls .bar {
+  width: 55%;
+  height: 2px;
+  background-color: var(--special-green);
+}
+.toggle {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+
+  position: absolute;
+  top: -9px;
+  left: 0;
+
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+  background-color: #C4C4C4;
+
+  cursor: pointer;
+}
+
+.toggle.toggle-max {
+  left: 98px;
+}
+
+  /* Карточки товаров */
 .goods {
   grid-column: 1;
 
