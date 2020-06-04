@@ -1273,7 +1273,7 @@ footer .wrapper {
   padding-left: 60px;
 }
 
-/* Фильтр и карточки товаров */
+/* Блоки с фильтрами и карточками товаров */
 .nowrap {
   position: relative;
 
@@ -1301,10 +1301,6 @@ footer .wrapper {
   background-color: var(--basic-grey-light);
 }
 
-.product-filter {
-  grid-column: 2;
-}
-
 .right-column {
   grid-column: 3/5;
   grid-row: 2;
@@ -1316,11 +1312,6 @@ footer .wrapper {
 
   background-color: var(--basic-white);
 }
-
-.goods {
-  grid-column: 1;
-}
-
 
 /* Хлебные крошки */
 .breadcrumbs {
@@ -1466,8 +1457,11 @@ ul.sorting-ascdesc {
   opacity: unset;
 }
 
- /* Фильтр по характеристикам товаров */
+/* Фильтр по характеристикам товаров */
+
 .product-filter {
+  grid-column: 2;
+
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
 }
@@ -1523,11 +1517,13 @@ ul.sorting-ascdesc {
   cursor: pointer;
 }
 
-  /* Товары */
+/* Карточки товаров */
 .goods {
+  grid-column: 1;
+
   display: grid;
   grid-template-columns: 1fr;
-  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline: 2px solid rgba(69, 226, 18, 0.7);
   outline-offset: -5px;
 }
 
