@@ -133,14 +133,24 @@
           <section class="product-filter">
             <h2 class="visually-hidden">Фильтр по характеристикам товаров</h2>
             <form action="https://echo.htmlacademy.ru" method="get" aria-label="Форма фильтрации товаров по характеристикам">
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend>Стоимость</legend>
-                <div>
-                  <div>
-                    <div></div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div><span>от 0</span></div>
-                  <div><span>до 5000</span></div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0" step="100">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="5000">
+                    </label>
+                  </div>
                 </div>
               </fieldset>
               <fieldset>
