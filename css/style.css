@@ -1534,7 +1534,7 @@ ul.sorting-ascdesc {
 }
 
 .range-controls {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 
   position: relative;
 }
@@ -1546,7 +1546,7 @@ ul.sorting-ascdesc {
 }
 
 .range-controls .bar {
-  width: 55%;
+  width: 60%;
   height: 2px;
   background-color: var(--special-green);
 }
@@ -1568,7 +1568,28 @@ ul.sorting-ascdesc {
 }
 
 .toggle.toggle-max {
-  left: 98px;
+  left: 114px;
+}
+
+.price-controls label {
+  font-family: "Gilroy Light", Arial, SansSerif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-black);
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px 0;
+  margin-right: 15px;
+  border: 0;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  background-color: var(--basic-grey-light);
 }
 
   /* Карточки товаров */
