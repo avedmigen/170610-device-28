@@ -784,10 +784,6 @@ a.slider-image {
   outline-offset: -5px;
 }
 
-.slider-image {
-  position: relative;
-}
-
 .slider-image img.selfie-stick {
   left: -9px;
   top: -93px;
@@ -795,6 +791,12 @@ a.slider-image {
 
 .slider-image img.fitness-tracker {
   top: -93px;
+}
+
+.slider-image img.quadcopter {
+  position: absolute;
+  top: 58px;
+  left: 30px;
 }
 
 .slider-text h3 {
@@ -839,7 +841,6 @@ a.slider-image {
   padding-right: 100px;
   margin-top: 0;
   margin-left: 0;
-  margin-right: 25px;
   margin-bottom: 49px;
 
   font-family: "Open Sans", Arial, SansSerif;
@@ -870,7 +871,7 @@ a.slider-image {
 .slider-props p {
   padding: 0;
   margin: 0;
-  margin-right: 62px;
+  margin-right: 27px;
 
   display: flex;
   flex-direction: column;
@@ -917,7 +918,7 @@ a.slider-image {
 .slider-controls {
   position: relative;
   left: 985px;
-  bottom: 176px;
+  bottom: 158px;
 }
 
 .slider-controls button {
