@@ -91,10 +91,10 @@
       <h1 class="visually-hidden">Интернет-магазин модных девайсов и умных гаджетов для гиков Девайс</h1>
       <section class="slider">
         <h2 class="visually-hidden">Топ-3 по продажам</h2>
-        <ol>
-          <li class="visually-hidden">
+        <ul class="slider-list">
+          <li class="slider-item slide visually-hidden">
             <div class="slider-text">
-              <h3>Делай селфи, как Бен Стиллер!</h3>
+              <h3>Делай селфи, <br> как Бен Стиллер!</h3>
               <span aria-label="Первое место топа по продажам">01</span>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
                 5 килограмм.</p>
@@ -108,12 +108,12 @@
               <div class="rectangle"></div>
             </div>
             <a class="slider-image" href="blank.html">
-              <img src="img/top/selfie_stick_slide.png" alt="Самая длинная палка для селфи" height="486" width="384">
+              <img class="selfie-stick" src="img/top/selfie_stick_slide.png" alt="Самая длинная палка для селфи" height="486" width="384">
             </a>
           </li>
-          <li class="visually-hidden">
+          <li class="slider-item slide">
             <div class="slider-text">
-              <h3>Худеем правильно!</h3>
+              <h3>Худеем <br> правильно!</h3>
               <span aria-label="Второе место топа по продажам">02</span>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <div class="slider-props">
@@ -124,10 +124,10 @@
               <div class="rectangle"></div>
             </div>
             <a class="slider-image" href="blank.html">
-              <img src="img/top/fitness-tracker_slide.png" alt="Мотивирующий фитнес-браслет" height="483" width="345">
+              <img class="fitness-tracker" src="img/top/fitness-tracker_slide.png" alt="Мотивирующий фитнес-браслет" height="483" width="345">
             </a>
           </li>
-          <li>
+          <li class="slider-item slide visually-hidden">
             <div class="slider-text">
               <h3>Порхает как бабочка, жалит как пчела!</h3>
               <span aria-label="Третье место топа по продажам">03</span>
@@ -146,18 +146,11 @@
               <img src="img/top/quadcopter_slide.png" alt="Квадрокоптер с мощным лазером" height="334" width="526">
             </a>
           </li>
-        </ol>
-        <div class="slider-controls" aria-label="Переключатели слайдов топа товаров">
-          <label><input type="radio" id="slide-1" name="slider-controls" value="slide-1" checked>
-            <span class="visually-hidden">
-              Первый товар топа продаж</span>
-          </label>
-          <label><input type="radio" id="slide-2" name="slider-controls" value="slide-2">
-            <span class="visually-hidden">Второй товар топа продаж</span>
-          </label>
-          <label><input type="radio" id="slide-3" name="slider-controls" value="slide-3">
-            <span class="visually-hidden">Третий товар топа продаж</span>
-          </label>
+        </ul>
+        <div class="slider-controls" aria-label="Переключатели слайдов">
+          <button type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button class="slide-current" type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
       <section class="popular">
