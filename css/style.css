@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 /* Переменные */
 :root {
@@ -10,6 +10,7 @@
   --basic-grey-light: #E5E5E5;
   --special-yellow: #F7E296;
   --special-green: #91C92F;
+  --special-grey-light: #A6A6A6;
   --special-yellow-light: #F7E296;
   --special-yellow-dark: #F0C52E;
   --status-pink: #F6DADA;
@@ -21,14 +22,14 @@
 
 /* Локальные шрифты */
 @font-face {
-  font-family: "Gilroy Extra Bold";
-  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+  font-family: 'Gilroy Extra Bold';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy Light";
-  src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+  font-family: 'Gilroy Light';
+  src: url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -45,7 +46,7 @@ body {
   padding-top: 40px;
   min-width: 1160px;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -86,7 +87,7 @@ input[type='radio'].visually-hidden {
 }
 
 .wrapper h1 {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -102,7 +103,7 @@ input[type='radio'].visually-hidden {
 
   display: inline-block;
 
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -116,7 +117,7 @@ input[type='radio'].visually-hidden {
 
   cursor: pointer;
 
-  background: url("../img/misc/button-rectangle-bg.svg") center repeat-x;
+  background: url('../img/misc/button-rectangle-bg.svg') center repeat-x;
 
   transition: all 500ms;
 }
@@ -190,7 +191,7 @@ header .wrapper {
   align-items: center;
   margin-right: 15px;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -218,7 +219,7 @@ header .wrapper {
 
   align-self: flex-end;
 
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -250,7 +251,7 @@ header .wrapper {
   border: 0 transparent;
   padding: 15px 17px;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -287,7 +288,7 @@ header .wrapper {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -340,7 +341,7 @@ header .wrapper {
   background: 0;
   border: none;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -399,7 +400,7 @@ header .wrapper {
 
 .mainmenu a,
 .mainmenu a:visited {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -452,7 +453,7 @@ header .wrapper {
 
 .submenu a,
 .submenu a:visited {
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -520,7 +521,7 @@ footer .wrapper {
   justify-content: end;
   justify-content: flex-end;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -562,7 +563,7 @@ footer .wrapper {
   background: 0;
   border: none;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -591,7 +592,7 @@ footer .wrapper {
   justify-content: space-between;
 
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -614,7 +615,7 @@ footer .wrapper {
   grid-column: 1/4;
   justify-content: center;
 
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -718,7 +719,7 @@ footer .wrapper {
 }
 
 .wrapper-index h2 {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -807,7 +808,7 @@ a.slider-image {
   margin: 0;
   margin-bottom: 28px;
 
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -824,7 +825,7 @@ a.slider-image {
   right: 55px;
   z-index: 1;
 
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 179px;
@@ -843,7 +844,7 @@ a.slider-image {
   margin-left: 0;
   margin-bottom: 49px;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -883,7 +884,7 @@ a.slider-image {
 .slider-props p span:first-child {
   order: 2;
 
-  font-family: "Gilroy Light", Arial, SansSerif;
+  font-family: 'Gilroy Light', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -897,7 +898,7 @@ a.slider-image {
 
   flex-shrink: 0;
 
-  font-family: "Gilroy Light", Arial, SansSerif;
+  font-family: 'Gilroy Light', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
@@ -934,7 +935,7 @@ a.slider-image {
 }
 
 .slider-controls button.slide-current {
-  background-image: url("../img/misc/slider-dot-bg.svg");
+  background-image: url('../img/misc/slider-dot-bg.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -979,7 +980,7 @@ a.slider-image {
 }
 
 .popular a {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -995,7 +996,7 @@ a.slider-image {
 
 .popular h3 > a::before,
 .popular h3 > a:visited::before {
-  content: "";
+  content: '';
   width: 160px;
   height: 160px;
   display: block;
@@ -1015,27 +1016,27 @@ a.slider-image {
 }
 
 .virtual-reality::before {
-  background-image: url("../img/popular/virtual-reality.svg");
+  background-image: url('../img/popular/virtual-reality.svg');
 }
 
 .monopods-for-selfies::before {
-  background-image: url("../img/popular/monopods-for-selfies.svg");
+  background-image: url('../img/popular/monopods-for-selfies.svg');
 }
 
 .action-cameras::before {
-  background-image: url("../img/popular/action-cameras.svg");
+  background-image: url('../img/popular/action-cameras.svg');
 }
 
 .fitness-bracelets::before {
-  background-image: url("../img/popular/fitness-bracelets.svg");
+  background-image: url('../img/popular/fitness-bracelets.svg');
 }
 
 .smartwatch::before {
-  background-image: url("../img/popular/smartwatch.svg");
+  background-image: url('../img/popular/smartwatch.svg');
 }
 
 .quadcopters::before {
-  background-image: url("../img/popular/quadcopters.svg");
+  background-image: url('../img/popular/quadcopters.svg');
 }
 
 /* Блок Наши услуги*/
@@ -1102,7 +1103,7 @@ a.slider-image {
 }
 
 .info ul {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1113,7 +1114,7 @@ a.slider-image {
 }
 
 .info ul li::before {
-  content: "";
+  content: '';
 
   width: 8px;
   height: 8px;
@@ -1164,7 +1165,7 @@ a.slider-image {
   position: relative;
   left: 85%;
 
-  background: var(--special-yellow) url("../img/misc/cross.svg") center no-repeat;
+  background: var(--special-yellow) url('../img/misc/cross.svg') center no-repeat;
   opacity: 0.5;
 
   cursor: pointer;
@@ -1206,7 +1207,7 @@ a.slider-image {
 }
 
 .contact-form-popup label {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1221,7 +1222,7 @@ a.slider-image {
   padding-left: 20px;
   border: 1px solid transparent;
 
-  font-family: "Gilroy Light";
+  font-family: 'Gilroy Light';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1256,7 +1257,7 @@ a.slider-image {
   padding-left: 20px;
   border: 1px solid transparent;
 
-  font-family: "Gilroy Light", Arial, SansSerif;
+  font-family: 'Gilroy Light', Arial, SansSerif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1365,7 +1366,7 @@ a.slider-image {
 
 .breadcrumbs a,
 .breadcrumbs a:visited {
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1397,7 +1398,7 @@ a.slider-image {
 }
 
 .sorting span {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1432,7 +1433,7 @@ a.slider-image {
 
 .sorting-types a,
 .sorting-types a:visited {
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1501,7 +1502,7 @@ ul.sorting-ascdesc {
   margin: 0;
   padding: 25px 0;
 
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1516,6 +1517,7 @@ ul.sorting-ascdesc {
 
 .product-filter fieldset {
   margin: 0;
+  margin-bottom: 21px;
   padding: 0;
   border: none;
 
@@ -1525,13 +1527,16 @@ ul.sorting-ascdesc {
 
 .product-filter legend {
   width: 200px;
-  padding-top: 15px;
-  margin-bottom: 38px;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 32px;
+
   border-top: 2px solid var(--basic-black);
 
   display: block;
 
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -1547,7 +1552,7 @@ ul.sorting-ascdesc {
 }
 
 .product-filter ul li {
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1558,6 +1563,12 @@ ul.sorting-ascdesc {
 .product-filter input,
 .product-filter label {
   cursor: pointer;
+}
+
+/* Стоимость */
+.range-filter {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .range-controls {
@@ -1599,7 +1610,7 @@ ul.sorting-ascdesc {
 }
 
 .price-controls label {
-  font-family: "Gilroy Light", Arial, SansSerif;
+  font-family: 'Gilroy Light', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1619,7 +1630,71 @@ ul.sorting-ascdesc {
   background-color: var(--basic-grey-light);
 }
 
-  /* Карточки товаров */
+/* Цвет */
+.check {
+  margin-bottom: 20px;
+  padding-left: 42px;
+
+  position: relative;
+
+  display: block;
+}
+
+.check-box {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--basic-black);
+  box-sizing: border-box;
+  border-radius: 2px;
+
+}
+
+/* Unchecked*/
+.check-input + .check-box:hover {
+  opacity: 0.6;
+}
+
+.check-input + .check-box:active {
+  background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
+}
+
+/* Checked */
+.check-input:checked + .check-box {
+  background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
+}
+
+.check-input:checked + .check-box:hover {
+ opacity: 0.6;
+}
+
+.check-input:checked + .check-box:active {
+  background: none;
+}
+
+/* Focus*/
+.check-input:focus + .check-box {
+  outline: 2px solid var(--special-yellow);
+}
+
+/* Disabled*/
+
+.check-input:disabled + .check-box {
+  opacity: 0.25;
+}
+
+.check-input:disabled + .check-box + span {
+  color: var(--special-grey-light);
+}
+
+.check-input:checked:disabled + .check-box {
+  opacity: 0.25;
+}
+
+ /* Карточки товаров */
 .goods {
   grid-column: 1;
 
@@ -1647,7 +1722,7 @@ ul.sorting-ascdesc {
 }
 
 .goods-item h2 a {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1670,7 +1745,7 @@ ul.sorting-ascdesc {
 }
 
 .goods-item p {
-  font-family: "Gilroy Light", Arial, SansSerif;
+  font-family: 'Gilroy Light', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1696,14 +1771,14 @@ ul.sorting-ascdesc {
   outline-offset: -5px;
 }
 
-button[name="add-to-comparison"] {
+button[name='add-to-comparison'] {
   margin: 0;
   padding: 0;
   border: none;
 
   order: 1;
 
-  font-family: "Open Sans", Arial, SansSerif;
+  font-family: 'Open Sans', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1714,12 +1789,12 @@ button[name="add-to-comparison"] {
   cursor: pointer;
 }
 
-button[name="add-to-comparison"]:hover,
-button[name="add-to-comparison"]:focus {
+button[name='add-to-comparison']:hover,
+button[name='add-to-comparison']:focus {
   opacity: unset;
 }
 
-button[name="add-to-comparison"]:active {
+button[name='add-to-comparison']:active {
   opacity: 0.2;
 }
 
@@ -1738,7 +1813,7 @@ button[name="add-to-comparison"]:active {
 
 .goods-controls a,
 .goods-controls a:visited {
-  font-family: "Gilroy Extra Bold", Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
