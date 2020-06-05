@@ -1332,21 +1332,15 @@ a.slider-image {
   padding-right: 69px;
 
   grid-column: 1/3;
-  grid-row: 2;
 
   display: grid;
-  grid-template-columns: 1fr 328px;
 
   border-top: 70px solid #DCDCDC;
   background-color: var(--basic-grey-light);
 }
 
 .right-column {
-  grid-column: 3/5;
-  grid-row: 2;
-
-  display: grid;
-  grid-template-columns: 832px 1fr;
+  grid-column: 3/4;
 
   border-top: 70px solid var(--basic-grey-light);
 
@@ -1777,26 +1771,19 @@ ul.sorting-ascdesc {
 
  /* Карточки товаров */
 .goods {
-  grid-column: 1;
-
-  display: grid;
-  grid-template-columns: 1fr;
   outline: 2px solid rgba(69, 226, 18, 0.7);
   outline-offset: -5px;
 }
 
 .goods-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Карточка товара */
 .goods-item {
   position: relative;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
@@ -1816,8 +1803,7 @@ ul.sorting-ascdesc {
 }
 
 .goods-item a {
-  grid-column: span 2;
-  order: -1;
+
 }
 
 .goods-item > a > img {
@@ -1842,11 +1828,6 @@ ul.sorting-ascdesc {
   position: absolute;
 
   grid-column: span 2;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  align-self: center;
-  justify-self: center;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
