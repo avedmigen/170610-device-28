@@ -1787,15 +1787,24 @@ ul.sorting-ascdesc {
 .goods-item {
   position: relative;
 
+  margin-bottom: 40px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-content: baseline;
+  align-items: baseline;
 
   width: 360px;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
+}
+
+.goods-item h2 {
+  margin: 0;
+
+  flex: 1;
 }
 
 .goods-item h2 a {
@@ -1812,11 +1821,19 @@ ul.sorting-ascdesc {
 }
 
 .goods-item a {
+  margin-bottom: 17px;
+
   order: -1;
   flex-shrink: 0;
 }
 
+..goods-item a:hover {
+  opacity: 0.7;
+}
+
 .goods-item p {
+  margin: 0;
+
   font-family: 'Gilroy Light', Arial, SansSerif;
   font-style: normal;
   font-weight: 300;
@@ -1830,11 +1847,26 @@ ul.sorting-ascdesc {
 }
 
 .goods-item-controls {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+
+  width: 200px;
+  margin-left: -100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
 }
 
-button[name='add-to-comparison'] {
+.goods-item-controls button[name='add-to-cart'] {
+  margin-bottom: 22px;
+}
+
+.goods-item-controls  button[name='add-to-comparison'] {
   margin: 0;
   padding: 0;
   border: none;
@@ -1850,14 +1882,16 @@ button[name='add-to-comparison'] {
   color: var(--basic-black);
 
   cursor: pointer;
+
+  background-color: unset;
 }
 
-button[name='add-to-comparison']:hover,
-button[name='add-to-comparison']:focus {
+.goods-item-controls  button[name='add-to-comparison']:hover,
+.goods-item-controls  button[name='add-to-comparison']:focus {
   opacity: unset;
 }
 
-button[name='add-to-comparison']:active {
+.goods-item-controls button[name='add-to-comparison']:active {
   opacity: 0.2;
 }
 
