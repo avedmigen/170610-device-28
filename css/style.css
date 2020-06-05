@@ -1788,7 +1788,9 @@ ul.sorting-ascdesc {
   position: relative;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 
   width: 360px;
 
@@ -1811,11 +1813,7 @@ ul.sorting-ascdesc {
 
 .goods-item a {
   order: -1;
-}
-
-.goods-item > a > img {
-  width: 360px;
-  height: 380px;
+  flex-shrink: 0;
 }
 
 .goods-item p {
