@@ -1517,7 +1517,7 @@ ul.sorting-ascdesc {
 
 .product-filter fieldset {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   padding: 0;
   border: none;
 
@@ -1530,7 +1530,7 @@ ul.sorting-ascdesc {
   margin: 0;
   padding: 0;
   padding-top: 14px;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
 
   border-top: 2px solid var(--basic-black);
 
@@ -1568,7 +1568,7 @@ ul.sorting-ascdesc {
 /* Стоимость */
 .range-filter {
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 }
 
 .range-controls {
@@ -1648,9 +1648,8 @@ ul.sorting-ascdesc {
   width: 24px;
   height: 24px;
   border: 2px solid var(--basic-black);
-  box-sizing: border-box;
-  border-radius: 2px;
 
+  border-radius: 2px;
 }
 
 /* Unchecked*/
@@ -1691,6 +1690,70 @@ ul.sorting-ascdesc {
 }
 
 .check-input:checked:disabled + .check-box {
+  opacity: 0.25;
+}
+
+/* Радио кнопки */
+.radio {
+  margin-top: -5px;
+  margin-bottom: 17px;
+  padding-left: 40px;
+
+  position: relative;
+
+  display: block;
+}
+
+.radio-button {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--basic-black);
+
+  border-radius: 50%;
+}
+
+/* Unchecked*/
+.radio-input + .check-box:hover {
+  opacity: 0.6;
+}
+
+.radio-input + .check-box:active {
+  background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
+}
+
+/* Checked */
+.radio-input:checked + .radio-button {
+  background: var(--basic-grey-light) url('../img/misc/radio-dot-bg.svg') center center no-repeat;
+}
+
+.radio-input:checked + .radio-button:hover {
+  opacity: 0.6;
+}
+
+.radio-input:checked + .radio-button:active {
+  background: none;
+}
+
+/* Focus*/
+.radio-input:focus + .radio-button {
+  outline: 2px solid var(--special-yellow);
+}
+
+/* Disabled*/
+
+.radio-input:disabled + .radio-button {
+  opacity: 0.25;
+}
+
+.radio-input:disabled + .radio-button + span {
+  color: var(--special-grey-light);
+}
+
+.radio-input:checked:disabled + .radio-button {
   opacity: 0.25;
 }
 

@@ -195,10 +195,16 @@
               </fieldset>
               <fieldset>
                 <legend>Bluetooth</legend>
-                <input type="radio" id="filter-yes" name="bluetooth-group" value="yes" checked>
-                <label for="filter-yes">Да</label>
-                <input type="radio" id="filter-no" name="bluetooth-group" value="no">
-                <label for="filter-no">Нет</label>
+                <label class="radio">
+                  <input class="radio-input visually-hidden" type="radio" id="filter-yes" name="bluetooth-group" value="yes" checked>
+                  <span class="radio-button" tabindex="1"></span>
+                  <span>Есть</span>
+                </label>
+                <label class="radio">
+                  <input class="radio-input visually-hidden" type="radio" id="filter-no" name="bluetooth-group" value="no">
+                  <span class="radio-button" tabindex="1"></span>
+                  <span>Нет</span>
+                </label>
               </fieldset>
               <button type="submit" class="button">Показать</button>
             </form>
