@@ -1340,8 +1340,6 @@ a.slider-image {
 }
 
 .right-column {
-  grid-column: 3/4;
-
   border-top: 70px solid var(--basic-grey-light);
 
   background-color: var(--basic-white);
@@ -1776,14 +1774,23 @@ ul.sorting-ascdesc {
 }
 
 .goods-items {
+  padding-left: 72px;
+  padding-top: 70px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Карточка товара */
 .goods-item {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 360px;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
@@ -1803,7 +1810,7 @@ ul.sorting-ascdesc {
 }
 
 .goods-item a {
-
+  order: -1;
 }
 
 .goods-item > a > img {
@@ -1825,10 +1832,6 @@ ul.sorting-ascdesc {
 }
 
 .goods-item-controls {
-  position: absolute;
-
-  grid-column: span 2;
-
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
 }
