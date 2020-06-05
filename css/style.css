@@ -1863,6 +1863,7 @@ ul.sorting-ascdesc {
 }
 
 .goods-item-controls button[name='add-to-cart'] {
+  width: 200px;
   margin-bottom: 22px;
 }
 
