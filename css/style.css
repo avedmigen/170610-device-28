@@ -1355,6 +1355,8 @@ a.slider-image {
 
 /* Хлебные крошки */
 .breadcrumbs {
+  position: relative;
+
   grid-column: span 2;
 
   display: flex;
@@ -1370,7 +1372,26 @@ a.slider-image {
 }
 
 .breadcrumbs li {
-  margin-right: 16px;
+  position: relative;
+
+  margin-right: 40px;
+
+  outline: 2px solid rgba(242, 48, 30, 0.7);
+  outline-offset: -5px;
+}
+
+.breadcrumbs li:not(:first-child):before {
+  content: "";
+  width: 12px;
+  height: 12px;
+
+  display: block;
+
+  position: absolute;
+  top: 10px;
+  left: -25px;
+
+  background: var(--basic-white) url('../img/misc/icon_arrow_nav.svg') center center no-repeat;
 }
 
 .breadcrumbs a,
