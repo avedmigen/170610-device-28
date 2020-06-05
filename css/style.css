@@ -1285,8 +1285,13 @@ a.slider-image {
 }
 
 /* Страница каталога товаров */
+.main-inner {
+  position: relative;
+}
 
 .wrapper-inner-top {
+  margin-bottom: 18px;
+  padding-left: 60px;
   padding-top: 44px;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
@@ -1295,8 +1300,8 @@ a.slider-image {
 
 .wrapper-inner-top h1 {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
-  padding-left: 60px;
 }
 
 /* Блоки с фильтрами и карточками товаров */
@@ -1305,15 +1310,21 @@ a.slider-image {
 
   display:grid;
   grid-template-columns: 1fr 328px 832px 1fr;
-  grid-template-rows: 70px 1fr;
 }
 
 .top-column {
   position: relative;
-  top: 70px;
+  top: 48px;
+
+  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 
   grid-column: span 4;
-  grid-row: 1;
+
+  outline: 2px solid rgba(197, 187, 7, 0.7);
+  outline-offset: -5px;
 }
 
 .left-column {
@@ -1344,8 +1355,6 @@ a.slider-image {
 
 /* Хлебные крошки */
 .breadcrumbs {
-  padding-left: 60px;
-
   grid-column: span 2;
 
   display: flex;
@@ -1385,19 +1394,7 @@ a.slider-image {
 }
 
 /* Сортировка товаров */
-.sorting {
-  padding-top: 21px;
-  padding-left: 60px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
-}
-
-.sorting span {
+.top-column span {
   font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-style: normal;
   font-weight: 800;
@@ -1409,15 +1406,15 @@ a.slider-image {
   color: var(--basic-black);
 }
 
-.sorting span:first-child {
+.top-column span:first-child {
   margin-right: 263px;
 }
 
-.sorting span:nth-child(2) {
+.top-column span:nth-child(2) {
   margin-right: 73px;
 }
 
-.sorting ul {
+.top-column ul {
   margin: 0;
   padding: 0;
 
