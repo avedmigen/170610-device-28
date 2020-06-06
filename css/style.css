@@ -1263,16 +1263,14 @@ a.slider-image {
   position: relative;
 }
 
-.wrapper-inner-top {
+.wrapper-options {
   margin-bottom: 18px;
   padding-left: 60px;
   padding-top: 44px;
 
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
-.wrapper-inner-top h1 {
+.wrapper-options h1 {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -1297,8 +1295,6 @@ a.slider-image {
 
   grid-column: span 4;
 
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .left-column {
@@ -1315,6 +1311,8 @@ a.slider-image {
 
 .right-column {
   border-top: 70px solid var(--basic-grey-light);
+
+  grid-column: 3/5;
 
   background-color: var(--basic-white);
 }
@@ -1333,8 +1331,6 @@ a.slider-image {
 
   list-style-type: none;
 
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .breadcrumbs li {
@@ -1342,8 +1338,6 @@ a.slider-image {
 
   margin-right: 40px;
 
-  outline: 2px solid rgba(242, 48, 30, 0.7);
-  outline-offset: -5px;
 }
 
 .breadcrumbs li:not(:first-child):before {
@@ -1442,8 +1436,6 @@ ul.sorting-ascdesc {
   flex-grow: 1;
   justify-content: flex-end;
 
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .sorting-ascdesc li {
@@ -1475,8 +1467,6 @@ ul.sorting-ascdesc {
   grid-column: 2;
   justify-self: end;
 
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .product-filter h2 {
@@ -1501,8 +1491,6 @@ ul.sorting-ascdesc {
   padding: 0;
   border: none;
 
-  outline: 2px solid rgba(242, 48, 30, 0.7);
-  outline-offset: -5px;
 }
 
 .product-filter legend {
@@ -1542,6 +1530,10 @@ ul.sorting-ascdesc {
 .product-filter input,
 .product-filter label {
   cursor: pointer;
+}
+
+.product-filter button {
+  width: 200px;
 }
 
 /* Стоимость */
@@ -1738,13 +1730,15 @@ ul.sorting-ascdesc {
  /* Карточки товаров */
 .goods {
   margin: 0 auto;
-  padding-left: 72px;
   padding-top: 52px;
+  padding-right: 40px;
+  padding-left: 72px;
+
+  grid-column: span 2;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /* Карточка товара */
@@ -1752,6 +1746,7 @@ ul.sorting-ascdesc {
   position: relative;
 
   margin-top: 18px;
+  margin-right: 40px;
   margin-bottom: 8px;
 
   display: flex;
@@ -1871,8 +1866,9 @@ ul.sorting-ascdesc {
   background-color: #EBEBEB;
 }
 
-.goods-controls a,
-.goods-controls a:visited {
+.goods-controls a {
+  width: 120px;
+
   font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-weight: 800;
   font-size: 16px;
@@ -1882,27 +1878,29 @@ ul.sorting-ascdesc {
   text-transform: uppercase;
 }
 
-.goods-controls a:active {
+.page-direction,
+.page-direction:visited {
+  width: 60px;
+  padding: 25px 30px;
+
+  display: block;
+}
+
+.page-direction:active {
   opacity: 0.3;
 }
 
-.goods-controls span a,
-.goods-controls span a:visited {
-  display: block;
-  padding: 25px 30px;
-}
-
-.goods-controls span a:hover,
-.goods-controls span a:focus {
+.page-direction:hover,
+.page-direction:focus {
   background: #D9D9D9;
 }
 
-.goods-controls span a:active {
+.page-direction:active {
   background: #D9D9D9;
 }
 
-.goods-controls span + span {
-  order: 1;
+.page-direction:first-child {
+  margin-right: 30px;
 }
 
 .goods-controls ul {
