@@ -1737,13 +1737,9 @@ ul.sorting-ascdesc {
 
  /* Карточки товаров */
 .goods {
-  outline: 2px solid rgba(69, 226, 18, 0.7);
-  outline-offset: -5px;
-}
-
-.goods-items {
+  margin: 0 auto;
   padding-left: 72px;
-  padding-top: 70px;
+  padding-top: 52px;
 
   display: flex;
   flex-direction: row;
@@ -1755,7 +1751,8 @@ ul.sorting-ascdesc {
 .goods-item {
   position: relative;
 
-  margin-bottom: 40px;
+  margin-top: 18px;
+  margin-bottom: 8px;
 
   display: flex;
   flex-direction: row;
@@ -1765,8 +1762,6 @@ ul.sorting-ascdesc {
 
   width: 360px;
 
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .goods-item h2 {
@@ -1783,12 +1778,14 @@ ul.sorting-ascdesc {
   letter-spacing: 0.05em;
   color: var(--basic-black);
 
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .goods-item a {
-  margin-bottom: 17px;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+
+  display: block;
 
   order: -1;
   flex-shrink: 0;
@@ -1808,8 +1805,6 @@ ul.sorting-ascdesc {
   letter-spacing: 0.05em;
   color: var(--basic-black);
 
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
 }
 
 .goods-item-controls {
@@ -1817,15 +1812,11 @@ ul.sorting-ascdesc {
   top: 180px;
   left: 50%;
 
-  width: 200px;
   margin-left: -100px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 /* Кнопки при наведении на карточку товара*/
@@ -1868,15 +1859,16 @@ ul.sorting-ascdesc {
 
 /* Навигация по страницам товаров */
 .goods-controls {
+  width: 760px;
+
+  margin-top: 10px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 
   background-color: #EBEBEB;
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
 }
 
 .goods-controls a,
