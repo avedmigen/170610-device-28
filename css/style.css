@@ -1776,6 +1776,28 @@ ul.sorting-ascdesc {
 
 }
 
+.new-item {
+  position: absolute;
+  top: 29px;
+  left: 271px;
+
+  font-family: 'Gilroy', Arial, SansSerif;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+
+  width: 62px;
+  height: 62px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .goods-item img {
   margin: 0;
   margin-bottom: 25px;
