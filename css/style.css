@@ -158,24 +158,25 @@ header .wrapper {
 }
 
 /*Логотип в шапке*/
-.logo a,
-.logo a:visited {
+.logo,
+.logo:visited {
   position: absolute;
   top: -20px;
   left: 60px;
+
+  display: block;
 }
 
-.logo svg:hover {
+.logo:hover {
   opacity: 0.6;
 }
 
-.logo svg:active,
-.logo svg:focus {
+.logo:active,
+.logo:focus {
   opacity: 0.3;
 }
 
 .logo svg {
-  display: block;
   width: 163px;
   height: 35px;
 }
@@ -477,28 +478,25 @@ footer .wrapper {
 
 /*Логотип в футере*/
 
-.footer-logo {
+.footer-logo,
+.footer-logo:vasited {
+  display: block;
+
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
 }
 
-.footer-logo svg path {
-  fill: var(--special-yellow-dark);
-}
-
-.footer-logo a svg {
-  display: block;
-  width: 163px;
-  height: 35px;
-}
-
-.footer-logo svg:hover {
+.footer-logo:hover {
   opacity: 0.6;
 }
 
-.footer-logo svg:active,
-.footer-logo svg:focus {
+.footer-logo:active,
+.footer-logo:focus {
   opacity: 0.3;
+}
+
+.footer-logo svg path {
+  fill: var(--special-yellow-dark);
 }
 
 /* Меню пользователя в футере */
@@ -677,21 +675,23 @@ footer .wrapper {
 .htmlacademy-logo {
   justify-self: end;
 
+  display: block;
+
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
 }
 
-.htmlacademy-logo svg path {
-  fill: var(--special-yellow-dark);
-}
-
-.htmlacademy-logo a:hover,
-.htmlacademy-logo a:focus {
+.htmlacademy-logo:hover,
+.htmlacademy-logo:focus {
   opacity: 0.6;
 }
 
-.htmlacademy-logo a:active {
+.htmlacademy-logo:active {
   opacity: 0.3;
+}
+
+.htmlacademy-logo svg path {
+  fill: var(--special-yellow-dark);
 }
 
 /* Индексная страница */
