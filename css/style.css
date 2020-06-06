@@ -465,25 +465,26 @@ header .wrapper {
 
 /* Футер */
 footer {
+  padding-top: 46px;
   background-color: var(--basic-dark);
 }
 
 footer .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: max-content 1fr max-content;
   justify-content: space-between;
-  align-items: start;
-  padding-top: 45px;
+  align-items: flex-start;
 }
 
 /*Логотип в футере*/
 
 .footer-logo,
-.footer-logo:vasited {
-  display: block;
+.footer-logo:visited {
+  width: 163px;
+  margin-top: 18px;
+  margin-bottom: 17px;
 
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
+  display: block;
 }
 
 .footer-logo:hover {
@@ -503,10 +504,11 @@ footer .wrapper {
 .footer-user-menu {
   margin: 0;
   padding: 0;
+
   grid-column: span 2;
 
+  flex-grow: 1;
   display: flex;
-  justify-content: end;
   justify-content: flex-end;
 
   font-family: 'Open Sans', Arial, SansSerif;
@@ -517,12 +519,19 @@ footer .wrapper {
 
   list-style-type: none;
 
-  outline: 2px solid rgba(7, 184, 197, 0.7);
-  outline-offset: -5px;
 }
 
-.footer-user-menu li {
+.footer-user-menu li:first-child {
+  margin-right: 24px;
+}
+
+.footer-user-menu li:last-child {
   margin-left: 40px;
+  margin-right: 0;
+}
+
+.footer-user-menu svg {
+  margin-right: 12px;
 }
 
 .footer-user-menu svg path {
@@ -531,6 +540,9 @@ footer .wrapper {
 
 .footer-user-menu a,
 .footer-user-menu a:visited {
+  display: flex;
+  align-items: center;
+
   color: var(--basic-white);
   opacity: 0.7;
 }
@@ -544,8 +556,9 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-.footer-user-menu button {
+.logout {
   margin: 0;
+  margin-right: 40px;
   padding: 0;
   background: 0;
   border: none;
@@ -560,45 +573,25 @@ footer .wrapper {
   cursor: pointer;
 }
 
-.footer-user-menu button:hover,
-.footer-user-menu button:focus {
+.logout:hover,
+.logout:focus {
   opacity: unset;
 }
 
-.footer-user-menu button:active {
+.logout:active {
   opacity: 0.3;
-}
-
-/* Контакты в футере */
-.footer-contacts {
-  grid-column: span 4;
-
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  justify-content: space-between;
-
-
-  font-family: 'Open Sans', Arial, SansSerif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-
-  color: var(--basic-white);
-  opacity: 0.6;
-
-  outline: 2px solid rgba(7, 197, 55, 0.7);
-  outline-offset: -5px;
 }
 
 /* Навигация по сайту в футере */
 .footer-navbar {
   margin: 0;
+  margin-bottom: 67px;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  grid-column-gap: 36px;
-  grid-column: 1/4;
+
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-self: baseline;
 
   font-family: 'Gilroy Extra Bold', Arial, SansSerif;
   font-weight: 800;
@@ -610,8 +603,10 @@ footer .wrapper {
 
   list-style-type: none;
 
-  outline: 2px solid rgba(197, 80, 7, 0.7);
-  outline-offset: -5px;
+}
+
+.footer-navbar li {
+  margin-right: 34px;
 }
 
 .footer-navbar a {
@@ -627,20 +622,36 @@ footer .wrapper {
   opacity: 0.3;
 }
 
+/* Адрес и телефон*/
+.address, .phone-number {
+  margin-bottom: 0;
+  padding: 0;
+
+  align-self: baseline;
+
+  font-family: 'Open Sans', Arial, SansSerif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: var(--basic-white);
+  opacity: 0.6;
+
+}
+
 /* Декоративный прямоугольник в футере */
-.rectangle {
+footer .rectangle {
+  width: 80px;
   height: 7px;
+  margin-top: 12px;
+
   background-color: var(--footer-yellow);
 }
 
 /* Иконки соцсетей */
 .social-icons {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  justify-content: center;
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
+  margin-left: -38px;
+  justify-self: center;
 }
 
 .social-icons ul {
@@ -673,12 +684,9 @@ footer .wrapper {
 
 /* Логотип HTML Academy */
 .htmlacademy-logo {
-  justify-self: end;
-
   display: block;
 
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
+  justify-self: flex-end;
 }
 
 .htmlacademy-logo:hover,
