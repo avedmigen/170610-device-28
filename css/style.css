@@ -939,6 +939,9 @@ a.slider-image {
 
 /* Популярные товары */
 .popular {
+  position: relative;
+  top: -35px;
+
   grid-column: span 2;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
@@ -956,14 +959,25 @@ a.slider-image {
 }
 
 .popular ul {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: max-content max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.popular li {
+.popular ul li {
+  width: 160px;
+  padding-top: 17px;
+
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -5px;
+}
+
+.popular h3 {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.2;
 }
 
 .popular a {
@@ -986,6 +1000,7 @@ a.slider-image {
   width: 160px;
   height: 160px;
   display: block;
+  margin-bottom: 38px;
 
   background-color: var(--special-yellow-light);
   background-repeat: no-repeat;
@@ -1002,11 +1017,19 @@ a.slider-image {
 }
 
 .virtual-reality::before {
+  width: 160px;
+  height: 160px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.virtual-reality::before {
   background-image: url('../img/popular/virtual-reality.svg');
 }
 
 .monopods-for-selfies::before {
-  background-image: url('../img/popular/monopods-for-selfies.svg');
+  background: var(--special-yellow-light) url('../img/popular/monopods-for-selfies.svg') center center no-repeat;
 }
 
 .action-cameras::before {
@@ -1267,7 +1290,7 @@ a.slider-image {
 }
 
 /* Страница каталога товаров */
-.main-inner {
+.inner-page {
   position: relative;
 }
 
