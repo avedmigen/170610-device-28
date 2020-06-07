@@ -1072,13 +1072,15 @@ a.slider-image {
 
   border-top: 115px solid var(--basic-white);
 
-  display: flex;
-  flex-direction: row;
-
   background-color: var(--basic-grey-light);
 
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -5px;
+}
+
+.services .wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .services ul {
@@ -1129,6 +1131,7 @@ a.slider-image {
 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   list-style-type: none;
 }
@@ -1156,6 +1159,10 @@ a.slider-image {
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
+}
+.info .wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .info ul {
