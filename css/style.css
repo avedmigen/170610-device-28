@@ -81,6 +81,8 @@ input[type='radio'].visually-hidden {
 }
 
 .wrapper {
+  position: relative;
+
   width: 1160px;
   margin: 0 auto;
 }
@@ -101,7 +103,7 @@ input[type='radio'].visually-hidden {
 
   display: inline-block;
 
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -189,7 +191,7 @@ header .wrapper {
   align-items: center;
   margin-right: 15px;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -216,7 +218,7 @@ header .wrapper {
 
   align-self: flex-end;
 
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -247,7 +249,7 @@ header .wrapper {
   border: 0 transparent;
   padding: 15px 17px;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -283,7 +285,7 @@ header .wrapper {
   margin: 0;
   padding: 0;
 
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -335,7 +337,7 @@ header .wrapper {
   background: 0;
   border: none;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -393,7 +395,7 @@ header .wrapper {
 
 .mainmenu a,
 .mainmenu a:visited {
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -445,7 +447,7 @@ header .wrapper {
 
 .submenu a,
 .submenu a:visited {
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -461,6 +463,11 @@ header .wrapper {
 
 .submenu a:active {
   opacity: 0.3;
+}
+
+/* Главный контент */
+.main {
+  position: relative;
 }
 
 /* Футер */
@@ -511,7 +518,7 @@ footer .wrapper {
   display: flex;
   justify-content: flex-end;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -563,7 +570,7 @@ footer .wrapper {
   background: 0;
   border: none;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -593,7 +600,7 @@ footer .wrapper {
   justify-content: center;
   align-self: baseline;
 
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -629,7 +636,7 @@ footer .wrapper {
 
   align-self: baseline;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -704,15 +711,13 @@ footer .rectangle {
 
 /* Индексная страница */
 .wrapper-index {
-  position: relative;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content;
 }
 
 .wrapper-index h2 {
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -724,8 +729,8 @@ footer .rectangle {
 .slider {
   grid-column: span 2;
 
-
-  top: -105px;
+  position: relative;
+  top: -104px;
 
   outline: 2px solid rgba(33, 148, 207, 0.7);
   outline-offset: -5px;
@@ -778,17 +783,25 @@ a.slider-image {
 }
 
 .slider-image img.selfie-stick {
-  left: -9px;
-  top: -93px;
+  position: absolute;
+
+  left: 88px;
+  top: -25px;
+
 }
 
 .slider-image img.fitness-tracker {
-  top: -93px;
+  position: absolute;
+
+  left: 88px;
+  top: -25px;
 }
 
-.slider-image img.quadcopter {
-  top: 58px;
-  left: 30px;
+.slider-image img.copter {
+  position: absolute;
+
+  left: 88px;
+  top: -25px;
 }
 
 .slider-text h3 {
@@ -797,9 +810,9 @@ a.slider-image {
 
   padding: 0;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -811,11 +824,11 @@ a.slider-image {
 
 .slider-text > span {
   position: absolute;
-  top: -41px;
-  right: 55px;
+  top: -43px;
+  right: 46px;
   z-index: 1;
 
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
@@ -828,12 +841,12 @@ a.slider-image {
 
 .slider-text > p {
   padding: 0;
-  padding-right: 100px;
+  padding-right: 75px;
   margin-top: 0;
   margin-left: 0;
-  margin-bottom: 49px;
+  margin-bottom: 51px;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -848,8 +861,11 @@ a.slider-image {
 /* Характеристики товара в слайдере */
 
 .slider-props {
+  width: 448px;
+
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   order: 1;
 
@@ -860,7 +876,6 @@ a.slider-image {
 .slider-props p {
   padding: 0;
   margin: 0;
-  margin-right: 27px;
 
   display: flex;
   flex-direction: column;
@@ -872,7 +887,7 @@ a.slider-image {
 .slider-props p span:first-child {
   order: 2;
 
-  font-family: 'Gilroy Light', Arial, SansSerif;
+  font-family: 'Gilroy Light', serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
@@ -885,7 +900,7 @@ a.slider-image {
 
   flex-shrink: 0;
 
-  font-family: 'Gilroy Light', Arial, SansSerif;
+  font-family: 'Gilroy Light', serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
@@ -897,15 +912,15 @@ a.slider-image {
 .slider-text a.button {
   width: 220px;
   margin-left: 3px;
-  margin-bottom: 53px;
+  margin-bottom: 52px;
 }
 
 /* Переключатели слайдов */
 
 .slider-controls {
-  position: relative;
-  left: 985px;
-  bottom: 158px;
+  position: absolute;
+  right: 87px;
+  bottom: 132px;
 }
 
 .slider-controls button {
@@ -929,9 +944,9 @@ a.slider-image {
 .slider-text .rectangle {
   position: absolute;
   top: 10px;
-  right: 460px;
 
   width: 100px;
+  height: 7px;
 
   background-color: var(--basic-white);
 }
@@ -939,7 +954,6 @@ a.slider-image {
 /* Популярные товары */
 .popular {
   position: relative;
-  top: -35px;
 
   grid-column: span 2;
 
@@ -966,7 +980,7 @@ a.slider-image {
 
 .popular ul li {
   width: 160px;
-  padding-top: 17px;
+  padding-top: 11px;
 
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -5px;
@@ -980,7 +994,7 @@ a.slider-image {
 }
 
 .popular a {
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1115,7 +1129,7 @@ a.slider-image {
 }
 
 .info ul {
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -1218,7 +1232,7 @@ a.slider-image {
 }
 
 .contact-form-popup label {
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1232,7 +1246,7 @@ a.slider-image {
   padding-left: 20px;
   border: 1px solid transparent;
 
-  font-family: 'Gilroy Light';
+  font-family: 'Gilroy Light', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -1247,7 +1261,6 @@ a.slider-image {
 }
 
 .contact-form-popup input:focus {
-  outline: none;
   outline: 2px solid var(--special-yellow);
 
   color: var(--basic-dark);
@@ -1266,7 +1279,7 @@ a.slider-image {
   padding-left: 20px;
   border: 1px solid transparent;
 
-  font-family: 'Gilroy Light', Arial, SansSerif;
+  font-family: 'Gilroy Light', serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -1371,7 +1384,6 @@ a.slider-image {
   position: relative;
 
   margin-right: 40px;
-
 }
 
 .breadcrumbs li:not(:first-child):before {
@@ -1390,7 +1402,7 @@ a.slider-image {
 
 .breadcrumbs a,
 .breadcrumbs a:visited {
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -1409,7 +1421,7 @@ a.slider-image {
 
 /* Сортировка товаров */
 .top-column span {
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1443,7 +1455,7 @@ a.slider-image {
 
 .sorting-types a,
 .sorting-types a:visited {
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -1507,7 +1519,7 @@ ul.sorting-ascdesc {
   margin: 0;
   padding: 25px 0;
 
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1538,7 +1550,7 @@ ul.sorting-ascdesc {
 
   display: block;
 
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
 
   font-weight: 800;
   font-size: 14px;
@@ -1554,7 +1566,7 @@ ul.sorting-ascdesc {
 }
 
 .product-filter ul li {
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -1604,7 +1616,7 @@ ul.sorting-ascdesc {
   top: -9px;
   left: 0;
 
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
   background-color: #C4C4C4;
 
   cursor: pointer;
@@ -1615,7 +1627,7 @@ ul.sorting-ascdesc {
 }
 
 .price-controls label {
-  font-family: 'Gilroy Light', Arial, SansSerif;
+  font-family: 'Gilroy Light', serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -1647,7 +1659,7 @@ ul.sorting-ascdesc {
 .check-box {
   position: absolute;
   top: -2px;
-  left: 0px;
+  left: 0;
 
   width: 24px;
   height: 24px;
@@ -1711,7 +1723,7 @@ ul.sorting-ascdesc {
 .radio-button {
   position: absolute;
   top: 2px;
-  left: 0px;
+  left: 0;
 
   width: 24px;
   height: 24px;
@@ -1801,7 +1813,7 @@ ul.sorting-ascdesc {
 }
 
 .goods-item h2 a {
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1815,7 +1827,7 @@ ul.sorting-ascdesc {
   top: 29px;
   left: 271px;
 
-  font-family: 'Gilroy', Arial, SansSerif;
+  font-family: 'Gilroy', serif;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
@@ -1850,7 +1862,7 @@ ul.sorting-ascdesc {
 .goods-item p {
   margin: 0;
 
-  font-family: 'Gilroy Light', Arial, SansSerif;
+  font-family: 'Gilroy Light', serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -1886,7 +1898,7 @@ ul.sorting-ascdesc {
   padding: 0;
   border: none;
 
-  font-family: 'Open Sans', Arial, SansSerif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
@@ -1924,7 +1936,7 @@ ul.sorting-ascdesc {
 .goods-controls a {
   width: 120px;
 
-  font-family: 'Gilroy Extra Bold', Arial, SansSerif;
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
