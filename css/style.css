@@ -85,6 +85,9 @@ input[type='radio'].visually-hidden {
 
   width: 1160px;
   margin: 0 auto;
+
+  outline: 2px solid rgba(33, 148, 207, 0.7);
+  outline-offset: -5px;
 }
 
 .wrapper h1 {
@@ -955,6 +958,8 @@ a.slider-image {
 .popular {
   position: relative;
 
+  margin-bottom: 69px;
+
   grid-column: span 2;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
@@ -1067,8 +1072,6 @@ a.slider-image {
 
   border-top: 115px solid var(--basic-white);
 
-
-
   display: flex;
   flex-direction: row;
 
@@ -1083,6 +1086,33 @@ a.slider-image {
   padding: 0;
 
   list-style-type: none;
+}
+
+.service-list {
+  border-right: 7px solid var(--basic-black);
+}
+
+.service-list .button {
+  width: 160px;
+}
+
+.service-list .active {
+  width: 277px;
+}
+
+.service-description h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  display: block;
+
+  font-family: 'Gilroy Extra Bold', serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  color: var(--basic-black);
 }
 
 /* Блок Наши партнеры */
@@ -1122,7 +1152,7 @@ a.slider-image {
 
 /* Блок О нас */
 .info {
-  padding-right: 80px;
+  grid-column: span 2;
 
   outline: 2px solid rgba(197, 187, 7, 0.7);
   outline-offset: -5px;
