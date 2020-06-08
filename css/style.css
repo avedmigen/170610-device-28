@@ -81,8 +81,6 @@ input[type='radio'].visually-hidden {
 }
 
 .wrapper {
-  position: relative;
-
   width: 1160px;
   margin: 0 auto;
 
@@ -1068,7 +1066,7 @@ a.slider-image {
 
 /* Блок Наши услуги*/
 .services {
-  margin-bottom: 208px;
+  margin-bottom: 91px;
   border-top: 115px solid var(--basic-white);
 
   grid-column: span 2;
@@ -1080,12 +1078,15 @@ a.slider-image {
 }
 
 .services .wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: row;
 }
 
 .service-list {
-  width: 277px;
+  position: relative;
+  top: -20px;
 
   margin: 0;
   padding: 0;
@@ -1093,31 +1094,46 @@ a.slider-image {
   list-style-type: none;
 }
 
-.service-list .button {
-  width: 160px;
-}
-
-.service-list .active {
+.service-list li {
   width: 277px;
+  margin-bottom: 21px;
 }
 
-.service-description {
+.service-list .button {
+  width: 164px;
+}
+
+.service-list button.active-button {
+  width: 277px;
+  padding-right: 122px;
+
+  color: var(--special-yellow);
+
+  background-image: none;
+  background-color: var(--basic-black );
+}
+
+ .service-description {
   position: relative;
 
   margin: 0;
   padding: 0;
-  padding-left: 116px;
-  border-left: 7px solid var(--basic-black);
+  padding-left: 124px;
+  padding-bottom: 134px;
 
   list-style-type: none;
 }
+
+ .service-description li {
+  position: relative;
+ }
 
 .service-description h3 {
   position: relative;
   top: -29px;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 11px;
   padding: 0;
 
   display: block;
@@ -1130,6 +1146,84 @@ a.slider-image {
   color: var(--basic-black);
 }
 
+.service-description p {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.9;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+.delivery {
+  padding-right: 217px;
+}
+
+.delivery::after {
+  position: absolute;
+  top: -29px;
+  right: 1px;
+
+  content: '';
+
+  width: 136px;
+  height: 164px;
+
+  display: block;
+
+  background: transparent url('../img/services-bg/delivery.png') 0 0 no-repeat;
+}
+
+.warranty {
+  padding-right: 189px;
+}
+
+.warranty::after {
+  position: absolute;
+  top: -47px;
+  right: -17px;
+
+  content: '';
+
+  width: 171px;
+  height: 195px;
+
+  display: block;
+
+  background: transparent url('../img/services-bg/warranty.png') 0 0 no-repeat;
+}
+
+.credit {
+  padding-right: 189px;
+}
+
+.credit::after {
+  position: absolute;
+  top: -52px;
+  right: 8px;
+
+  content: '';
+
+  width: 156px;
+  height: 188px;
+
+  display: block;
+
+  background: transparent url('../img/services-bg/credit.png') 0 0 no-repeat;
+}
+
+.vertical-rectangle {
+  position: absolute;
+  bottom: 68px;
+  left: 277px;
+
+  width: 7px;
+  height: 320px;
+
+  background-color: var(--basic-black);
+}
 
 /* Блок Наши партнеры */
 .logotypes {
