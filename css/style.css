@@ -1068,9 +1068,10 @@ a.slider-image {
 
 /* Блок Наши услуги*/
 .services {
-  grid-column: span 2;
-
+  margin-bottom: 208px;
   border-top: 115px solid var(--basic-white);
+
+  grid-column: span 2;
 
   background-color: var(--basic-grey-light);
 
@@ -1083,15 +1084,13 @@ a.slider-image {
   flex-direction: row;
 }
 
-.services ul {
+.service-list {
+  width: 277px;
+
   margin: 0;
   padding: 0;
 
   list-style-type: none;
-}
-
-.service-list {
-  border-right: 7px solid var(--basic-black);
 }
 
 .service-list .button {
@@ -1102,10 +1101,24 @@ a.slider-image {
   width: 277px;
 }
 
-.service-description h3 {
+.service-description {
+  position: relative;
+
   margin: 0;
   padding: 0;
+  padding-left: 116px;
+  border-left: 7px solid var(--basic-black);
+
+  list-style-type: none;
+}
+
+.service-description h3 {
+  position: relative;
+  top: -29px;
+
+  margin: 0;
   margin-bottom: 40px;
+  padding: 0;
 
   display: block;
 
@@ -1116,6 +1129,7 @@ a.slider-image {
   letter-spacing: 0.2em;
   color: var(--basic-black);
 }
+
 
 /* Блок Наши партнеры */
 .logotypes {
