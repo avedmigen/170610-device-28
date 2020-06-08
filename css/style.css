@@ -83,9 +83,6 @@ input[type='radio'].visually-hidden {
 .wrapper {
   width: 1160px;
   margin: 0 auto;
-
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .wrapper h1 {
@@ -117,7 +114,7 @@ input[type='radio'].visually-hidden {
 
   cursor: pointer;
 
-  background: url('../img/misc/button-rectangle-bg.svg') center repeat-x;
+  background: transparent url('../img/misc/button-rectangle-bg.svg') center repeat-x;
 
   transition: all 500ms;
 }
@@ -432,14 +429,6 @@ header .wrapper {
   grid-gap: 8px 50px;
 
   list-style-type: none;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
-}
-
-.submenu li {
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .submenu li:last-child {
@@ -732,9 +721,6 @@ footer .rectangle {
 
   position: relative;
   top: -104px;
-
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-list {
@@ -742,9 +728,6 @@ footer .rectangle {
   padding: 0;
 
   list-style-type: none;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-item {
@@ -752,9 +735,6 @@ footer .rectangle {
 
   display: flex;
   flex-direction: row;
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-text {
@@ -767,9 +747,6 @@ footer .rectangle {
   align-items: flex-start;
 
   order: 1;
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
 }
 
 a.slider-image {
@@ -778,27 +755,23 @@ a.slider-image {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  outline: 2px solid rgba(242, 48, 30, 0.7);
-  outline-offset: -5px;
 }
 
-.slider-image img.selfie-stick {
-  position: absolute;
-
-  left: 88px;
-  top: -25px;
-
-}
-
-.slider-image img.fitness-tracker {
+.selfie-stick {
   position: absolute;
 
   left: 88px;
   top: -25px;
 }
 
-.slider-image img.copter {
+.fitness-tracker {
+  position: absolute;
+
+  left: 88px;
+  top: -25px;
+}
+
+.copter {
   position: absolute;
 
   left: 88px;
@@ -818,9 +791,6 @@ a.slider-image {
   font-size: 47px;
   line-height: 58px;
   color: var(--basic-black);
-
-  outline: 2px solid rgba(242, 48, 30, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-text > span {
@@ -835,9 +805,6 @@ a.slider-image {
   line-height: 219px;
   text-transform: uppercase;
   color: var(--basic-white);
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-text > p {
@@ -853,10 +820,6 @@ a.slider-image {
   line-height: 20px;
 
   color: var(--basic-black);
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
-
 }
 
 /* Характеристики товара в слайдере */
@@ -869,9 +832,6 @@ a.slider-image {
   justify-content: space-between;
 
   order: 1;
-
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-props p {
@@ -880,9 +840,6 @@ a.slider-image {
 
   display: flex;
   flex-direction: column;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-props p span:first-child {
@@ -959,9 +916,6 @@ a.slider-image {
   margin-bottom: 69px;
 
   grid-column: span 2;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .popular ul {
@@ -984,9 +938,6 @@ a.slider-image {
 .popular ul li {
   width: 160px;
   padding-top: 11px;
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
 }
 
 .popular h3 {
@@ -1005,9 +956,6 @@ a.slider-image {
   color: var(--basic-black);
 
   order: 1;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
 
 .popular h3 > a::before,
@@ -1072,9 +1020,6 @@ a.slider-image {
   grid-column: span 2;
 
   background-color: var(--basic-grey-light);
-
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
 }
 
 .services .wrapper {
@@ -1228,9 +1173,6 @@ a.slider-image {
 /* Блок Наши партнеры */
 .logotypes {
   grid-column: span 2;
-
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .logotypes ul {
@@ -1242,11 +1184,6 @@ a.slider-image {
   justify-content: space-between;
 
   list-style-type: none;
-}
-
-.logotypes ul li {
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .logotypes a img,
@@ -1264,10 +1201,8 @@ a.slider-image {
 /* Блок О нас */
 .info {
   grid-column: span 2;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
 }
+
 .info .wrapper {
   display: flex;
   flex-direction: row;
@@ -1310,9 +1245,6 @@ a.slider-image {
   position: relative;
 
   grid-column: span 2;
-
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
 }
 
 .contact-form-popup form {
