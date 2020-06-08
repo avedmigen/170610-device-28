@@ -1173,6 +1173,8 @@ a.slider-image {
 /* Блок Наши партнеры */
 .logotypes {
   grid-column: span 2;
+
+  margin-bottom: 80px;
 }
 
 .logotypes ul {
@@ -1234,10 +1236,82 @@ a.slider-image {
   top: -2px;
 }
 
+/* Блок О нас */
+.about-us {
+  position: relative;
+
+  width: 50%;
+  padding-top: 20px;
+  padding-right: 105px;
+  padding-bottom: 77px;
+
+  flex-shrink: 0;
+}
+
+.about-us p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 42px;
+}
+
+.about-us ul {
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 53px;
+  padding: 0;
+}
+
+.about-us ul li {
+  padding-bottom: 15px;
+}
+
+.about-us a.button {
+  padding-left: 24px;
+  padding-right: 18px;
+}
+
+.about-us .rectangle {
+  position: absolute;
+  top: 10px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: var(--basic-black);
+}
+
 /* Блок Контакты */
-.contact {
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -5px;
+.contact-us {
+  position: relative;
+
+  width: 50%;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  flex-shrink: 0;
+}
+
+.contact-us p {
+  margin-bottom: 41px;
+}
+
+.map {
+  margin-bottom: 68px;
+}
+
+.contact-us a.button {
+  padding-left: 40px;
+  padding-right: 38px;
+}
+
+.contact-us .rectangle {
+  position: absolute;
+  top: 10px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: var(--basic-black);
 }
 
 /* Контактная форма Напишите нам*/
