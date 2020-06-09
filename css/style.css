@@ -1314,148 +1314,6 @@ a.slider-image {
   background-color: var(--basic-black);
 }
 
-/* Контактная форма Напишите нам*/
-.contact-form-popup {
-  position: relative;
-
-  grid-column: span 2;
-}
-
-.contact-form-popup form {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 100px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.contact-form-popup > button {
-  width: 55px;
-  height: 55px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-
-  position: relative;
-  left: 85%;
-
-  background: var(--special-yellow) url('../img/misc/cross.svg') center no-repeat;
-  opacity: 0.5;
-
-  cursor: pointer;
-}
-
-.contact-form-popup > button:hover {
-  opacity: 0.7;
-
-  background-color: var(--special-yellow-dark);
-}
-
-.contact-form-popup > button:focus {
-  opacity: 0.3;
-
-  background-color: var(--special-yellow-dark);
-}
-
-.contact-form-popup fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-
-  display: contents;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -5px;
-}
-
-.contact-form-popup p {
-  display: flex;
-  flex-direction: column;
-
-  outline: 2px solid rgba(33, 148, 207, 0.7);
-  outline-offset: -5px;
-}
-
-.contact-form-popup p:last-child {
-  grid-column: span 2;
-}
-
-.contact-form-popup label {
-  font-family: 'Gilroy Extra Bold', serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  color: var(--basic-black);
-}
-
-.contact-form-popup input {
-  width: 360px;
-  margin: 0;
-  padding: 18px 0;
-  padding-left: 20px;
-  border: 1px solid transparent;
-
-  font-family: 'Gilroy Light', sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--basic-black);
-  opacity: 0.4;
-
-  background-color: var(--input-grey);
-}
-
-.contact-form-popup input:hover {
-  background-color: var(--input-grey-hover);
-}
-
-.contact-form-popup input:focus {
-  outline: 2px solid var(--special-yellow);
-
-  color: var(--basic-dark);
-  opacity: unset;
-}
-
-.contact-form-popup input:invalid {
-  background-color: var(--status-pink);
-}
-
-.contact-form-popup textarea {
-  min-height: 167px;
-  margin: 0;
-  padding: 0;
-  padding: 18px 0;
-  padding-left: 20px;
-  border: 1px solid transparent;
-
-  font-family: 'Gilroy Light', serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--basic-black);
-  opacity: 0.4;
-
-  background-color: var(--input-grey);
-}
-
-.contact-form-popup textarea:hover {
-  background-color: var(--input-grey-hover);
-}
-
-.contact-form-popup textarea:focus {
-  outline: none;
-  outline: 2px solid var(--special-yellow);
-
-  color: var(--basic-dark);
-  opacity: unset;
-}
-
-.contact-form-popup textarea:invalid {
-  background-color: var(--status-pink);
-}
-
 /* Страница каталога товаров */
 .inner-page {
   position: relative;
@@ -2147,6 +2005,182 @@ ul.sorting-ascdesc {
 
 .goods-controls ul a:active {
   opacity: unset;
+}
+
+/* Модалки */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+
+  margin: auto;
+}
+
+/* Контактная форма Напишите нам*/
+.modal-contact-form {
+  width: 960px;
+  top: 24px;
+  bottom: auto;
+
+  padding: 92px 100px 60px;
+
+  grid-column: span 2;
+
+  background: var(--basic-white);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+.modal-contact-form form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-contact-form > button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+
+  background: var(--special-yellow) url('../img/misc/cross.svg') center no-repeat;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.modal-contact-form > button:hover {
+  opacity: 0.7;
+
+  background-color: var(--special-yellow-dark);
+}
+
+.modal-contact-form > button:focus {
+  opacity: 0.3;
+
+  background-color: var(--special-yellow-dark);
+}
+
+.modal-contact-form fieldset {
+  display: contents;
+
+  margin: 0;
+  margin-bottom:49px;
+  padding: 0;
+  border: 0;
+
+}
+
+.form-item {
+  width: 360px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item label {
+  margin-bottom: 10px;
+
+  font-family: 'Gilroy Extra Bold', serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+.form-item input {
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+
+  border: 1px solid transparent;
+
+  font-family: 'Open Sans', serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+
+  background-color: var(--input-grey);
+}
+
+.form-item input:hover {
+  background-color: var(--input-grey-hover);
+}
+
+.form-item input:focus {
+  outline: 2px solid var(--special-yellow);
+
+  color: var(--basic-dark);
+  opacity: unset;
+}
+
+.form-item input:invalid {
+  background-color: var(--status-pink);
+}
+
+.form-item:last-child {
+  width: 760px;
+  margin-top: 30px;
+  margin-bottom: 44px;
+}
+
+.form-item textarea {
+  min-height: 167px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+
+  border: 1px solid transparent;
+
+  font-family: 'Open Sans', serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+
+  background-color: var(--input-grey);
+}
+
+.form-item textarea:hover {
+  background-color: var(--input-grey-hover);
+}
+
+.form-item textarea:focus {
+  outline: none;
+  outline: 2px solid var(--special-yellow);
+
+  color: var(--basic-dark);
+  opacity: unset;
+}
+
+.form-item textarea:invalid {
+  background-color: var(--status-pink);
+}
+
+.submit-button {
+  min-width: 200px;
+}
+
+.submit-button {
+  min-width: 200px;
+  background: transparent url('../img/misc/button-rectangle-bg-light.svg') center repeat-x;
 }
 
 
