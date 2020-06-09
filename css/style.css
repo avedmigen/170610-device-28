@@ -2019,31 +2019,8 @@ ul.sorting-ascdesc {
   margin: auto;
 }
 
-/* Контактная форма Напишите нам*/
-.modal-contact-form {
-  width: 960px;
-  top: 24px;
-  bottom: auto;
-
-  padding: 92px 100px 60px;
-
-  grid-column: span 2;
-
-  background: var(--basic-white);
-  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
-}
-
-.modal-contact-form form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.modal-contact-form > button {
+.modal > button {
   position: absolute;
-  top: 20px;
-  right: 20px;
 
   width: 55px;
   height: 55px;
@@ -2058,16 +2035,42 @@ ul.sorting-ascdesc {
   cursor: pointer;
 }
 
-.modal-contact-form > button:hover {
+.modal > button:hover {
   opacity: 0.7;
 
   background-color: var(--special-yellow-dark);
 }
 
-.modal-contact-form > button:focus {
+.modal > button:focus {
   opacity: 0.3;
 
   background-color: var(--special-yellow-dark);
+}
+
+/* Контактная форма Напишите нам*/
+.modal-contact-form {
+  width: 960px;
+  top: 24px;
+  bottom: auto;
+
+  padding: 92px 100px 60px;
+
+  grid-column: span 2;
+
+  background: var(--basic-white);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+.modal-contact-form button {
+  top: 20px;
+  right: 20px;
+}
+
+.modal-contact-form form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .modal-contact-form fieldset {
@@ -2077,7 +2080,6 @@ ul.sorting-ascdesc {
   margin-bottom:49px;
   padding: 0;
   border: 0;
-
 }
 
 .form-item {
@@ -2181,6 +2183,20 @@ ul.sorting-ascdesc {
 .submit-button {
   min-width: 200px;
   background: transparent url('../img/misc/button-rectangle-bg-light.svg') center repeat-x;
+}
+
+/* Увеличенная карта проезда */
+
+.modal-map {
+  top: 24px;
+  bottom: auto;
+
+  width: 994px;
+}
+
+.modal-map button {
+  top: 26px;
+  right: 34px;
 }
 
 
