@@ -2216,9 +2216,17 @@ ul.sorting-ascdesc {
   width: 994px;
 }
 
+.modal-map img {
+  display: block;
+}
+
 .modal-map .modal-close {
   top: 26px;
   right: 34px;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 
