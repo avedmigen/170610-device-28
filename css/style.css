@@ -1786,7 +1786,6 @@ ul.sorting-ascdesc {
 .goods {
   margin: 0 auto;
   padding-top: 48px;
-  padding-right: 40px;
   padding-bottom: 78px;
   padding-left: 72px;
 
@@ -1802,7 +1801,6 @@ ul.sorting-ascdesc {
   position: relative;
 
   margin-top: 21px;
-  margin-right: 40px;
   margin-bottom: 21px;
 
   display: flex;
@@ -1812,7 +1810,10 @@ ul.sorting-ascdesc {
   align-items: baseline;
 
   width: 360px;
+}
 
+.goods-item:nth-child(odd) {
+  margin-left: 40px;
 }
 
 .goods-item h2 {
@@ -1854,6 +1855,8 @@ ul.sorting-ascdesc {
 }
 
 .goods-item img {
+  width: 360px;
+  height: 380px;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -1862,6 +1865,10 @@ ul.sorting-ascdesc {
 
   order: -1;
   flex-shrink: 0;
+
+  object-fit: contain;
+
+  background-color: var(--basic-grey-light);
 }
 
 .goods-item a:hover {
