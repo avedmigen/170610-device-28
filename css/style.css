@@ -2019,7 +2019,7 @@ ul.sorting-ascdesc {
   margin: auto;
 }
 
-.modal > button {
+.modal-close {
   position: absolute;
 
   width: 55px;
@@ -2028,20 +2028,42 @@ ul.sorting-ascdesc {
   padding: 0;
   border: 0;
   border-radius: 50%;
+  background-color: var(--special-yellow);
 
-  background: var(--special-yellow) url('../img/misc/cross.svg') center no-repeat;
+  /*background: var(--special-yellow) url('../img/misc/cross.svg') center no-repeat;*/
   opacity: 0.5;
 
   cursor: pointer;
 }
 
-.modal > button:hover {
+.modal-close::before,
+.modal-close::after {
+  content: '';
+
+  position: absolute;
+  top: 27px;
+  left: 15px;
+
+  width: 25px;
+  height: 3px;
+  background-color: var(--basic-white);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover {
   opacity: 0.7;
 
   background-color: var(--special-yellow-dark);
 }
 
-.modal > button:focus {
+.modal-close:focus {
   opacity: 0.3;
 
   background-color: var(--special-yellow-dark);
@@ -2061,7 +2083,7 @@ ul.sorting-ascdesc {
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
-.modal-contact-form button {
+.modal-contact-form .modal-close {
   top: 20px;
   right: 20px;
 }
@@ -2194,7 +2216,7 @@ ul.sorting-ascdesc {
   width: 994px;
 }
 
-.modal-map button {
+.modal-map .modal-close {
   top: 26px;
   right: 34px;
 }
