@@ -1054,6 +1054,8 @@ a.slider-image {
 
   color: var(--special-yellow);
 
+  border-radius: 0;
+
   background-image: none;
   background-color: var(--basic-black );
 }
