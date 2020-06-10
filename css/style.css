@@ -1220,17 +1220,41 @@ a.slider-image {
 }
 
 .info .wrapper {
+  padding-top: 39px;
+
   display: flex;
   flex-direction: row;
 }
 
 .info h2 {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+
+  display: block;
+
   font-family: 'Gilroy Extra Bold';
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
   color: var(--basic-black);
+}
+
+.info h2::before {
+  position: absolute;
+  top: -57px;
+
+  content: '';
+
+  width: 80px;
+  height: 7px;
+
+  display: block;
+
+  background-color: var(--basic-black);
 }
 
 .info ul {
