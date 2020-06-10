@@ -137,17 +137,13 @@ input[type='radio'].visually-hidden {
 }
 
 /* Хедер */
-header {
-  min-height: 186px;
-}
-
 header .wrapper {
   position: relative;
 
-  padding-left: 60px;
-  padding-right: 60px;
   padding-top: 28px;
-  border-bottom: 47px solid var(--special-yellow);
+  padding-right: 60px;
+  padding-bottom: 47px;
+  padding-left: 60px;
 
   display: flex;
   flex-direction: row;
@@ -157,7 +153,11 @@ header .wrapper {
   background-color: var(--special-yellow);
 }
 
-/*Логотип в шапке*/
+header .index-page  {
+  padding-bottom: 161px;
+}
+
+  /*Логотип в шапке*/
 .logo,
 .logo:visited {
   position: absolute;
@@ -361,6 +361,8 @@ header .wrapper {
 }
 
 .mainmenu {
+  position: relative;
+
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -417,10 +419,14 @@ header .wrapper {
 
 /* Выпадающее меню */
 .submenu {
+  position: absolute;
+  z-index: 5;
+
+  width: 100%;
   margin: 0;
-  margin-top: 23px;
-  margin-bottom: -9px;
+  margin-top: 24px;
   padding: 0;
+  padding-bottom: 37px;
 
   display: grid;
   grid-template-columns: repeat(3, max-content);
@@ -429,6 +435,8 @@ header .wrapper {
   grid-gap: 8px 50px;
 
   list-style-type: none;
+
+  background-color: var(--special-yellow);
 }
 
 .submenu li:last-child {
@@ -456,7 +464,7 @@ header .wrapper {
 }
 
 /* Главный контент */
-.main {
+main {
   position: relative;
 }
 
@@ -700,13 +708,12 @@ footer .rectangle {
 }
 
 /* Индексная страница */
-.wrapper-index {
-  display: grid;
+.index-page {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content;
 }
 
-.wrapper-index h2 {
+.index-page h2 {
   font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 47px;
@@ -717,10 +724,16 @@ footer .rectangle {
 
 /* Слайдер Топ-3 по продажам */
 .slider {
-  grid-column: span 2;
-
   position: relative;
-  top: -104px;
+  top: -114px;
+
+  margin-bottom: -10px;
+
+  grid-column: span 2;
+}
+
+.slider .wrapper {
+  position: relative;
 }
 
 .slider-list {
@@ -731,15 +744,30 @@ footer .rectangle {
 }
 
 .slider-item {
-  position: relative;
-
   display: flex;
   flex-direction: row;
 }
 
+.number::before {
+  position: absolute;
+  right: 48px;
+  top: -32px;
+  z-index: 1;
+
+  content: '01';
+  display: inline-block;
+
+  font-family: 'Gilroy Extra Bold', serif;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
 .slider-text {
   width: 50%;
-  padding-top: 68px;
+  padding-top: 78px;
   padding-left: 20px;
 
   display: flex;
@@ -759,9 +787,8 @@ a.slider-image {
 
 .selfie-stick {
   position: absolute;
-
+  top: -15px;
   left: 88px;
-  top: -25px;
 }
 
 .fitness-tracker {
@@ -780,7 +807,6 @@ a.slider-image {
 
 .slider-text h3 {
   position: relative;
-  z-index: 2;
 
   padding: 0;
   margin: 0;
@@ -791,20 +817,6 @@ a.slider-image {
   font-size: 47px;
   line-height: 58px;
   color: var(--basic-black);
-}
-
-.slider-text > span {
-  position: absolute;
-  top: -43px;
-  right: 46px;
-  z-index: 1;
-
-  font-family: 'Gilroy Extra Bold', serif;
-  font-weight: 800;
-  font-size: 179px;
-  line-height: 219px;
-  text-transform: uppercase;
-  color: var(--basic-white);
 }
 
 .slider-text > p {
@@ -901,7 +913,7 @@ a.slider-image {
 
 .slider-text .rectangle {
   position: absolute;
-  top: 10px;
+  top: 19px;
 
   width: 100px;
   height: 7px;
@@ -1210,6 +1222,15 @@ a.slider-image {
 .info .wrapper {
   display: flex;
   flex-direction: row;
+}
+
+.info h2 {
+  font-family: 'Gilroy Extra Bold';
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  color: var(--basic-black);
 }
 
 .info ul {
