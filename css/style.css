@@ -375,13 +375,31 @@ header .index-page  {
   flex-grow: 1;
 }
 
-.mainmenu > li:first-child a {
+.product-catalog {
+  position: relative;
+
   margin-right: 13px;
 }
 
-.mainmenu > li:first-child svg {
-  position: relative;
-  top: 2px;
+.product-catalog::before,
+.product-catalog::after {
+  position: absolute;
+  left: 210px;
+  top: 10px;
+  bottom: 0;
+
+  content: '';
+
+  display: block;
+
+  width: 16px;
+  height: 2px;
+
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.product-catalog::after {
+  transform: rotate(90deg);
 }
 
 .mainmenu > li:first-child + li {
