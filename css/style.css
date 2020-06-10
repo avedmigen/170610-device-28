@@ -819,6 +819,20 @@ a.slider-image {
   color: var(--basic-black);
 }
 
+.slider-text h3::before {
+  position: absolute;
+  top: -59px;
+
+  content: '';
+
+  width: 100px;
+  height: 7px;
+
+  display: block;
+
+  background-color: var(--basic-white);
+}
+
 .slider-text > p {
   padding: 0;
   padding-right: 75px;
@@ -909,16 +923,6 @@ a.slider-image {
   background-image: url('../img/misc/slider-dot-bg.svg');
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.slider-text .rectangle {
-  position: absolute;
-  top: 19px;
-
-  width: 100px;
-  height: 7px;
-
-  background-color: var(--basic-white);
 }
 
 /* Популярные товары */
@@ -1317,16 +1321,6 @@ a.slider-image {
   padding-right: 18px;
 }
 
-.about-us .rectangle {
-  position: absolute;
-  top: 10px;
-
-  width: 80px;
-  height: 7px;
-
-  background-color: var(--basic-black);
-}
-
 /* Блок Контакты */
 .contact-us {
   position: relative;
@@ -1349,16 +1343,6 @@ a.slider-image {
 .contact-us a.button {
   padding-left: 40px;
   padding-right: 38px;
-}
-
-.contact-us .rectangle {
-  position: absolute;
-  top: 10px;
-
-  width: 80px;
-  height: 7px;
-
-  background-color: var(--basic-black);
 }
 
 /* Страница каталога товаров */
