@@ -17,11 +17,9 @@
         </svg>
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="search-form-input" class="visually-hidden">Введите поисковый запрос</label>
-        <img src="img/misc/icon_search.svg" alt="Иконка поиска" width="16"
-             height="16">
-        <input type="text" id="search-form-input" name="search-form-input"
-               value="" placeholder="Поиск по сайту">
+        <label for="search-form-input"><span class="visually-hidden">Введите поисковый запрос</span></label>
+        <input type="text" class="search-form-input" id="search-form-input" name="search-form-input"
+               value="" placeholder="Поиск по сайту" required>
         <button type="submit">Найти</button>
       </form>
       <ul class="user-menu">
@@ -63,7 +61,7 @@
         <ul class="mainmenu">
           <li>
             <a class="product-catalog" href="inner.html">Каталог товаров</a>
-            <ul class="submenu visually-hidden">
+            <ul class="submenu">
               <li><a href="blank.html">Виртуальная реальность</a></li>
               <li><a href="blank.html">Моноподы для селфи</a></li>
               <li><a href="blank.html">Экшн-камеры</a></li>

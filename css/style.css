@@ -27,6 +27,7 @@
   font-weight: 800;
 
 }
+
 @font-face {
   font-family: 'Gilroy Light';
   src: url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
@@ -154,7 +155,7 @@ header .wrapper {
   background-color: var(--special-yellow);
 }
 
- /* Логотип в шапке */
+/* Логотип в шапке */
 
 .logo,
 .logo:visited {
@@ -181,69 +182,76 @@ header .wrapper {
 
 /*Форма поиска в шапке*/
 .search-form {
+  position:  relative;
+
+  width: 440px;
+  margin-right: auto;
+  margin-bottom: 32px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 15px;
 
   font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black);
-  text-align: left;
 }
 
-.search-form img {
-  position: absolute;
+.search-form label::after {
+  content: '';
 
-  display: block;
+  position: absolute;
+  top: 19px;
+
   width: 16px;
   height: 16px;
-  margin-top: 1px;
+
+  background: var(--special-yellow) url('../img/misc/icon_search.svg') center center no-repeat;
 }
 
-.search-form input {
-  width: 440px;
-  border:2px solid var(--special-yellow);
-  padding-left: 37px;
-  padding-right: 84px;
-  padding-bottom: 12px;
-  outline-style: none;
 
-  align-self: flex-end;
+.search-form input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-right: 21px;
+  padding-bottom: 16px;
+  padding-left: 38px;
+  border: none;
+  border-bottom: 2px solid var(--special-yellow);
+
+  display: block;
 
   font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   text-align: left;
-  opacity:  0.3;
+  opacity: 0.3;
 
-  background-color: inherit;
+  background-color: var(--special-yellow);
 }
 
 .search-form input:hover {
   opacity: 0.6;
 }
 
-.search-form input:focus {
-  border-left: 1px;
-  border-right: 1px;
-  border-bottom: 2px solid var(--basic-black);
+.search-form input:focus,
+.search-form input:valid {
   outline: none;
-
+  border-bottom: 2px solid var(--basic-black);
   opacity: unset;
 }
 
 .search-form button {
-  position: relative;
-  right: 84px;
-
   width: 84px;
-  border: 0 transparent;
   padding: 15px 17px;
+  border: 2px solid var(--special-yellow);
+  border-radius: unset;
 
   font-family: 'Open Sans', serif;
   font-weight: 300;
@@ -252,35 +260,47 @@ header .wrapper {
   text-transform: uppercase;
 
   color: var(--special-yellow);
-  background-color: inherit;
-}
 
-.search-form button:hover {
-  color: var(--basic-white, white);
-  background-color: var(--basic-black);
-}
-
-.search-form button:focus {
-  color: var(--basic-black);
   background-color: inherit;
 
   cursor: pointer;
 }
 
-.search-form button:active {
-  color: rgba(255,255,255,0.3);
+.search-form button:hover,
+.search-form button:focus {
+  color: var(--basic-white);
+
   background-color: var(--basic-black);
 }
 
-/* Меню пользователя */
+.search-form button:active {
+  opacity: 0.3;
+}
+
+.search-form input:focus + button,
+.search-form input:valid + button {
+  border: 2px solid var(--basic-black);
+  color: var(--basic-black);
+}
+
+.search-form input:focus + button:hover,
+.search-form input:valid + button:hover {
+  color: var(--basic-white);
+}
+
+  /* Меню пользователя */
 .user-menu {
+  position: relative;
+  top: 5px;
+
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  flex-grow: 1;
-  margin: 0;
-  margin-bottom: 50px;
-  padding: 0;
 
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -386,11 +406,11 @@ header .wrapper {
 .mainmenu > li > a,
 .mainmenu > li > a:visited {
 
-	margin: 0;
-	margin-bottom: 27px;
-	padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
 
-	display: block;
+  display: block;
 
 
   font-family: 'Gilroy Extra Bold', serif;
@@ -466,7 +486,7 @@ header .wrapper {
 }
 
 .submenu .index-page {
-	position: absolute;
+  position: absolute;
 }
 
 .submenu li:last-child {
@@ -475,9 +495,9 @@ header .wrapper {
 
 .submenu a,
 .submenu a:visited {
-	margin: 0;
-	padding: 0;
-	display: block;
+  margin: 0;
+  padding: 0;
+  display: block;
 
   font-family: 'Open Sans', serif;
   font-weight: 300;
@@ -516,7 +536,6 @@ footer .wrapper {
 }
 
 /*Логотип в футере*/
-
 .footer-logo,
 .footer-logo:visited {
   width: 163px;
@@ -764,7 +783,7 @@ footer .rectangle {
 }
 
 .slider-list {
-	position: relative;
+  position: relative;
 
   margin: 0;
   padding: 0;
@@ -775,8 +794,8 @@ footer .rectangle {
 }
 
 .slider-item {
-	position: relative;
-	top: -37px;
+  position: relative;
+  top: -37px;
 
   display: flex;
   flex-direction: row;
@@ -1106,10 +1125,10 @@ a.slider-image {
   border-radius: 0;
 
   background-image: none;
-  background-color: var(--basic-black );
+  background-color: var(--basic-black);
 }
 
- .service-description {
+.service-description {
   position: relative;
 
   margin: 0;
@@ -1120,9 +1139,9 @@ a.slider-image {
   list-style-type: none;
 }
 
- .service-description li {
+.service-description li {
   position: relative;
- }
+}
 
 .service-description h3 {
   position: relative;
@@ -1153,6 +1172,7 @@ a.slider-image {
   letter-spacing: 0.1em;
   color: var(--basic-black);
 }
+
 .delivery {
   padding-right: 217px;
 }
@@ -1240,13 +1260,13 @@ a.slider-image {
 }
 
 .logotypes a img,
-.logotypes a:visited img{
+.logotypes a:visited img {
   opacity: 0.1;
   filter: grayscale(100%);
 }
 
 .logotypes a:hover img,
-.logotypes a:focus img{
+.logotypes a:focus img {
   opacity: unset;
   filter: unset;
 }
@@ -1399,7 +1419,7 @@ a.slider-image {
 .nowrap {
   position: relative;
 
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 328px 832px 1fr;
 }
 
@@ -1597,7 +1617,7 @@ ul.sorting-ascdesc {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color:var(--basic-black);
+  color: var(--basic-black);
   text-align: center;
 
   background-color: #DCDCDC;
@@ -1677,6 +1697,7 @@ ul.sorting-ascdesc {
   height: 2px;
   background-color: var(--special-green);
 }
+
 .toggle {
   width: 20px;
   height: 20px;
@@ -1755,7 +1776,7 @@ ul.sorting-ascdesc {
 }
 
 .check-input:checked + .check-box:hover {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
 .check-input:checked + .check-box:active {
@@ -1845,7 +1866,7 @@ ul.sorting-ascdesc {
   opacity: 0.25;
 }
 
- /* Карточки товаров */
+/* Карточки товаров */
 .goods {
   margin: 0 auto;
   padding-top: 48px;
@@ -2169,7 +2190,7 @@ ul.sorting-ascdesc {
   display: contents;
 
   margin: 0;
-  margin-bottom:49px;
+  margin-bottom: 49px;
   padding: 0;
   border: 0;
 }
