@@ -142,8 +142,9 @@ header .wrapper {
 
   padding-top: 28px;
   padding-right: 60px;
-  padding-bottom: 47px;
   padding-left: 60px;
+
+  border-bottom: 23px solid var(--special-yellow);
 
   display: flex;
   flex-direction: row;
@@ -153,11 +154,8 @@ header .wrapper {
   background-color: var(--special-yellow);
 }
 
-header .index-page  {
-  padding-bottom: 161px;
-}
+ /* Логотип в шапке */
 
-  /*Логотип в шапке*/
 .logo,
 .logo:visited {
   position: absolute;
@@ -281,6 +279,7 @@ header .index-page  {
   align-items: baseline;
   flex-grow: 1;
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
 
   font-family: 'Open Sans', sans-serif;
@@ -357,7 +356,6 @@ header .index-page  {
 /* Главное навигационное меню */
 .navbar {
   width: 100%;
-  padding-top: 35px
 }
 
 .mainmenu {
@@ -365,9 +363,10 @@ header .index-page  {
 
   display: flex;
   flex-direction: row;
+
   margin: 0;
-  margin-top: -2px;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -375,9 +374,49 @@ header .index-page  {
   flex-grow: 1;
 }
 
+.mainmenu > li:first-child + li {
+  margin-right: 35px;
+}
+
+.mainmenu > li:last-child {
+  margin-left: 108px;
+  margin-right: -3px;
+}
+
+.mainmenu > li > a,
+.mainmenu > li > a:visited {
+
+	margin: 0;
+	margin-bottom: 27px;
+	padding: 0;
+
+	display: block;
+
+
+  font-family: 'Gilroy Extra Bold', serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.mainmenu > li:first-child > a {
+  letter-spacing: 0.1em;
+}
+
+.mainmenu a:hover,
+.mainmenu a:focus {
+  opacity: 0.6;
+}
+
+.mainmenu a:active {
+  opacity: 0.3;
+}
+
 .product-catalog {
   position: relative;
-
   margin-right: 13px;
 }
 
@@ -402,59 +441,32 @@ header .index-page  {
   transform: rotate(90deg);
 }
 
-.mainmenu > li:first-child + li {
-  margin-right: 35px;
-}
-
-.mainmenu > li:last-child {
-  margin-left: 108px;
-  margin-right: -3px;
-}
-
-.mainmenu a,
-.mainmenu a:visited {
-  font-family: 'Gilroy Extra Bold', serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--basic-black);
-}
-
-.mainmenu > li:first-child > a {
-  letter-spacing: 0.1em;
-}
-
-.mainmenu a:hover,
-.mainmenu a:focus {
-  opacity: 0.6;
-}
-
-.mainmenu a:active {
-  opacity: 0.3;
-}
-
 /* Выпадающее меню */
 .submenu {
   position: absolute;
+  right: -60px;
   z-index: 5;
 
-  width: 100%;
+  width: 1160px;
   margin: 0;
-  margin-top: 24px;
   padding: 0;
-  padding-bottom: 37px;
+  padding-top: 3px;
+  padding-bottom: 42px;
+  padding-left: 60px;
 
   display: grid;
   grid-template-columns: repeat(3, max-content);
   grid-template-rows: repeat(3, min-content);
   grid-auto-flow: column;
-  grid-gap: 8px 50px;
+  grid-gap: 16px 63px;
 
   list-style-type: none;
 
   background-color: var(--special-yellow);
+}
+
+.submenu .index-page {
+	position: absolute;
 }
 
 .submenu li:last-child {
@@ -463,6 +475,10 @@ header .index-page  {
 
 .submenu a,
 .submenu a:visited {
+	margin: 0;
+	padding: 0;
+	display: block;
+
   font-family: 'Open Sans', serif;
   font-weight: 300;
   font-size: 15px;
@@ -742,26 +758,26 @@ footer .rectangle {
 
 /* Слайдер Топ-3 по продажам */
 .slider {
-  position: relative;
-  top: -114px;
-
-  margin-bottom: -10px;
+  margin-bottom: 67px;
 
   grid-column: span 2;
 }
 
-.slider .wrapper {
-  position: relative;
-}
-
 .slider-list {
+	position: relative;
+
   margin: 0;
   padding: 0;
+
+  border-top: 115px solid var(--special-yellow);
 
   list-style-type: none;
 }
 
 .slider-item {
+	position: relative;
+	top: -37px;
+
   display: flex;
   flex-direction: row;
 }
@@ -769,7 +785,7 @@ footer .rectangle {
 .number::before {
   position: absolute;
   right: 48px;
-  top: -32px;
+  top: -110px;
   z-index: 1;
 
   content: '01';
@@ -785,7 +801,6 @@ footer .rectangle {
 
 .slider-text {
   width: 50%;
-  padding-top: 78px;
   padding-left: 20px;
 
   display: flex;
@@ -805,7 +820,7 @@ a.slider-image {
 
 .selfie-stick {
   position: absolute;
-  top: -15px;
+  top: -93px;
   left: 88px;
 }
 
@@ -947,7 +962,7 @@ a.slider-image {
 .popular {
   position: relative;
 
-  margin-bottom: 69px;
+  margin-bottom: 68px;
 
   grid-column: span 2;
 }
@@ -1079,7 +1094,7 @@ a.slider-image {
 }
 
 .service-list .button {
-  width: 164px;
+  min-width: 160px;
 }
 
 .service-list button.active-button {
@@ -1326,7 +1341,7 @@ a.slider-image {
 .about-us ul {
   margin: 0;
   margin-top: 17px;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
   padding: 0;
 }
 
@@ -1355,7 +1370,7 @@ a.slider-image {
 }
 
 .map {
-  margin-bottom: 68px;
+  margin-bottom: 66px;
 }
 
 .contact-us a.button {
@@ -1372,7 +1387,6 @@ a.slider-image {
   margin-bottom: 18px;
   padding-left: 60px;
   padding-top: 44px;
-
 }
 
 .wrapper-options h1 {
