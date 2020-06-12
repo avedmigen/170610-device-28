@@ -45,7 +45,7 @@ body {
   margin: 0;
   padding-top: 40px;
   min-width: 1160px;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -83,7 +83,7 @@ input[type='radio'].visually-hidden {
 }
 
 .wrapper h1 {
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -96,7 +96,7 @@ input[type='radio'].visually-hidden {
   padding: 9px 10px;
   border: none;
   display: inline-block;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -172,7 +172,7 @@ header .wrapper {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -191,15 +191,11 @@ header .wrapper {
 .search-form input {
   width: 100%;
   margin: 0;
-  padding: 0;
-  padding-top: 16px;
-  padding-right: 21px;
-  padding-bottom: 16px;
-  padding-left: 38px;
+  padding: 16px 21px 16px 38px;
   border: none;
   border-bottom: 2px solid var(--special-yellow);
   display: block;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -224,7 +220,7 @@ header .wrapper {
   padding: 15px 17px;
   border: 2px solid var(--special-yellow);
   border-radius: unset;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -266,7 +262,7 @@ header .wrapper {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -316,7 +312,7 @@ header .wrapper {
   padding: 0;
   background: 0;
   border: none;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -367,7 +363,7 @@ header .wrapper {
   margin-bottom: 27px;
   padding: 0;
   display: block;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -445,7 +441,7 @@ header .wrapper {
   margin: 0;
   padding: 0;
   display: block;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -512,7 +508,7 @@ footer .wrapper {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -560,7 +556,7 @@ footer .wrapper {
   padding: 0;
   background: 0;
   border: none;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -587,7 +583,7 @@ footer .wrapper {
   flex-direction: row;
   justify-content: center;
   align-self: baseline;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -620,7 +616,7 @@ footer .wrapper {
   margin-bottom: 0;
   padding: 0;
   align-self: baseline;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -696,7 +692,7 @@ footer .rectangle {
 }
 
 .index-page h2 {
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -706,6 +702,7 @@ footer .rectangle {
 
 /* Слайдер Топ-3 по продажам */
 .slider {
+  position: relative;
   margin-bottom: 67px;
   grid-column: span 2;
 }
@@ -732,7 +729,7 @@ footer .rectangle {
   z-index: 1;
   content: '01';
   display: inline-block;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
@@ -779,7 +776,7 @@ a.slider-image {
   padding: 0;
   margin: 0;
   margin-bottom: 26px;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -802,7 +799,7 @@ a.slider-image {
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 51px;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -828,7 +825,7 @@ a.slider-image {
 
 .slider-props p span:first-child {
   order: 2;
-  font-family: 'Gilroy Light', serif;
+  font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
@@ -839,7 +836,7 @@ a.slider-image {
 .slider-props p span:last-child {
   margin-bottom: 15px;
   flex-shrink: 0;
-  font-family: 'Gilroy Light', serif;
+  font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
@@ -857,8 +854,8 @@ a.slider-image {
 /* Переключатели слайдов */
 .slider-controls {
   position: absolute;
-  right: 87px;
-  bottom: 132px;
+  right: 181px;
+  bottom: 168px;
 }
 
 .slider-controls button {
@@ -914,7 +911,7 @@ a.slider-image {
 }
 
 .popular-title a {
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   color: var(--basic-black);
@@ -1023,7 +1020,7 @@ a.slider-image {
   margin-bottom: 11px;
   padding: 0;
   display: block;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1034,7 +1031,7 @@ a.slider-image {
 .service-description p {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 1.9;
@@ -1141,7 +1138,7 @@ a.slider-image {
   margin-bottom: 39px;
   padding: 0;
   display: block;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1160,7 +1157,7 @@ a.slider-image {
 }
 
 .info ul {
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -1284,7 +1281,7 @@ a.slider-image {
 
 .breadcrumbs a,
 .breadcrumbs a:visited {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -1336,7 +1333,7 @@ a.slider-image {
   margin-right: 121px;
   margin-bottom: 95px;
   padding: 0;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1361,7 +1358,7 @@ a.slider-image {
   padding-bottom: 33px;
   border-top: 2px solid var(--basic-black);
   display: block;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -1376,7 +1373,7 @@ a.slider-image {
 }
 
 .product-filter ul li {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -1434,7 +1431,7 @@ a.slider-image {
 }
 
 .price-controls label {
-  font-family: 'Gilroy Light', serif;
+  font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -1580,7 +1577,7 @@ a.slider-image {
 
 .sorting h2,
 .sorting span {
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1608,7 +1605,7 @@ a.slider-image {
 
 .sorting-types a,
 .sorting-types a:visited {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -1690,7 +1687,7 @@ ul.sorting-ascdesc {
 }
 
 .goods-item h2 a {
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1702,7 +1699,7 @@ ul.sorting-ascdesc {
   position: absolute;
   top: 29px;
   left: 271px;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
@@ -1736,7 +1733,7 @@ ul.sorting-ascdesc {
 
 .goods-item p {
   margin: 0;
-  font-family: 'Gilroy Light', serif;
+  font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -1767,7 +1764,7 @@ ul.sorting-ascdesc {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
@@ -1801,7 +1798,7 @@ ul.sorting-ascdesc {
 
 .goods-controls a {
   width: 120px;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1955,7 +1952,7 @@ ul.sorting-ascdesc {
 
 .form-item label {
   margin-bottom: 10px;
-  font-family: 'Gilroy Extra Bold', serif;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1969,7 +1966,7 @@ ul.sorting-ascdesc {
   padding-bottom: 15px;
   padding-left: 20px;
   border: 1px solid transparent;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -2005,7 +2002,7 @@ ul.sorting-ascdesc {
   padding-bottom: 15px;
   padding-left: 20px;
   border: 1px solid transparent;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
