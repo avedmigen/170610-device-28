@@ -1359,7 +1359,7 @@ a.slider-image {
   margin-right: 40px;
 }
 
-.breadcrumbs li:not(:first-child)::after {
+.breadcrumbs li::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -1368,6 +1368,10 @@ a.slider-image {
   top: 10px;
   left: -25px;
   background: var(--basic-white) url('../img/misc/icon_arrow_nav.svg') center center no-repeat;
+}
+
+.breadcrumbs li:first-child::after {
+  content: none;
 }
 
 .breadcrumbs a,
