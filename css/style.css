@@ -1359,7 +1359,7 @@ a.slider-image {
   margin-right: 40px;
 }
 
-.breadcrumbs li:not(:first-child):before {
+.breadcrumbs li:not(:first-child)::after {
   content: "";
   width: 12px;
   height: 12px;
