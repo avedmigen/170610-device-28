@@ -465,226 +465,6 @@ main {
   position: relative;
 }
 
-/* Футер */
-footer {
-  padding-top: 46px;
-  background-color: var(--basic-dark);
-}
-
-footer .wrapper {
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-/*Логотип в футере*/
-.footer-logo,
-.footer-logo:visited {
-  width: 163px;
-  margin-top: 18px;
-  margin-bottom: 17px;
-  display: block;
-}
-
-.footer-logo:hover {
-  opacity: 0.6;
-}
-
-.footer-logo:active,
-.footer-logo:focus {
-  opacity: 0.3;
-}
-
-.footer-logo svg path {
-  fill: var(--special-yellow-dark);
-}
-
-/* Меню пользователя в футере */
-.footer-user-menu {
-  margin: 0;
-  padding: 0;
-  grid-column: span 2;
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  color: var(--basic-white);
-  list-style-type: none;
-}
-
-.footer-user-menu li:first-child {
-  margin-right: 24px;
-}
-
-.footer-user-menu li:last-child {
-  margin-left: 40px;
-  margin-right: 0;
-}
-
-.footer-user-menu svg {
-  margin-right: 12px;
-}
-
-.footer-user-menu svg path {
-  fill: var(--footer-yellow);
-}
-
-.footer-user-menu a,
-.footer-user-menu a:visited {
-  display: flex;
-  align-items: center;
-  color: var(--basic-white);
-  opacity: 0.7;
-}
-
-.footer-user-menu a:hover,
-.footer-user-menu a:focus {
-  opacity: unset;
-}
-
-.footer-user-menu a:active {
-  opacity: 0.3;
-}
-
-.logout {
-  margin: 0;
-  margin-right: 40px;
-  padding: 0;
-  background: 0;
-  border: none;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  color: var(--basic-white);
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.logout:hover,
-.logout:focus {
-  opacity: unset;
-}
-
-.logout:active {
-  opacity: 0.3;
-}
-
-/* Навигация по сайту в футере */
-.footer-navbar {
-  margin: 0;
-  margin-bottom: 67px;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: baseline;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  opacity: 0.6;
-  list-style-type: none;
-}
-
-.footer-navbar li {
-  margin-right: 34px;
-}
-
-.footer-navbar a {
-  color: var(--basic-white);
-}
-
-.footer-navbar a:hover,
-.footer-navbar a:focus {
-  opacity: 0.6;
-}
-
-.footer-navbar a:active {
-  opacity: 0.3;
-}
-
-/* Адрес и телефон*/
-.address,
-.phone-number {
-  margin-bottom: 0;
-  padding: 0;
-  align-self: baseline;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  color: var(--basic-white);
-  opacity: 0.6;
-}
-
-/* Декоративный прямоугольник в футере */
-footer .rectangle {
-  width: 80px;
-  height: 7px;
-  margin-top: 12px;
-  background-color: var(--footer-yellow);
-}
-
-/* Иконки соцсетей */
-.social-icons {
-  margin-left: -38px;
-  justify-self: center;
-}
-
-.social-icons ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 32px);
-  grid-column-gap: 20px;
-  list-style-type: none;
-}
-
-.social-icons ul a,
-.social-icons ul a:visited {
-  opacity: 0.3;
-}
-
-.social-icons ul a:hover,
-.social-icons ul a:focus {
-  opacity: 0.6;
-}
-
-.social-icons ul a:active {
-  opacity: 0.1;
-}
-
-.social-icons svg path {
-  fill: var(--basic-white);
-}
-
-/* Логотип HTML Academy */
-
-.htmlacademy-logo {
-  display: block;
-  justify-self: flex-end;
-}
-
-.htmlacademy-logo:hover,
-.htmlacademy-logo:focus {
-  opacity: 0.6;
-}
-
-.htmlacademy-logo:active {
-  opacity: 0.3;
-}
-
-.htmlacademy-logo svg path {
-  fill: var(--special-yellow-dark);
-}
-
 /* Индексная страница */
 .index-page {
   grid-template-columns: 1fr 1fr;
@@ -1196,7 +976,7 @@ a.slider-image {
 .about-us ul {
   margin: 0;
   margin-top: 17px;
-  margin-bottom: 51px;
+  margin-bottom: 53px;
   padding: 0;
 }
 
@@ -1223,7 +1003,7 @@ a.slider-image {
 }
 
 .map {
-  margin-bottom: 66px;
+  margin-bottom: 68px;
 }
 
 .contact-us a.button {
@@ -2052,4 +1832,231 @@ ul.sorting-ascdesc {
 
 .modal-map iframe {
   border: none;
+}
+
+/* Футер */
+footer {
+  padding-top: 46px;
+  background-color: var(--basic-dark);
+}
+
+footer .wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*Логотип в футере*/
+.footer-logo {
+  position: relative;
+}
+
+.footer-logo,
+.footer-logo:visited {
+  width: 163px;
+  margin-top: 18px;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active,
+.footer-logo:focus {
+  opacity: 0.3;
+}
+
+.footer-logo svg path {
+  fill: var(--special-yellow-dark);
+}
+
+/* Декоративный прямоугольник в футере */
+.footer-logo::after {
+  position: absolute;
+  bottom: -139px;
+  content: '';
+  width: 80px;
+  height: 7px;
+  display: block;
+  background-color: var(--footer-yellow);
+}
+
+/* Меню пользователя в футере */
+.footer-user-menu {
+  margin: 0;
+  padding: 0;
+  grid-column: span 2;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  list-style-type: none;
+}
+
+.footer-user-menu li:first-child {
+  margin-right: 24px;
+}
+
+.footer-user-menu li:last-child {
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.footer-user-menu svg {
+  margin-right: 12px;
+}
+
+.footer-user-menu svg path {
+  fill: var(--footer-yellow);
+}
+
+.footer-user-menu a,
+.footer-user-menu a:visited {
+  display: flex;
+  align-items: center;
+  color: var(--basic-white);
+  opacity: 0.7;
+}
+
+.footer-user-menu a:hover,
+.footer-user-menu a:focus {
+  opacity: unset;
+}
+
+.footer-user-menu a:active {
+  opacity: 0.3;
+}
+
+.logout {
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  background: 0;
+  border: none;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.logout:hover,
+.logout:focus {
+  opacity: unset;
+}
+
+.logout:active {
+  opacity: 0.3;
+}
+
+/* Навигация по сайту в футере */
+.footer-navbar {
+  margin: 0;
+  margin-bottom: 67px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: baseline;
+  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  list-style-type: none;
+}
+
+.footer-navbar li {
+  margin-right: 34px;
+}
+
+.footer-navbar a {
+  color: var(--basic-white);
+}
+
+.footer-navbar a:hover,
+.footer-navbar a:focus {
+  opacity: 0.6;
+}
+
+.footer-navbar a:active {
+  opacity: 0.3;
+}
+
+/* Адрес и телефон*/
+.address,
+.phone-number {
+  margin-bottom: 0;
+  padding: 0;
+  align-self: baseline;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  opacity: 0.6;
+}
+
+/* Иконки соцсетей */
+.social-icons {
+  margin-left: -38px;
+  justify-self: center;
+}
+
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  grid-column-gap: 20px;
+  list-style-type: none;
+}
+
+.social-icons ul a,
+.social-icons ul a:visited {
+  opacity: 0.3;
+}
+
+.social-icons ul a:hover,
+.social-icons ul a:focus {
+  opacity: 0.6;
+}
+
+.social-icons ul a:active {
+  opacity: 0.1;
+}
+
+.social-icons svg path {
+  fill: var(--basic-white);
+}
+
+/* Логотип HTML Academy */
+
+.htmlacademy-logo {
+  display: block;
+  justify-self: flex-end;
+}
+
+.htmlacademy-logo:hover,
+.htmlacademy-logo:focus {
+  opacity: 0.6;
+}
+
+.htmlacademy-logo:active {
+  opacity: 0.3;
+}
+
+.htmlacademy-logo svg path {
+  fill: var(--special-yellow-dark);
 }
