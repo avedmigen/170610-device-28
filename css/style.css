@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* Переменные */
-
 :root {
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -20,9 +19,7 @@
   --input-grey-hover: #EAEAEA;
 }
 
-
 /* Локальные шрифты */
-
 @font-face {
   font-family: 'Gilroy Extra Bold';
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
@@ -35,9 +32,7 @@
   font-weight: 300;
 }
 
-
 /* Глобальные стили */
-
 *,
 *::before,
 *::after {
@@ -130,9 +125,7 @@ input[type='radio'].visually-hidden {
   opacity: 0.3;
 }
 
-
 /* Хедер */
-
 header .wrapper {
   position: relative;
   padding-top: 28px;
@@ -146,9 +139,7 @@ header .wrapper {
   background-color: var(--special-yellow);
 }
 
-
 /* Логотип в шапке */
-
 .logo,
 .logo:visited {
   position: absolute;
@@ -171,9 +162,7 @@ header .wrapper {
   height: 35px;
 }
 
-
 /*Форма поиска в шапке*/
-
 .search-form {
   position: relative;
   width: 440px;
@@ -266,9 +255,7 @@ header .wrapper {
   color: var(--basic-white);
 }
 
-
 /* Меню пользователя */
-
 .user-menu {
   position: relative;
   top: 5px;
@@ -347,9 +334,7 @@ header .wrapper {
   opacity: 0.3;
 }
 
-
 /* Главное навигационное меню */
-
 .navbar {
   width: 100%;
 }
@@ -428,7 +413,6 @@ header .wrapper {
 
 
 /* Выпадающее меню */
-
 .submenu {
   position: absolute;
   right: -60px;
@@ -479,16 +463,13 @@ header .wrapper {
   opacity: 0.3;
 }
 
-
 /* Главный контент */
 
 main {
   position: relative;
 }
 
-
 /* Футер */
-
 footer {
   padding-top: 46px;
   background-color: var(--basic-dark);
@@ -501,9 +482,7 @@ footer .wrapper {
   align-items: flex-start;
 }
 
-
 /*Логотип в футере*/
-
 .footer-logo,
 .footer-logo:visited {
   width: 163px;
@@ -525,9 +504,7 @@ footer .wrapper {
   fill: var(--special-yellow-dark);
 }
 
-
 /* Меню пользователя в футере */
-
 .footer-user-menu {
   margin: 0;
   padding: 0;
@@ -601,9 +578,7 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-
 /* Навигация по сайту в футере */
-
 .footer-navbar {
   margin: 0;
   margin-bottom: 67px;
@@ -639,9 +614,7 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-
 /* Адрес и телефон*/
-
 .address,
 .phone-number {
   margin-bottom: 0;
@@ -655,9 +628,7 @@ footer .wrapper {
   opacity: 0.6;
 }
 
-
 /* Декоративный прямоугольник в футере */
-
 footer .rectangle {
   width: 80px;
   height: 7px;
@@ -665,9 +636,7 @@ footer .rectangle {
   background-color: var(--footer-yellow);
 }
 
-
 /* Иконки соцсетей */
-
 .social-icons {
   margin-left: -38px;
   justify-self: center;
@@ -700,7 +669,6 @@ footer .rectangle {
   fill: var(--basic-white);
 }
 
-
 /* Логотип HTML Academy */
 
 .htmlacademy-logo {
@@ -721,9 +689,7 @@ footer .rectangle {
   fill: var(--special-yellow-dark);
 }
 
-
 /* Индексная страница */
-
 .index-page {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content;
@@ -738,9 +704,7 @@ footer .rectangle {
   color: var(--basic-black);
 }
 
-
 /* Слайдер Топ-3 по продажам */
-
 .slider {
   margin-bottom: 67px;
   grid-column: span 2;
@@ -847,7 +811,6 @@ a.slider-image {
 
 
 /* Характеристики товара в слайдере */
-
 .slider-props {
   width: 448px;
   display: flex;
@@ -884,18 +847,14 @@ a.slider-image {
   color: var(--basic-black);
 }
 
-
 /* Ссылка - кнопка подробнее в слайдере */
-
 .slider-text a.button {
   width: 220px;
   margin-left: 3px;
   margin-bottom: 52px;
 }
 
-
 /* Переключатели слайдов */
-
 .slider-controls {
   position: absolute;
   right: 87px;
@@ -919,9 +878,7 @@ a.slider-image {
   background-repeat: no-repeat;
 }
 
-
 /* Популярные товары */
-
 .popular {
   position: relative;
   margin-bottom: 67px;
@@ -971,9 +928,6 @@ a.slider-image {
   height: 160px;
   display: block;
   margin-bottom: 38px;
-  background-color: var(--special-yellow-light);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .popular-title > a:hover::before,
@@ -1010,7 +964,6 @@ a.slider-image {
 }
 
 /* Блок Наши услуги*/
-
 .services {
   margin-bottom: 91px;
   border-top: 115px solid var(--basic-white);
@@ -1143,9 +1096,7 @@ a.slider-image {
   background-color: var(--basic-black);
 }
 
-
 /* Блок Наши партнеры */
-
 .logotypes {
   grid-column: span 2;
   margin-bottom: 80px;
@@ -1174,7 +1125,6 @@ a.slider-image {
 
 
 /* Блок О нас */
-
 .info {
   grid-column: span 2;
 }
@@ -1191,7 +1141,7 @@ a.slider-image {
   margin-bottom: 39px;
   padding: 0;
   display: block;
-  font-family: 'Gilroy Extra Bold';
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1230,9 +1180,7 @@ a.slider-image {
   top: -2px;
 }
 
-
 /* Блок О нас */
-
 .about-us {
   position: relative;
   width: 50%;
@@ -1264,9 +1212,7 @@ a.slider-image {
   padding-right: 18px;
 }
 
-
 /* Блок Контакты */
-
 .contact-us {
   position: relative;
   width: 50%;
@@ -1288,9 +1234,7 @@ a.slider-image {
   padding-right: 38px;
 }
 
-
 /* Страница каталога товаров */
-
 .inner-page {
   position: relative;
 }
@@ -1308,7 +1252,6 @@ a.slider-image {
 }
 
 /* Хлебные крошки */
-
 .breadcrumbs {
   position: relative;
   grid-column: span 2;
@@ -1359,7 +1302,6 @@ a.slider-image {
 }
 
 /* Блоки с фильтрами и карточками товаров */
-
 .nowrap {
   display: grid;
   grid-template-columns: 1fr 328px 832px 1fr;
@@ -1367,28 +1309,24 @@ a.slider-image {
 
 .left-column {
   position: relative;
-
   grid-column: 1/3;
   display: grid;
-
   border-top: 70px solid #DCDCDC;
   background-color: var(--basic-grey-light);
 }
 
 .right-column {
   position: relative;
-
   border-top: 70px solid var(--basic-grey-light);
   grid-column: 3/5;
   background-color: var(--basic-white);
 }
+
 /* Фильтр по характеристикам товаров */
 .product-filter {
   position: absolute;
   top: -45px;
-
   padding-right: 68px;
-
   grid-column: 2;
   justify-self: end;
 }
@@ -1398,7 +1336,6 @@ a.slider-image {
   margin-right: 121px;
   margin-bottom: 95px;
   padding: 0;
-
   font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 16px;
@@ -1532,7 +1469,6 @@ a.slider-image {
 }
 
 /* Unchecked*/
-
 .check-input+.check-box:hover {
   opacity: 0.6;
 }
@@ -1542,7 +1478,6 @@ a.slider-image {
 }
 
 /* Checked */
-
 .check-input:checked+.check-box {
   background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
 }
@@ -1556,13 +1491,11 @@ a.slider-image {
 }
 
 /* Focus*/
-
 .check-input:focus+.check-box {
   outline: 2px solid var(--special-yellow);
 }
 
 /* Disabled*/
-
 .check-input:disabled+.check-box {
   opacity: 0.25;
 }
@@ -1576,7 +1509,6 @@ a.slider-image {
 }
 
 /* Радио кнопки */
-
 .radio {
   margin-top: -5px;
   margin-bottom: 17px;
@@ -1596,7 +1528,6 @@ a.slider-image {
 }
 
 /* Unchecked*/
-
 .radio-input+.check-box:hover {
   opacity: 0.6;
 }
@@ -1606,7 +1537,6 @@ a.slider-image {
 }
 
 /* Checked */
-
 .radio-input:checked+.radio-button {
   background: var(--basic-grey-light) url('../img/misc/radio-dot-bg.svg') center center no-repeat;
 }
@@ -1620,13 +1550,11 @@ a.slider-image {
 }
 
 /* Focus*/
-
 .radio-input:focus+.radio-button {
   outline: 2px solid var(--special-yellow);
 }
 
 /* Disabled*/
-
 .radio-input:disabled+.radio-button {
   opacity: 0.25;
 }
@@ -1652,7 +1580,7 @@ a.slider-image {
 
 .sorting h2,
 .sorting span {
-  font-family: 'Gilroy Extra Bold';
+  font-family: 'Gilroy Extra Bold', serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1699,7 +1627,6 @@ a.slider-image {
 }
 
 /* Сортировка по возрастанию и убыванию */
-
 ul.sorting-ascdesc {
   padding-right: 4px;
   flex-grow: 1;
@@ -1741,7 +1668,6 @@ ul.sorting-ascdesc {
 
 
 /* Карточка товара */
-
 .goods-item {
   position: relative;
   margin-top: 21px;
@@ -1831,17 +1757,12 @@ ul.sorting-ascdesc {
 
 
 /* Кнопки при наведении на карточку товара*/
-
-
 /* В корзину*/
-
 .goods-item-controls .button {
   width: 100%;
 }
 
-
 /* Добавить к сравнению */
-
 .add-to-comparison {
   margin: 0;
   padding: 0;
@@ -1868,7 +1789,6 @@ ul.sorting-ascdesc {
 
 
 /* Навигация по страницам товаров */
-
 .goods-controls {
   width: 760px;
   margin-top: 12px;
@@ -1940,9 +1860,7 @@ ul.sorting-ascdesc {
   opacity: unset;
 }
 
-
 /* Модалки */
-
 .modal {
   position: fixed;
   top: 0;
@@ -1996,9 +1914,7 @@ ul.sorting-ascdesc {
   background-color: var(--special-yellow-dark);
 }
 
-
 /* Контактная форма Напишите нам*/
-
 .modal-contact-form {
   width: 960px;
   top: 24px;
@@ -2121,9 +2037,7 @@ ul.sorting-ascdesc {
   background: transparent url('../img/misc/button-rectangle-bg-light.svg') center repeat-x;
 }
 
-
 /* Увеличенная карта проезда */
-
 .modal-map {
   top: 24px;
   bottom: auto;
