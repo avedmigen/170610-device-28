@@ -261,15 +261,7 @@ header .wrapper {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  color: var(--basic-black);
   list-style-type: none;
-
-  outline: 2px solid rgba(242, 48, 30, 0.7);
-  outline-offset: -1px;
 }
 
 .login {
@@ -278,8 +270,6 @@ header .wrapper {
 
 .user-menu-item {
   margin-left: 19px;
-  outline: 2px solid rgba(63, 206, 18, 0.7);
-  outline-offset: -1px;
 }
 
 .user-menu-item:last-child {
@@ -290,6 +280,12 @@ header .wrapper {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black);
 }
 
 .user-menu-link,
@@ -355,7 +351,7 @@ header .wrapper {
   width: 100%;
 }
 
-.mainmenu {
+.mainmenu-list {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -364,21 +360,21 @@ header .wrapper {
   list-style-type: none;
 }
 
-.mainmenu>li:first-child {
+.mainmenu-item:first-child {
   flex-grow: 1;
 }
 
-.mainmenu>li:first-child+li {
+.mainmenu-item:first-child+li {
   margin-right: 35px;
 }
 
-.mainmenu>li:last-child {
+.mainmenu-item:last-child {
   margin-left: 108px;
   margin-right: -3px;
 }
 
-.mainmenu>li>a,
-.mainmenu>li>a:visited {
+.mainmenu-item > a,
+.mainmenu-item > a:visited {
   margin: 0;
   margin-bottom: 27px;
   padding: 0;
@@ -392,7 +388,7 @@ header .wrapper {
   color: var(--basic-black);
 }
 
-.mainmenu>li:first-child>a {
+.mainmenu-item:first-child > a {
   letter-spacing: 0.1em;
 }
 
@@ -593,7 +589,7 @@ a.slider-image {
   background-color: var(--basic-white);
 }
 
-.slider-text>p {
+.slider-text > p {
   padding: 0;
   padding-right: 75px;
   margin-top: 0;
@@ -1866,7 +1862,8 @@ footer {
 
 footer .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: max-content 1fr max-content;
+  justify-content: space-between;
   align-items: start;
 }
 
@@ -1912,14 +1909,103 @@ footer .wrapper {
 .footer-user-menu {
   margin: 0;
   padding: 0;
-  grid-column: 3;
-
-  outline: 2px solid rgba(197, 187, 7, 0.7);
-  outline-offset: -1px;
+  grid-column: span 2;
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style-type: none;
 }
 
+.footer-user-menu item {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footer-user-menu .user-menu-item,
+.footer-user-menu .user-menu-item:last-child {
+  margin-left: 41px;
+}
+
+.footer-user-menu .user-menu-link {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.footer-user-menu .user-menu-link,
+.footer-user-menu .user-menu-link:visited {
+  color: var(--basic-white);
+  opacity: 0.7;
+}
+
+.footer-user-menu .user-menu-link:hover,
+.footer-user-menu .user-menu-link:focus {
+  opacity: 0.6;
+}
+
+.footer-user-menu .user-menu-link:active {
+  opacity: 0.3;
+}
+
+.footer-user-menu .user-menu-link svg {
+  margin: auto;
+  margin-right: 12px;
+}
+
+.footer-user-menu .user-menu-link svg path {
+  fill: var(--footer-yellow);
+}
+
+/* Кнопка выхода из личного кабинета */
+.footer-user-menu .logout {
+  padding-left: 2px;
+}
+
+.footer-user-menu .logout:hover,
+.footer-user-menu .logout:focus {
+  opacity: unset;
+}
+
+.footer-user-menu .logout:active {
+  opacity: 0.3;
+}
+
+.footer-user-menu .logout-button {
+  margin: 0;
+  padding: 0;
+  background: 0;
+  border: none;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.footer-user-menu .logout-button:hover,
+.footer-user-menu .logout-button:focus {
+  opacity: 0.6;
+}
+
+.footer-user-menu .logout-button:active {
+  opacity: 0.3;
+}
 
 /* Адрес и телефон*/
+.address {
+  grid-column: 1;
+}
+
+.phone-number {
+  grid-column: 3;
+  justify-self: end;
+}
 
 .address,
 .phone-number {
@@ -1934,22 +2020,15 @@ footer .wrapper {
   opacity: 0.6;
 }
 
-.address {
-  grid-column: 1;
-}
-
-.phone-number {
-  grid-column: 3;
-  justify-self: end;
-}
-
 /* Навигация по сайту в футере */
 .footer-navbar {
   margin: 0;
   margin-bottom: 67px;
   padding: 0;
+  grid-column: 2;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-self: baseline;
   font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
@@ -1982,8 +2061,9 @@ footer .wrapper {
 /* Иконки соцсетей */
 .social-icons {
   margin-left: -38px;
-  justify-self: center;
   grid-column: 2;
+  justify-self: center;
+  justify-content: center;
 }
 
 .social-icons ul {
@@ -2014,7 +2094,6 @@ footer .wrapper {
 }
 
 /* Логотип HTML Academy */
-
 .htmlacademy-logo {
   display: block;
   justify-self: flex-end;
