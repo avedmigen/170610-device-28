@@ -112,13 +112,13 @@ input[type='radio'].visually-hidden {
   vertical-align: middle;
   cursor: pointer;
   background: transparent url('../img/misc/button-rectangle-bg.svg') center repeat-x;
-  transition: all 500ms;
+  transition: background 500ms;
 }
 
 .button:hover {
   background-image: none;
   background-color: var(--special-yellow-dark);
-  transition: all 500ms;
+  transition: background 500ms;
 }
 
 .button:focus {
