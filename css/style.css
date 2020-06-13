@@ -2008,7 +2008,7 @@ footer .wrapper {
 }
 
 .address,
-.phone-number {
+.phone-number a {
   margin-bottom: 0;
   padding: 0;
   align-self: baseline;
