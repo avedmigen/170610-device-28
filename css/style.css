@@ -255,7 +255,7 @@ header .wrapper {
 .user-menu {
   width: 50%;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 12px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -1376,7 +1376,6 @@ a.slider-image {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -1431,8 +1430,7 @@ a.slider-image {
 /* Сортировка по возрастанию и убыванию */
 ul.sorting-ascdesc {
   padding-right: 4px;
-  flex-grow: 1;
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .sorting-ascdesc li {
@@ -1860,7 +1858,7 @@ ul.sorting-ascdesc {
 
 /* Футер */
 footer {
-  padding-top: 46px;
+  padding-top: 42px;
   background-color: var(--basic-dark);
 }
 
@@ -1872,15 +1870,12 @@ footer .wrapper {
 }
 
 /*Логотип в футере*/
-.footer-logo {
-  position: relative;
-  grid-column: 1;
-}
-
 .footer-logo,
 .footer-logo:visited {
+  position: relative;
+  grid-column: 1;
   width: 163px;
-  margin-top: 18px;
+  margin-top: 21px;
   margin-bottom: 17px;
   display: block;
 }
