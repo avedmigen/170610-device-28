@@ -1633,7 +1633,7 @@ ul.sorting-ascdesc {
   margin-right: 30px;
 }
 
-.goods-controls ul {
+.page-numbers {
   margin: 0;
   padding: 0;
   display: flex;
@@ -1641,21 +1641,21 @@ ul.sorting-ascdesc {
   list-style-type: none;
 }
 
-.goods-controls ul li {
+.page-numbers li {
   margin-right: 30px;
 }
 
-.goods-controls ul a,
-.goods-controls ul a:visited {
+.page-numbers a,
+.page-numbers a:visited {
   opacity: 0.3;
 }
 
-.goods-controls ul a:hover,
-.goods-controls ul a:focus {
+.page-numbers a:hover,
+.page-numbers a:focus {
   opacity: 0.6;
 }
 
-.goods-controls ul a:active {
+a.page-current {
   opacity: unset;
 }
 
