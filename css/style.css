@@ -1117,6 +1117,7 @@ a.slider-image {
 
 .right-column {
   position: relative;
+  padding-left: 72px;
   border-top: 70px solid var(--basic-grey-light);
   grid-column: 3/5;
   background-color: var(--basic-white);
@@ -1369,13 +1370,14 @@ a.slider-image {
 
 /* Сортировка товаров */
 .sorting {
+  width: 760px;
   position: absolute;
   top: -58px;
-  padding-left: 72px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: baseline;
-  grid-column: span 4;
 }
 
 .sorting h2,
@@ -1456,10 +1458,10 @@ ul.sorting-ascdesc {
 
 /* Карточки товаров */
 .goods {
-  margin: 0 auto;
+  width: 760px;
+  margin: 0;
   padding-top: 48px;
   padding-bottom: 78px;
-  padding-left: 72px;
   grid-column: span 2;
   display: flex;
   flex-direction: row;
@@ -1590,7 +1592,7 @@ ul.sorting-ascdesc {
 
 /* Навигация по страницам товаров */
 .goods-controls {
-  width: 760px;
+  width: 100%;
   margin-top: 12px;
   display: flex;
   flex-direction: row;
