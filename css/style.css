@@ -1040,14 +1040,14 @@ a.slider-image {
 }
 
 .wrapper-options {
-  margin-bottom: 46px;
+  margin-bottom: 50px;
   padding-left: 60px;
   padding-top: 44px;
 }
 
 .wrapper-options h1 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -1064,22 +1064,26 @@ a.slider-image {
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 41px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: baseline;
 }
 
 .breadcrumbs li::after {
+  position: relative;
+  top: 5px;
+  left: 13px;
   content: "";
   width: 12px;
   height: 12px;
   display: block;
-  position: absolute;
-  top: 10px;
-  left: -27px;
   background: var(--basic-white) url('../img/misc/icon_arrow_nav.svg') center center no-repeat;
 }
 
-.breadcrumbs li:first-child::after {
-  content: none;
+.breadcrumbs li:last-child::after {
+  content: unset;
 }
 
 .breadcrumbs a,
