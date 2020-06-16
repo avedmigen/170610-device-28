@@ -706,17 +706,19 @@ a.slider-image {
   letter-spacing: 0.05em;
 }
 
-.popular-title a,
-.popular-title a:hover {
+.popular-list-item a,
+.popular-list-item a:hover {
   font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
   color: var(--basic-black);
   order: 1;
 }
 
-.popular-title a:active,
-.popular-title a:focus {
+.popular-list-item a:active,
+.popular-list-item a:focus {
   opacity: 0.3;
 }
 
