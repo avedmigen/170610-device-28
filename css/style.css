@@ -1470,7 +1470,7 @@ ul.sorting-ascdesc {
 .goods-item {
   position: relative;
   margin-top: 21px;
-  margin-bottom: 21px;
+  margin-bottom: 27px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1485,15 +1485,16 @@ ul.sorting-ascdesc {
 
 .goods-item h2 {
   margin: 0;
+  padding: 0;
   flex: 1;
-}
-
-.goods-item h2 a {
   font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
+}
+
+.goods-item h2 a {
   color: var(--basic-black);
 }
 
@@ -1520,7 +1521,7 @@ ul.sorting-ascdesc {
   width: 360px;
   height: 380px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding: 0;
   display: block;
   order: -1;
@@ -1535,6 +1536,7 @@ ul.sorting-ascdesc {
 
 .goods-item p {
   margin: 0;
+  padding: 0;
   font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -1586,11 +1588,10 @@ ul.sorting-ascdesc {
   opacity: 0.2;
 }
 
-
 /* Навигация по страницам товаров */
 .goods-controls {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 13px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1612,7 +1613,7 @@ ul.sorting-ascdesc {
 .page-direction,
 .page-direction:visited {
   width: 60px;
-  padding: 25px 30px;
+  padding: 25px;
   display: block;
 }
 
@@ -1630,7 +1631,7 @@ ul.sorting-ascdesc {
 }
 
 .page-direction:first-child {
-  margin-right: 30px;
+  padding-left: 30px;
 }
 
 .page-numbers {
@@ -1638,11 +1639,16 @@ ul.sorting-ascdesc {
   padding: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .page-numbers li {
   margin-right: 30px;
+}
+
+.page-numbers li:last-child {
+  margin-right: 0;
 }
 
 .page-numbers a,
