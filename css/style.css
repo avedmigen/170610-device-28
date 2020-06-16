@@ -774,6 +774,17 @@ a.slider-image {
   list-style-type: none;
 }
 
+.service-list::after {
+  position: absolute;
+  top: -78px;
+  left: 100%;
+  content: '';
+  width: 7px;
+  height: 320px;
+  display: block;
+  background-color: var(--basic-black);
+}
+
 .service-list li {
   width: 277px;
   margin-bottom: 21px;
