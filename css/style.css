@@ -701,25 +701,12 @@ a.slider-image {
 .popular-title {
   margin: 0;
   padding: 0;
-
-  line-height: 22px;
-  letter-spacing: 0.05em;
-}
-
-.popular-list-item a,
-.popular-list-item a:hover {
   font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
   color: var(--basic-black);
-  order: 1;
-}
-
-.popular-list-item a:active,
-.popular-list-item a:focus {
-  opacity: 0.3;
 }
 
 .popular-title::before {
@@ -728,38 +715,41 @@ a.slider-image {
   height: 160px;
   display: block;
   margin-bottom: 38px;
+  background-color: var(--special-yellow-light);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.virtual-reality::before {
+  background-image: url('../img/popular/virtual-reality.svg');
+}
+
+.monopods-for-selfies::before {
+  background-image: url('../img/popular/monopods-for-selfies.svg');
+}
+
+.action-cameras::before {
+  background-image: url('../img/popular/action-cameras.svg');
+}
+
+.fitness-bracelets::before {
+  background-image: url('../img/popular/fitness-bracelets.svg');
+}
+
+.smartwatch::before {
+  background-image: url('../img/popular/smartwatch.svg');
+}
+
+.quads::before {
+  background-image: url('../img/popular/quadcopters.svg');
+}
+
+.popular-link:active .popular-title {
+  opacity: 0.3;
 }
 
 .popular-title:hover::before {
   background-color: var(--special-yellow-dark);
-}
-
-.popular-title:active::before {
-  opacity: 0.3;
-}
-
-.virtual-reality::before {
-  background: var(--special-yellow-light) url('../img/popular/virtual-reality.svg') center center no-repeat;
-}
-
-.monopods-for-selfies::before {
-  background: var(--special-yellow-light) url('../img/popular/monopods-for-selfies.svg') center center no-repeat;
-}
-
-.action-cameras::before {
-  background: var(--special-yellow-light) url('../img/popular/action-cameras.svg') center center no-repeat;
-}
-
-.fitness-bracelets::before {
-  background: var(--special-yellow-light) url('../img/popular/fitness-bracelets.svg') center center no-repeat;
-}
-
-.smartwatch::before {
-  background: var(--special-yellow-light) url('../img/popular/smartwatch.svg') center center no-repeat;
-}
-
-.quads::before {
-  background: var(--special-yellow-light) url('../img/popular/quadcopters.svg') center center no-repeat;
 }
 
 /* Блок Наши услуги*/
