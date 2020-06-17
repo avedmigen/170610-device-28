@@ -498,9 +498,12 @@ main {
 
 /* Слайдер Топ-3 по продажам */
 .slider {
-  position: relative;
   margin-bottom: 67px;
   grid-column: span 2;
+}
+
+.slider .wrapper {
+  position: relative;
 }
 
 .slider-list {
@@ -650,7 +653,7 @@ a.slider-image {
 /* Переключатели слайдов */
 .slider-controls {
   position: absolute;
-  right: 181px;
+  right: 87px;
   bottom: 168px;
 }
 
