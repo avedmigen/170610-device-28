@@ -6,10 +6,11 @@
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-grey: #464646;
-  --basic-half-grey: #7E7E7E;
   --basic-grey-light: #E5E5E5;
+  --basic-half-grey-light: #EBEBEB;
   --special-yellow: #F7E296;
   --special-green: #91C92F;
+  --special-grey: #D9D9D9;
   --special-grey-light: #A6A6A6;
   --special-yellow-light: #F7E296;
   --special-yellow-dark: #F0C52E;
@@ -836,7 +837,7 @@ a.slider-image {
 }
 
 .button-current:hover {
-  color: var(--special-black);
+  color: var(--basic-black);
 }
 
 .service-description {
@@ -1650,7 +1651,7 @@ ul.sorting-ascdesc {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  background-color: #EBEBEB;
+  background-color: var(--basic-half-grey-light);
 }
 
 .goods-controls a {
@@ -1677,11 +1678,11 @@ ul.sorting-ascdesc {
 
 .page-direction:hover,
 .page-direction:focus {
-  background: #D9D9D9;
+  background: var(--special-grey);
 }
 
 .page-direction:active {
-  background: #D9D9D9;
+  background: var(--special-grey);
 }
 
 .page-direction:first-child {
@@ -2164,21 +2165,21 @@ footer .wrapper {
 }
 
 /* Логотип HTML Academy */
-.htmlacademy-logo {
+.htmlacademy-logo-link {
   display: block;
   justify-self: flex-end;
   grid-column: 3;
 }
 
-.htmlacademy-logo:hover,
-.htmlacademy-logo:focus {
+.htmlacademy-logo-link:hover,
+.htmlacademy-logo-link:focus {
   opacity: 0.6;
 }
 
-.htmlacademy-logo:active {
+.htmlacademy-logo-link:active {
   opacity: 0.3;
 }
 
-.htmlacademy-logo svg path {
+.htmlacademy-logo-image path {
   fill: var(--special-yellow-dark);
 }
