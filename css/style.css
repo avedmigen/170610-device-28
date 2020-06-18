@@ -372,7 +372,6 @@ header .wrapper {
   margin-left: 19px;
 }
 
-
 .mainmenu-item:first-child {
   min-width: 50%;
   margin-left: 0;
@@ -486,7 +485,6 @@ header .wrapper {
 }
 
 /* Главный контент */
-
 main {
   position: relative;
 }
@@ -687,7 +685,7 @@ a.slider-image {
   background-color: var(--basic-white);
 }
 
-.slider-controls button.slide-current {
+.slide-current {
   background-image: url('../img/misc/slider-dot-bg.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -828,13 +826,17 @@ a.slider-image {
   padding-left: 13px;
 }
 
-.service-list button.active-button {
+.button-current {
   width: 277px;
   padding-right: 127px;
   color: var(--special-yellow);
   border-radius: 0;
   background-image: none;
   background-color: var(--basic-black);
+}
+
+.button-current:hover {
+  color: var(--special-black);
 }
 
 .service-description {
@@ -965,7 +967,6 @@ a.slider-image {
   opacity: unset;
   filter: unset;
 }
-
 
 /* Блок О нас */
 .info {
@@ -1319,42 +1320,42 @@ a.slider-image {
 }
 
 /* Unchecked*/
-.check-input+.check-box:hover {
+.check-input + .check-box:hover {
   opacity: 0.6;
 }
 
-.check-input+.check-box:active {
+.check-input + .check-box:active {
   background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
 }
 
 /* Checked */
-.check-input:checked+.check-box {
+.check-input:checked + .check-box {
   background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
 }
 
-.check-input:checked+.check-box:hover {
+.check-input:checked + .check-box:hover {
   opacity: 0.6;
 }
 
-.check-input:checked+.check-box:active {
+.check-input:checked + .check-box:active {
   background: none;
 }
 
 /* Focus*/
-.check-input:focus+.check-box {
+.check-input:focus + .check-box {
   outline: 2px solid var(--special-yellow);
 }
 
 /* Disabled*/
-.check-input:disabled+.check-box {
+.check-input:disabled + .check-box {
   opacity: 0.25;
 }
 
-.check-input:disabled+.check-box+span {
+.check-input:disabled + .check-box + span {
   color: var(--special-grey-light);
 }
 
-.check-input:checked:disabled+.check-box {
+.check-input:checked:disabled + .check-box {
   opacity: 0.25;
 }
 
@@ -1378,42 +1379,42 @@ a.slider-image {
 }
 
 /* Unchecked*/
-.radio-input+.check-box:hover {
+.radio-input + .check-box:hover {
   opacity: 0.6;
 }
 
-.radio-input+.check-box:active {
+.radio-input + .check-box:active {
   background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
 }
 
 /* Checked */
-.radio-input:checked+.radio-button {
+.radio-input:checked + .radio-button {
   background: var(--basic-grey-light) url('../img/misc/radio-dot-bg.svg') center center no-repeat;
 }
 
-.radio-input:checked+.radio-button:hover {
+.radio-input:checked + .radio-button:hover {
   opacity: 0.6;
 }
 
-.radio-input:checked+.radio-button:active {
+.radio-input:checked + .radio-button:active {
   background: none;
 }
 
 /* Focus*/
-.radio-input:focus+.radio-button {
+.radio-input:focus + .radio-button {
   outline: 2px solid var(--special-yellow);
 }
 
 /* Disabled*/
-.radio-input:disabled+.radio-button {
+.radio-input:disabled + .radio-button {
   opacity: 0.25;
 }
 
-.radio-input:disabled+.radio-button+span {
+.radio-input:disabled + .radio-button + span {
   color: var(--special-grey-light);
 }
 
-.radio-input:checked:disabled+.radio-button {
+.radio-input:checked:disabled + .radio-button {
   opacity: 0.25;
 }
 
@@ -1547,7 +1548,7 @@ ul.sorting-ascdesc {
   letter-spacing: 0.05em;
 }
 
-.goods-item h2 a {
+.item-title a {
   color: var(--basic-black);
 }
 
@@ -1609,8 +1610,8 @@ ul.sorting-ascdesc {
   align-items: center;
 }
 
-
 /* Кнопки при наведении на карточку товара*/
+
 /* В корзину*/
 .goods-item-controls .button {
   width: 100%;
@@ -1718,7 +1719,7 @@ a.page-current {
   opacity: unset;
 }
 
-/* Модалки */
+/* Модальные окна */
 .modal {
   position: fixed;
   top: 0;
@@ -1980,7 +1981,7 @@ footer .wrapper {
   margin-top: 4px;
 }
 
-.footer-user-menu item {
+.footer-user-menu .user-menu-item {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -2013,12 +2014,12 @@ footer .wrapper {
   opacity: 0.3;
 }
 
-.footer-user-menu .user-menu-link svg {
+.user-menu-item-icon {
   margin: auto;
   margin-right: 12px;
 }
 
-.footer-user-menu .user-menu-link svg path {
+.user-menu-item-icon path {
   fill: var(--footer-yellow);
 }
 
@@ -2135,7 +2136,7 @@ footer .wrapper {
   justify-content: center;
 }
 
-.social-icons ul {
+.social-icons-list {
   margin: 0;
   padding: 0;
   display: grid;
@@ -2144,21 +2145,21 @@ footer .wrapper {
   list-style-type: none;
 }
 
-.social-icons ul a,
-.social-icons ul a:visited {
+.social-icons-list a,
+.social-icons-list a:visited {
   opacity: 0.3;
 }
 
-.social-icons ul a:hover,
-.social-icons ul a:focus {
+.social-icons-list a:hover,
+.social-icons-list a:focus {
   opacity: 0.6;
 }
 
-.social-icons ul a:active {
+.social-icons-list a:active {
   opacity: 0.1;
 }
 
-.social-icons svg path {
+.social-icon path {
   fill: var(--basic-white);
 }
 
