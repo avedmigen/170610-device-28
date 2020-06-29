@@ -84,7 +84,7 @@ input[type='radio'].visually-hidden {
 }
 
 .wrapper h1 {
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -97,7 +97,7 @@ input[type='radio'].visually-hidden {
   padding: 9px 10px;
   border: none;
   display: inline-block;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -107,7 +107,10 @@ input[type='radio'].visually-hidden {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  background: transparent url('../img/misc/button-rectangle-bg.svg') center repeat-x;
+  background-color: transparent;
+  background-image: url('../img/misc/button-rectangle-bg.svg');
+  background-position: center center;
+  background-repeat: repeat-x;
   transition: background 500ms;
 }
 
@@ -163,7 +166,7 @@ header .wrapper {
   height: 35px;
 }
 
-/*Форма поиска в шапке*/
+/* Форма поиска в шапке */
 .search-form {
   position: relative;
   width: 440px;
@@ -186,7 +189,10 @@ header .wrapper {
   top: 19px;
   width: 16px;
   height: 16px;
-  background: var(--special-yellow) url('../img/misc/icon_search.svg') center center no-repeat;
+  background-color: var(--special-yellow);
+  background-image: url('../img/misc/icon_search.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .search-form input {
@@ -216,43 +222,50 @@ header .wrapper {
   opacity: unset;
 }
 
+/* Кнопка Найти */
 .search-form button {
   width: 84px;
   padding: 15px 17px;
-  border: 2px solid var(--special-yellow);
   border-radius: unset;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
+  border: none;
   color: var(--special-yellow);
-  background-color: inherit;
-  cursor: pointer;
+  background-color: var(--special-yellow);
 }
 
-.search-form button:hover,
 .search-form button:focus {
-  color: var(--basic-white);
-  background-color: var(--basic-black);
-}
-
-.search-form button:active {
-  opacity: 0.3;
+  outline: none;
+  border: 2px solid var(--special-yellow);
 }
 
 .search-form input:focus+button,
-.search-form input:valid+button {
+.search-form input:valid+button:active {
   border: 2px solid var(--basic-black);
   color: var(--basic-black);
+  cursor: pointer;
 }
 
 .search-form input:focus+button:hover,
 .search-form input:valid+button:hover {
+  border: 2px solid var(--basic-black);
   color: var(--basic-white);
+  background-color: var(--basic-black);
+  cursor: pointer;
 }
 
-/* Меню пользователя */
+.search-form input:valid+button:active,
+.search-form input:invalid+button:active {
+  border: 2px solid var(--basic-black);
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-black);
+  cursor: pointer;
+}
+
+  /* Меню пользователя */
 .user-menu {
   width: 50%;
   margin: 0;
@@ -286,7 +299,6 @@ header .wrapper {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -332,7 +344,7 @@ header .wrapper {
 .logout-button {
   margin: 0;
   padding: 0;
-  background: 0;
+  background: none;
   border: none;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
@@ -390,7 +402,7 @@ header .wrapper {
   margin-bottom: 27px;
   padding: 0;
   display: block;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -427,7 +439,7 @@ header .wrapper {
   display: block;
   width: 16px;
   height: 2px;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .product-catalog::after {
@@ -497,7 +509,7 @@ main {
 }
 
 .index-page h2 {
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -540,7 +552,7 @@ ul.slider-list {
   top: -110px;
   z-index: 1;
   display: inline-block;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
@@ -593,7 +605,7 @@ a.slider-image {
   padding: 0;
   margin: 0;
   margin-bottom: 26px;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -622,7 +634,6 @@ a.slider-image {
   line-height: 20px;
   color: var(--basic-black);
 }
-
 
 /* Характеристики товара в слайдере */
 .slider-props {
@@ -688,7 +699,7 @@ a.slider-image {
 
 .slide-current {
   background-image: url('../img/misc/slider-dot-bg.svg');
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -729,7 +740,7 @@ a.slider-image {
 .popular-title {
   margin: 0;
   padding: 0;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -832,8 +843,8 @@ a.slider-image {
   padding-right: 127px;
   color: var(--special-yellow);
   border-radius: 0;
-  background-image: none;
   background-color: var(--basic-black);
+  background-image: none;
 }
 
 .button-current:hover {
@@ -860,7 +871,7 @@ a.slider-image {
   margin-bottom: 10px;
   padding: 0;
   display: block;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -874,7 +885,7 @@ a.slider-image {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
-  line-height: 2;
+  line-height: 28px;
   letter-spacing: 0.1em;
   color: var(--basic-black);
 }
@@ -891,7 +902,10 @@ a.slider-image {
   width: 136px;
   height: 164px;
   display: block;
-  background: transparent url('../img/services-bg/delivery.png') 0 0 no-repeat;
+  background-color: transparent;
+  background-image: url('../img/services-bg/delivery.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .warranty {
@@ -906,7 +920,10 @@ a.slider-image {
   width: 171px;
   height: 195px;
   display: block;
-  background: transparent url('../img/services-bg/warranty.png') 0 0 no-repeat;
+  background-color: transparent;
+  background-image: url('../img/services-bg/warranty.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .credit {
@@ -921,7 +938,10 @@ a.slider-image {
   width: 156px;
   height: 188px;
   display: block;
-  background: transparent url('../img/services-bg/credit.png') 0 0 no-repeat;
+  background-color: transparent;
+  background-image: url('../img/services-bg/credit.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .vertical-rectangle {
@@ -986,7 +1006,7 @@ a.slider-image {
   margin-bottom: 39px;
   padding: 0;
   display: block;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1005,7 +1025,7 @@ a.slider-image {
 }
 
 .info ul {
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -1074,6 +1094,10 @@ a.slider-image {
   margin-bottom: 68px;
 }
 
+.map-image {
+  background-color: var(--input-grey-hover);
+}
+
 .contact-us a.button {
   padding-left: 40px;
   padding-right: 38px;
@@ -1124,7 +1148,10 @@ a.slider-image {
   width: 12px;
   height: 12px;
   display: block;
-  background: var(--basic-white) url('../img/misc/icon_arrow_nav.svg') center center no-repeat;
+  background-color: var(--basic-white);
+  background-image: url('../img/misc/icon_arrow_nav.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs li:last-child::after {
@@ -1186,7 +1213,7 @@ a.slider-image {
   margin-right: 121px;
   margin-bottom: 95px;
   padding: 0;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1211,7 +1238,7 @@ a.slider-image {
   padding-bottom: 32px;
   border-top: 2px solid var(--basic-black);
   display: block;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -1326,12 +1353,18 @@ a.slider-image {
 }
 
 .check-input + .check-box:active {
-  background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
+  background-color: var(--basic-grey-light);
+  background-image: url('../img/misc/check.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /* Checked */
 .check-input:checked + .check-box {
-  background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
+  background-color: var(--basic-grey-light);
+  background-image: url('../img/misc/check.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .check-input:checked + .check-box:hover {
@@ -1385,12 +1418,18 @@ a.slider-image {
 }
 
 .radio-input + .check-box:active {
-  background: var(--basic-grey-light) url('../img/misc/check.svg') center center no-repeat;
+  background-color: var(--basic-grey-light);
+  background-image: url('../img/misc/check.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /* Checked */
 .radio-input:checked + .radio-button {
-  background: var(--basic-grey-light) url('../img/misc/radio-dot-bg.svg') center center no-repeat;
+  background-color: var(--basic-grey-light);
+  background-image: url('../img/misc/radio-dot-bg.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .radio-input:checked + .radio-button:hover {
@@ -1432,7 +1471,7 @@ a.slider-image {
 
 .sorting h2,
 .sorting span {
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1542,7 +1581,7 @@ ul.sorting-ascdesc {
   margin: 0;
   padding: 0;
   flex: 1;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1557,7 +1596,7 @@ ul.sorting-ascdesc {
   position: absolute;
   top: 29px;
   left: 271px;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
@@ -1612,7 +1651,6 @@ ul.sorting-ascdesc {
 }
 
 /* Кнопки при наведении на карточку товара*/
-
 /* В корзину*/
 .goods-item-controls .button {
   width: 100%;
@@ -1656,7 +1694,7 @@ ul.sorting-ascdesc {
 
 .goods-controls a {
   width: 120px;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1678,11 +1716,11 @@ ul.sorting-ascdesc {
 
 .page-direction:hover,
 .page-direction:focus {
-  background: var(--special-grey);
+  background-color: var(--special-grey);
 }
 
 .page-direction:active {
-  background: var(--special-grey);
+  background-color: var(--special-grey);
 }
 
 .page-direction:first-child {
@@ -1781,7 +1819,7 @@ a.page-current {
   bottom: auto;
   padding: 92px 100px 60px;
   grid-column: span 2;
-  background: var(--basic-white);
+  background-color: var(--basic-white);
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
@@ -1815,7 +1853,7 @@ a.page-current {
 
 .form-item label {
   margin-bottom: 10px;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1894,7 +1932,10 @@ a.page-current {
 
 .submit-button {
   min-width: 200px;
-  background: transparent url('../img/misc/button-rectangle-bg-light.svg') center repeat-x;
+  background-color: transparent;
+  background-image: url('../img/misc/button-rectangle-bg-light.svg');
+  background-position: center center;
+  background-repeat: repeat-x;
 }
 
 /* Увеличенная карта проезда */
@@ -2042,7 +2083,7 @@ footer .wrapper {
 .footer-user-menu .logout-button {
   margin: 0;
   padding: 0;
-  background: 0;
+  background: none;
   border: none;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
@@ -2099,7 +2140,7 @@ footer .wrapper {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-self: baseline;
-  font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;
+  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
