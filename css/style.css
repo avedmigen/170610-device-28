@@ -446,6 +446,19 @@ header .wrapper {
   transform: rotate(90deg);
 }
 
+.submenu-toggle-button {
+  position: absolute;
+  left: 206px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /* Выпадающее меню */
 .submenu {
   position: absolute;
