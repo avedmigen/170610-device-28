@@ -1094,7 +1094,7 @@ a.slider-image {
   margin-bottom: 68px;
 }
 
-.map-image {
+.map-image-preview {
   background-color: var(--input-grey-hover);
 }
 
@@ -1943,6 +1943,11 @@ a.page-current {
   top: 24px;
   bottom: auto;
   width: 994px;
+  height: 593px;
+  background-color: transparent;
+  background-image: url('../img/map/map_popup.png');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .modal-map img {
