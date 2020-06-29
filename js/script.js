@@ -1,30 +1,35 @@
-let contactUsBtn = document.querySelector("#contactUsButton");
-let modalContactForm  = document.querySelector(".modal-contact-form");
-let modalContactFormCloseBtn = document.querySelector(".modal-contact-form button.modal-close");
-let mapImageLink = document.querySelector(".map-image-preview");
-let modalMap = document.querySelector(".modal-map");
-let modalMapCloseBtn = document.querySelector(".modal-map button.modal-close")
+const productCatalog = document.querySelector(".product-catalog")
+const subMenu = document.querySelector(".submenu")
+const mapImagePreview = document.querySelector(".map-image-preview")
+const modalMap = document.querySelector(".modal-map")
+const modalMapCloseBtn = document.querySelector(".modal-map .modal-close")
+const modalContactForm = document.querySelector(".modal-contact-form")
+const modalContactFormLink = document.querySelector(".contact-us a.button")
+const modalContactFormCloseBtn = document.querySelector(".modal-contact-form .modal-close")
 
-contactUsBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalContactForm.classList.remove("visually-hidden")
+productCatalog.addEventListener("click", function (evt) {
+  evt.preventDefault()
+  subMenu.classList.toggle("visually-hidden")
 })
 
-modalContactFormCloseBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalContactForm.classList.add("visually-hidden")
-})
-
-mapImageLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
+mapImagePreview.addEventListener("click", function (evt) {
+  evt.preventDefault()
   modalMap.classList.remove("visually-hidden")
 })
 
 modalMapCloseBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
+  evt.preventDefault()
   modalMap.classList.add("visually-hidden")
 })
 
+modalContactFormLink.addEventListener("click", function (evt) {
+  evt.preventDefault()
+  modalContactForm.classList.remove("visually-hidden")
+})
 
+modalContactFormCloseBtn.addEventListener("click", function (evt) {
+  evt.preventDefault()
+  modalContactForm.classList.add("visually-hidden")
+})
 
 

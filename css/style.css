@@ -449,13 +449,13 @@ header .wrapper {
 /* Выпадающее меню */
 .submenu {
   position: absolute;
-  right: -60px;
+  right: -57px;
   z-index: 5;
   width: 1160px;
   margin: 0;
   padding: 0;
   padding-top: 3px;
-  padding-bottom: 42px;
+  padding-bottom: 43px;
   padding-left: 60px;
   display: grid;
   grid-template-columns: repeat(3, max-content);
