@@ -7,8 +7,7 @@ const modalContactForm = document.querySelector(".modal-contact-form")
 const modalContactFormLink = document.querySelector(".contact-us a.button")
 const modalContactFormCloseBtn = document.querySelector(".modal-contact-form .modal-close")
 
-productCatalog.addEventListener("click", function (evt) {
-  evt.preventDefault()
+productCatalog.addEventListener("mouseover", function (evt) {
   subMenu.classList.toggle("visually-hidden")
 })
 
