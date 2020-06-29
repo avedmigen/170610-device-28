@@ -73,7 +73,7 @@ input[type='radio'].visually-hidden {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   clip-path: inset(100%);
   overflow: hidden;
 }

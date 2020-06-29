@@ -1,2 +1,2 @@
-let contactUsButton = document.getElementById('contactUsButton');
+let contactUsButton = document.querySelector('#contactUsButton');
 console.log(contactUsButton)
