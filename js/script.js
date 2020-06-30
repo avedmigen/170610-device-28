@@ -7,40 +7,70 @@ const modalContactFormPopup = document.querySelector(".modal-contact-form")
 const modalContactFormLink = document.querySelector(".contact-us a.button")
 const modalContactFormCloseBtn = document.querySelector(".modal-contact-form .modal-close")
 const modalContactForm = modalContactFormPopup.querySelector("form")
-const name = document.querySelector("[name = name]")
-const email = document.querySelector("[name = email]")
-const message = document.querySelector("[name = message]")
+let name = document.querySelector("[name = name]")
+let email = document.querySelector("[name = email]")
+let message = document.querySelector("[name = message]")
+let isStorageSupport = true
+let storage = ""
+let storageName = localStorage.getItem("name")
+let storageEmail = localStorage.getItem("email")
 
-submenuToggleButton.addEventListener("click", function (evt) {
+submenuToggleButton.addEventListener("click", function (e) {
   subMenu.classList.toggle("visually-hidden")
 })
 
-mapImagePreview.addEventListener("click", function (evt) {
-  evt.preventDefault()
+mapImagePreview.addEventListener("click", function (e) {
+  e.preventDefault()
   modalMap.classList.remove("visually-hidden")
 })
 
-modalMapCloseBtn.addEventListener("click", function (evt) {
-  evt.preventDefault()
+modalMapCloseBtn.addEventListener("click", function (e) {
+  e.preventDefault()
   modalMap.classList.add("visually-hidden")
 })
 
-modalContactFormLink.addEventListener("click", function (evt) {
-  evt.preventDefault()
+modalContactFormLink.addEventListener("click", function (e) {
+  e.preventDefault()
   modalContactFormPopup.classList.remove("visually-hidden")
-  name.focus()
-})
 
-modalContactFormCloseBtn.addEventListener("click", function (evt) {
-  evt.preventDefault()
-  modalContactFormPopup.classList.add("visually-hidden")
-})
-
-modalContactForm.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value || !message.value) {
-    evt.preventDefault()
-    console.log("Заполните все поля формы")
+  if (storage) {
+    name.value = storageName
+    email.focus()
+  } else {
+    name.focus()
   }
+
+  if (storage) {
+    email.value = storageEmail
+    message.focus()
+  } else {
+    email.focus()
+  }
+
+})
+
+try {
+  storage = localStorage.getItem("name")
+}
+catch (err) {
+  isStorageSupport = false
+}
+
+modalContactForm.addEventListener("submit", function (e) {
+  if (!name.value || !email.value || !message.value) {
+    e.preventDefault()
+    console.log("Заполните все поля контактной формы")
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("name", name.value)
+      localStorage.setItem("email", email.value)
+    }
+  }
+})
+
+modalContactFormCloseBtn.addEventListener("click", function (e) {
+  e.preventDefault()
+  modalContactFormPopup.classList.add("visually-hidden")
 })
 
 
