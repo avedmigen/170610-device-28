@@ -869,7 +869,7 @@ a.slider-image {
   margin: 0;
   padding: 0;
   padding-left: 124px;
-  padding-bottom: 131px;
+  padding-bottom: 135px;
   list-style-type: none;
 }
 
@@ -881,7 +881,7 @@ a.slider-image {
   position: relative;
   top: -28px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding: 0;
   display: block;
   font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
@@ -1588,6 +1588,7 @@ ul.sorting-ascdesc {
   align-content: baseline;
   align-items: baseline;
   width: 360px;
+  cursor:pointer;
 }
 
 .goods-item h2 {
@@ -1653,6 +1654,10 @@ ul.sorting-ascdesc {
 }
 
 .goods-item-controls {
+  display: none;
+}
+
+.goods-item:hover .goods-item-controls {
   position: absolute;
   top: 180px;
   left: 50%;
@@ -1992,7 +1997,6 @@ footer .wrapper {
 /*Логотип в футере*/
 .footer-logo,
 .footer-logo:visited {
-  position: relative;
   grid-column: 1;
   width: 163px;
   margin-top: 22px;
@@ -2013,20 +2017,10 @@ footer .wrapper {
   fill: var(--special-yellow-dark);
 }
 
-/* Декоративный прямоугольник в футере */
-.footer-logo::after {
-  position: absolute;
-  bottom: -139px;
-  content: '';
-  width: 80px;
-  height: 7px;
-  display: block;
-  background-color: var(--footer-yellow);
-}
-
 /* Меню пользователя в футере */
 .footer-user-menu {
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   grid-column: span 2;
   justify-self: end;
@@ -2035,10 +2029,6 @@ footer .wrapper {
   justify-content: space-between;
   align-items: baseline;
   list-style-type: none;
-}
-
-.footer-index-page .footer-user-menu {
-  margin-top: 4px;
 }
 
 .footer-user-menu .user-menu-item {
@@ -2123,6 +2113,7 @@ footer .wrapper {
 
 /* Адрес и телефон*/
 .address {
+  position: relative;
   grid-column: 1;
 }
 
@@ -2144,6 +2135,17 @@ footer .wrapper {
   line-height: 20px;
   color: var(--basic-white);
   opacity: 0.6;
+}
+
+/* Декоративный прямоугольник в футере */
+.address::after {
+  position: absolute;
+  bottom: -87px;
+  content: '';
+  width: 80px;
+  height: 7px;
+  display: block;
+  background-color: var(--footer-yellow);
 }
 
 /* Навигация по сайту в футере */
@@ -2241,4 +2243,28 @@ footer .wrapper {
 
 .htmlacademy-logo-image path {
   fill: var(--special-yellow-dark);
+}
+
+/* Анимация формы */
+@keyframes bounce {
+  0% { transform: translateY(-2000px) }
+  70% { transform: translateY(30px) }
+  90% { transform: translateY(-10px) }
+  100% { transform: translateY(0px) }
+}
+
+.bounce-animation {
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0) }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px) }
+  20%, 40%, 60%, 80% { transform: translateX(10px) }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
