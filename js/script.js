@@ -12,7 +12,6 @@ let email = document.querySelector("[name = email]")
 let message = document.querySelector("[name = message]")
 let isStorageSupport = true
 let storage = ""
-let storageName = localStorage.getItem("name")
 let storageEmail = localStorage.getItem("email")
 
 submenuToggleButton.addEventListener("click", function (e) {
@@ -46,9 +45,10 @@ window.addEventListener("keydown", function (e) {
 modalContactFormLink.addEventListener("click", function (e) {
   e.preventDefault()
   modalContactFormPopup.classList.remove("visually-hidden")
+  modalContactFormPopup.classList.add("bounce-animation")
 
   if (storage) {
-    name.value = storageName
+    name.value = storage
     email.focus()
   } else {
     name.focus()
