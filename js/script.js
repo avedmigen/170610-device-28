@@ -19,6 +19,13 @@ submenuToggleButton.addEventListener("click", function (e) {
   subMenu.classList.toggle("visually-hidden")
 })
 
+window.addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
+    e.preventDefault()
+    subMenu.classList.add("visually-hidden")
+  }
+})
+
 mapImagePreview.addEventListener("click", function (e) {
   e.preventDefault()
   modalMap.classList.remove("visually-hidden")
@@ -27,6 +34,13 @@ mapImagePreview.addEventListener("click", function (e) {
 modalMapCloseBtn.addEventListener("click", function (e) {
   e.preventDefault()
   modalMap.classList.add("visually-hidden")
+})
+
+window.addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
+    e.preventDefault()
+    modalMap.classList.add("visually-hidden")
+  }
 })
 
 modalContactFormLink.addEventListener("click", function (e) {
@@ -73,4 +87,10 @@ modalContactFormCloseBtn.addEventListener("click", function (e) {
   modalContactFormPopup.classList.add("visually-hidden")
 })
 
+window.addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
+    e.preventDefault()
+    modalContactFormPopup.classList.add("visually-hidden")
+  }
+})
 
