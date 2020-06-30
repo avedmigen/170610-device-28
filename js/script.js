@@ -1,10 +1,10 @@
-let name = document.querySelector("[name = name]")
-let email = document.querySelector("[name = email]")
-let message = document.querySelector("[name = message]")
-let isStorageSupport = true
-let storage = ""
-let storageName = localStorage.getItem("name")
-let storageEmail = localStorage.getItem("email")
+let name = document.querySelector("[name = name]");
+let email = document.querySelector("[name = email]");
+let message = document.querySelector("[name = message]");
+let isStorageSupport = true;
+let storage = "";
+let storageName = localStorage.getItem("name");
+let storageEmail = localStorage.getItem("email");
 
 document.querySelector(".submenu-toggle-button").addEventListener("click", function (e) {
   document.querySelector(".submenu").classList.toggle("visually-hidden")
