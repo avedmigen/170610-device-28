@@ -774,14 +774,17 @@ a.slider-image {
 
 .virtual-reality::before {
   background-image: url('../img/popular/virtual-reality.svg');
+  background-position: center 52px;
 }
 
 .monopods-for-selfies::before {
   background-image: url('../img/popular/monopods-for-selfies.svg');
+  background-position: center 26px;
 }
 
 .action-cameras::before {
   background-image: url('../img/popular/action-cameras.svg');
+  background-position: 44px 36px;
 }
 
 .fitness-bracelets::before {
