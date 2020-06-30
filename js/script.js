@@ -86,12 +86,16 @@ modalContactForm.addEventListener("submit", function (e) {
 modalContactFormCloseBtn.addEventListener("click", function (e) {
   e.preventDefault()
   modalContactFormPopup.classList.add("visually-hidden")
+  modalContactFormPopup.classList.remove("bounce-animation")
+  modalContactFormPopup.classList.remove("modal-error")
 })
 
 window.addEventListener("keydown", function (e) {
   if (e.keyCode === 27) {
     e.preventDefault()
     modalContactFormPopup.classList.add("visually-hidden")
+    modalContactFormPopup.classList.remove("bounce-animation")
+    modalContactFormPopup.classList.remove("modal-error")
   }
 })
 
