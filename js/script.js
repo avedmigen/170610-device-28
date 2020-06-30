@@ -12,6 +12,7 @@ let email = document.querySelector("[name = email]")
 let message = document.querySelector("[name = message]")
 let isStorageSupport = true
 let storage = ""
+let storageName = localStorage.getItem("name")
 let storageEmail = localStorage.getItem("email")
 
 submenuToggleButton.addEventListener("click", function (e) {
@@ -55,12 +56,12 @@ modalContactFormLink.addEventListener("click", function (e) {
   }
 
   if (storage) {
+    name.value = storageName
     email.value = storageEmail
     message.focus()
   } else {
-    email.focus()
+    name.focus()
   }
-
 })
 
 try {
@@ -73,7 +74,7 @@ catch (err) {
 modalContactForm.addEventListener("submit", function (e) {
   if (!name.value || !email.value || !message.value) {
     e.preventDefault()
-    console.log("Заполните все поля контактной формы")
+    modalContactFormPopup.classList.add("modal-error")
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", name.value)
