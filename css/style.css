@@ -582,6 +582,7 @@ ul.slider-list {
   font-size: 179px;
   line-height: 219px;
   text-transform: uppercase;
+  vertical-align: middle;
   color: var(--basic-white);
 }
 
@@ -1064,6 +1065,8 @@ a.slider-image {
 }
 
 .info ul li::before {
+  position: relative;
+  top: -2px;
   content: '';
   width: 8px;
   height: 8px;
@@ -1071,8 +1074,7 @@ a.slider-image {
   display: inline-block;
   border: 2px solid var(--basic-grey-light);
   border-radius: 50%;
-  position: relative;
-  top: -2px;
+  vertical-align: middle;
 }
 
 /* Блок О нас */
