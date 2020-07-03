@@ -139,7 +139,7 @@ input[type='radio'].visually-hidden {
 }
 
 /* Хедер */
-header .wrapper {
+.main-header .wrapper {
   position: relative;
   padding-top: 28px;
   padding-right: 57px;
@@ -287,6 +287,7 @@ header .wrapper {
   align-items: center;
   list-style-type: none;
 }
+
 .header-index-page .user-menu {
   margin-top: 16px;
   padding-right: 4px;
@@ -522,24 +523,9 @@ header .wrapper {
 }
 
 /* Главный контент */
-main {
-  position: relative;
-}
-
 /* Индексная страница */
-.index-page {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: -webkit-max-content;
-  grid-template-rows: max-content;
-}
-
-.index-page h2 {
-  font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
-  letter-spacing: 0.2em;
-  color: var(--basic-black);
+.main-content {
+  position: relative;
 }
 
 /* Слайдер Топ-3 по продажам */
@@ -1136,10 +1122,6 @@ a.slider-image {
 }
 
 /* Страница каталога товаров */
-.inner-page {
-  position: relative;
-}
-
 .wrapper-options {
   margin-bottom: 50px;
   padding-left: 60px;
@@ -2002,12 +1984,12 @@ a.page-current {
 }
 
 /* Футер */
-footer {
+.main-footer {
   padding-top: 42px;
   background-color: var(--basic-dark);
 }
 
-footer .wrapper {
+.main-footer .wrapper {
   display: grid;
   grid-template-columns: 1fr -webkit-max-content 1fr;
   grid-template-columns: 1fr max-content 1fr;
