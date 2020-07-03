@@ -656,14 +656,14 @@ a.slider-image {
   order: 1;
 }
 
-.slider-props p {
+.item-property {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-.slider-props p span:first-child {
+.item-property span:first-child {
   order: 2;
   font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
@@ -673,7 +673,7 @@ a.slider-image {
   color: var(--basic-black);
 }
 
-.slider-props p span:last-child {
+.item-property span:last-child {
   margin-bottom: 15px;
   flex-shrink: 0;
   font-family: 'Gilroy Light', 'Arial', sans-serif;
@@ -971,7 +971,7 @@ a.slider-image {
 /* Блок Наши партнеры */
 .logotypes {
   grid-column: span 2;
-  margin-bottom: 78px;
+  margin-bottom: 99px;
 }
 
 .logotypes-list {
@@ -1013,6 +1013,7 @@ a.slider-image {
 
 .info .wrapper {
   padding-top: 39px;
+  padding-bottom: 77px;
   display: flex;
   flex-direction: row;
 }
@@ -1041,16 +1042,40 @@ a.slider-image {
   background-color: var(--basic-black);
 }
 
-.info ul {
+/* Блок О нас */
+.about-us {
+  position: relative;
+  width: 50%;
+  padding-right: 102px;
+  flex-shrink: 0;
+}
+
+.about-us p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 42px;
+}
+
+.companies-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 53px;
+  flex-shrink: 0;
+  list-style-type: none;
+}
+
+.companies-list li {
+  padding-bottom: 15px;
   font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
   color: var(--basic-black);
-  list-style-type: none;
 }
 
-.info ul li::before {
+.companies-list li::before {
   position: relative;
   top: -2px;
   content: '';
@@ -1063,33 +1088,6 @@ a.slider-image {
   vertical-align: middle;
 }
 
-/* Блок О нас */
-.about-us {
-  position: relative;
-  width: 50%;
-  padding-top: 21px;
-  padding-right: 105px;
-  padding-bottom: 78px;
-  flex-shrink: 0;
-}
-
-.about-us p {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 42px;
-}
-
-.about-us ul {
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 52px;
-  padding: 0;
-}
-
-.about-us ul li {
-  padding-bottom: 15px;
-}
-
 .about-us a.button {
   padding-left: 24px;
   padding-right: 18px;
@@ -1099,7 +1097,6 @@ a.slider-image {
 .contact-us {
   position: relative;
   width: 50%;
-  padding-top: 21px;
   padding-left: 20px;
   flex-shrink: 0;
 }
@@ -1260,20 +1257,6 @@ a.slider-image {
   color: var(--basic-black);
 }
 
-.product-filter ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.product-filter ul li {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--basic-black);
-}
-
 .product-filter input,
 .product-filter label {
   cursor: pointer;
@@ -1344,6 +1327,20 @@ a.slider-image {
   background-color: var(--basic-grey-light);
 }
 /* Цвет */
+.filter-colors {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-colors li {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+}
+
 .check {
   margin-bottom: 20px;
   padding-left: 42px;
@@ -2016,7 +2013,7 @@ a.page-current {
   opacity: 0.3;
 }
 
-.footer-logo svg path {
+.footer-logo-img path {
   fill: var(--special-yellow-dark);
 }
 
