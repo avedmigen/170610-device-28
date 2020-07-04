@@ -491,10 +491,6 @@ input[type='radio'].visually-hidden {
   background-color: var(--special-yellow);
 }
 
-.submenu .index-page {
-  position: absolute;
-}
-
 .submenu li:last-child {
   grid-column-start: 3;
 }
@@ -546,7 +542,7 @@ input[type='radio'].visually-hidden {
   list-style-type: none;
 }
 
-ul.slider-list {
+.slider-list {
   counter-reset: slide-number;
 }
 
@@ -560,7 +556,7 @@ ul.slider-list {
 .slider-item::before {
   position: absolute;
   right: 51px;
-  top: -110px;
+  top: -111px;
   z-index: 1;
   display: inline-block;
   font-family: 'Gilroy Extra Bold', 'Arial Black', sans-serif;
@@ -586,7 +582,7 @@ ul.slider-list {
   order: 1;
 }
 
-a.slider-image {
+.slider-image {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -596,7 +592,7 @@ a.slider-image {
 .selfie-stick {
   position: absolute;
   top: -93px;
-  left: 88px;
+  left: 89px;
 }
 
 .fitness-tracker {
@@ -649,9 +645,10 @@ a.slider-image {
 
 /* Характеристики товара в слайдере */
 .slider-props {
-  width: 448px;
+  width: 472px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   order: 1;
 }
@@ -659,8 +656,19 @@ a.slider-image {
 .item-property {
   padding: 0;
   margin: 0;
+  margin-right: 27px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+}
+
+.item-property:last-child {
+  margin-right: 24px;
+}
+
+.left-props .item-property:last-child {
+  margin-right: 0;
+  flex-grow: 1;
 }
 
 .item-property span:first-child {
@@ -675,7 +683,6 @@ a.slider-image {
 
 .item-property span:last-child {
   margin-bottom: 15px;
-  flex-shrink: 0;
   font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 36px;
