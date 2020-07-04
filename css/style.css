@@ -645,33 +645,35 @@ input[type='radio'].visually-hidden {
 
 /* Характеристики товара в слайдере */
 .slider-props {
-  width: 472px;
+  position: relative;
+  width: 80%;
+}
+
+.props-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  order: 1;
 }
 
-.item-property {
-  padding: 0;
-  margin: 0;
-  margin-right: 27px;
+.left-align {
+  justify-content: unset;
+}
+
+.props-item {
   display: flex;
+  margin-right: 27px;
   flex-direction: column;
-  flex-shrink: 0;
 }
 
-.item-property:last-child {
-  margin-right: 24px;
-}
-
-.left-props .item-property:last-child {
+.props-item:last-child {
   margin-right: 0;
-  flex-grow: 1;
 }
 
-.item-property span:first-child {
+.props-item span:first-child {
   order: 2;
   font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
@@ -681,7 +683,7 @@ input[type='radio'].visually-hidden {
   color: var(--basic-black);
 }
 
-.item-property span:last-child {
+.props-item span:last-child {
   margin-bottom: 15px;
   font-family: 'Gilroy Light', 'Arial', sans-serif;
   font-weight: 300;
@@ -701,8 +703,8 @@ input[type='radio'].visually-hidden {
 /* Переключатели слайдов */
 .slider-controls {
   position: absolute;
-  right: 87px;
-  bottom: 168px;
+  right: -25px;
+  top: -87px;
 }
 
 .slider-controls button {
